@@ -1,0 +1,109 @@
+.homeHeroSection {
+    min-width: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.heroTitle {
+    color: #FFFFFF;
+    font-size: 80px;
+    line-height: 157px;
+    font-weight: 700;
+    text-align: center;
+}
+.heroImg {
+    width: 1064px;
+    height: 663px;
+    border: 1px solid wheat;
+    text-align: center;
+}
+.briefStorySection {
+    display: flex;
+    color: #FFFFFF;
+    padding: 1em;
+    justify-content: space-between;
+    margin: 10em 1em;
+    font-family: 'Poppins', sans-serif;
+}
+.briefStoryTitle {
+    text-align: left;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 102px;
+    margin-bottom: 0;
+}
+.characterName {
+    text-align: left;
+    font-size: 26px;
+    line-height: 57px;
+    margin-bottom: 0;
+}
+.subSection {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.briefStoryText {
+    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.briefStoryImg {
+    width: 660px;
+    height: 630px;
+    border: 1px solid wheat;
+}
+.characterImg {
+    width: 150px;
+    height: 150px;
+    border: 1px solid wheat;
+}
+.questionBox {
+    padding: 1em;
+    margin-top: .5em;
+    background-color: #2E2E2E;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+.questionPart {
+    display: flex;
+    justify-content: space-between;
+}
+.searchIcon {
+    border-right: 1px solid white;
+    padding-right: 1em;
+    margin-right: 1em;
+}
+.questionLeft {
+    text-align: left;
+}
+.responseBox {
+    padding: 0 1em;
+    margin-top: .5em;
+    background-color: #2E2E2E;
+    border-radius: 10px;
+    font-size: 80%;
+    text-align: left;
+    line-height: 26px;
+}
+hr {
+    opacity: .25;
+}
+.characterImgs {
+    width: 660px;
+    height: 630px;
+    border: 1px solid wheat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.character {
+    cursor: pointer;
+    margin: 0 2em;
+    font-size: 150%;
+}
+.character:hover {
+    opacity: .5;
+}

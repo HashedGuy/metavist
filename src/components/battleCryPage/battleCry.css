@@ -1,0 +1,71 @@
+.messageSection {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-right: 2em;
+}
+.titleh2 {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.foundersMessageText {
+    text-align: left;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.foundersMessageImg {
+    width: 460px;
+    height: 830px;
+    border: 1px solid wheat;
+}
+.valuesSection {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 2em;
+}
+.valuesImg {
+    width: 600px;
+    height: 730px;
+    border: 1px solid wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.valuesTitle {
+    text-align: left;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 102px;
+    margin-bottom: 0;
+}
+.valuesBoxes {
+    display: flex;
+    margin-top: 0;
+}
+.valuesBox {
+    height: 250px;
+    width: 250px;
+    background-color: #2E2E2E;
+    margin: 1em;
+    cursor: pointer;
+}
+.valuesBox:hover {
+    opacity: .5;
+}
+.valuesOpenBox {
+    height: 500px;
+    width: 500px;
+    background-color: #2E2E2E;
+    cursor: pointer;
+    padding: .5em;
+
+    display: flex;
+    justify-content: space-between;
+}
+.closeIcon {
+    text-align: right;
+    font-size: 150%;
+}
