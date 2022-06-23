@@ -9,7 +9,7 @@ function NavigationMenu() {
   return (
     <div className='navContainer'>
       <div className='logoContainer'>
-        <h2>Metavista</h2>
+        <Link className='navLink' to={'/'} onClick={()=>setActiveLink('home')}><h2>Metavista</h2></Link>
       </div>
 
       <div className='menuSection'>

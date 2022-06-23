@@ -9,10 +9,6 @@
     color: #FFFFFF;
 }
 
-.logoContainer {
-    /*  */
-}
-
 .menuSection {
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -34,11 +30,13 @@
     color: #FFFFFF;
     text-decoration: none;
 }
+.navLink:hover {
+    opacity: .7;
+}
 
 .activeMenuItem {
     position: relative;
-    display:inline-block;
-    
+    display:inline-block;  
 }
 
 .activeMenuItem::after {
@@ -64,6 +62,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.languageBox:hover {
+    opacity: .7;
 }
 
 .flagIcon {
