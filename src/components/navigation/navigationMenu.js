@@ -4,8 +4,8 @@ import { CircleFlag } from 'react-circle-flags'
 import {BsChevronDown} from 'react-icons/bs'
 import { Link, Outlet } from "react-router-dom";
 
-function NavigationMenu() {
-  const [activeLink, setActiveLink] = useState('home')
+function NavigationMenu(props) {
+  const [activeLink, setActiveLink] = useState(props.defaultActive)
   return (
     <div className='navContainer'>
       <div className='logoContainer'>

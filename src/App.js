@@ -12,21 +12,13 @@ import {
 
 function App() {
   return (
-    <div className="App">
-      <NavigationMenu/>
-      <div className="dynamicSection">
-        <StickyNavigation/>
-        <div className="pagesContent">
+   
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="battlecry" element={<BattleCry />} />
             <Route path="roadmap" element={<Roadmap />} />
             <Route path="fablesmyths" element={<FablesMyths />} />
           </Routes>
-        </div>
-        
-      </div>
-    </div>
   );
 }
 

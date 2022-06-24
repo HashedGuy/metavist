@@ -3,9 +3,9 @@ import {AiOutlineClose} from 'react-icons/ai'
 
 function ValuesOfMetavist(props) {
   const [status, setStatus] = useState('')
-  const [box, setBox] = useState('one')
+  const [box, setBox] = useState('default')
   return (
-    <div className='briefStorySection'>
+    <div className='briefStorySection' ref={props.refG}>
         <div className='valuesSection'>
            <h1 className='valuesTitle'>{props.title}</h1>
            {status!=='' ? 
@@ -18,7 +18,11 @@ function ValuesOfMetavist(props) {
                   status==='three' ? 'The Prisoner of Azkaban'
                   : 'The Goblet of Fire'}
                 </h2>
-                <AiOutlineClose className='closeIcon' onClick={()=>setStatus('')}/>
+                <AiOutlineClose 
+                  className='closeIcon' 
+                  onClick={()=>{
+                    setBox('default')
+                    setStatus('')}}/>
               </div>
             </div>
            </> 

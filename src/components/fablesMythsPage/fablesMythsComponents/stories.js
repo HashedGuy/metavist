@@ -2,7 +2,7 @@ import React from 'react'
 
 function Stories(props) {
   return (
-    <div className='briefStorySection'>
+    <div className='briefStorySection' ref={props.refG}>
              <div className={props.order==='image' ? 'subSection order' : 'subSection'}>
                 <h1 className='storyTitle'>Fables & Myths</h1>
            
@@ -12,7 +12,7 @@ function Stories(props) {
                     {props.secondParagraph}
                 </p>
             </div>
-            <img className='briefStoryImg'/>
+            <img className='storyImg'/>
         </div>
   )
 }

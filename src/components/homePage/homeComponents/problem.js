@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
 import {BsSearch, BsChevronDown, BsChevronUp} from 'react-icons/bs'
 
-function Problem() {
+function Problem(props) {
     const [responseQ1, setResponseQ1] = useState(false)
     const [responseQ2, setResponseQ2] = useState(false)
     const [responseQ3, setResponseQ3] = useState(true)
   return (
-    <div className='briefStorySection'>
+    <div className='briefStorySection' ref={props.refG}>
              <div className='subSection'>
                 <h1 className='briefStoryTitle'>PROBLEM WE SOLVE</h1>
            

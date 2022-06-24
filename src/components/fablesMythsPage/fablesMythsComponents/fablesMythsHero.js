@@ -1,11 +1,13 @@
 import { useState } from "react"
 
-function FablesMythsHero() {
+function FablesMythsHero(props) {
     const [activeDot, setActiveDot] = useState('first')
   return (
-    <div className="homeHeroSection">
+    <div className="homeHeroSection" ref={props.refG}>
         <h1 className="heroTitle">Fables & Myths</h1>
-        <img className="fablesMythsHeroImg"/>
+        <a className="fablesMythsHeroImg">
+          {activeDot==='second' ? 2 : activeDot==='third' ? 3 : activeDot==='fourth' ? 4 : 'default'}
+        </a>
         <div className='slideShowDotsContainer'>
             <div className={activeDot==='first' ? 'slideShowDot activeDot' : 'slideShowDot'} onClick={()=>setActiveDot('first')}></div>
             <div className={activeDot==='second' ? 'slideShowDot activeDot' : 'slideShowDot'} onClick={()=>setActiveDot('second')}></div>

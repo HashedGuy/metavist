@@ -1,8 +1,15 @@
 .fablesMythsHeroImg {
-    width: 1064px;
-    height: 563px;
+    display: flex;
+    color: white;
+    font-size: 200%;
+    justify-content: center;
+    align-items: center;
+
+    padding:.5em;
+    height: 300px;
     border: 1px solid wheat;
     text-align: center;
+    margin: 0 2em;
 }
 .slideShowDotsContainer {
     display: flex;
@@ -11,8 +18,8 @@
 }
 
 .slideShowDot {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 1px solid #BBBBBB;
     margin: 1em;
@@ -42,4 +49,9 @@
 }
 .order {
     order: 1;
+}
+.storyImg {
+    width: 660px;
+    height: 660px;
+    border: 1px solid wheat;
 }

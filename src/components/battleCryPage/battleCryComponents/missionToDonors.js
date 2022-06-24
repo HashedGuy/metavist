@@ -1,9 +1,9 @@
 import {useState} from 'react'
 
-function MissionToDonors() {
+function MissionToDonors(props) {
   const [box, setBox] = useState('one')
   return (
-    <div className='briefStorySection'>
+    <div className='briefStorySection' ref={props.refG}>
       <div className='valuesSection'>
         <h1 className='valuesTitle'>Values of a Metavist</h1>
         <div className='valuesBoxes'>
