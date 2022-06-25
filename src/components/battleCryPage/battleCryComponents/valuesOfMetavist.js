@@ -5,9 +5,9 @@ function ValuesOfMetavist(props) {
   const [status, setStatus] = useState('')
   const [box, setBox] = useState('default')
   return (
-    <div className='briefStorySection' ref={props.refG}>
+    <div className='briefStorySection' ref={props.refG} id='vomRef'>
         <div className='valuesSection'>
-           <h1 className='valuesTitle'>{props.title}</h1>
+           <h1 className='valuesTitle'>Values of a Metavist</h1>
            {status!=='' ? 
            <>
             <div className='valuesBoxes'>

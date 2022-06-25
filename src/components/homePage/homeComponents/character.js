@@ -3,7 +3,7 @@ import { useState } from "react"
 function Character(props) {
   const [character, setCharacter] = useState('bigBoy')
   return (
-    <div className='briefStorySection' ref={props.refG}>
+    <div className='briefStorySection' ref={props.refG} id='charRef'>
     <div className='subSection'>
        <h1 className='briefStoryTitle'>CHARACTER</h1>
        <img className='characterImg'/>

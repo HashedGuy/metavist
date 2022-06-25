@@ -6,6 +6,10 @@ import FoundersMessage from './battleCryComponents/foundersMessage'
 import ValuesOfMetavist from './battleCryComponents/valuesOfMetavist'
 import NavigationMenu from '../navigation/navigationMenu'
 import { useInView } from 'react-intersection-observer';
+import {FaRegDotCircle} from 'react-icons/fa'
+import MissionToDonors from './battleCryComponents/missionToDonors'
+import MissionToNonprofits from './battleCryComponents/missionToNonprofits'
+import { HashLink } from 'react-router-hash-link'
 
 function BattleCry(props) {
   const { ref: heroRef, inView: heroVisible} = useInView({threshold:.5})
@@ -15,22 +19,22 @@ function BattleCry(props) {
   const { ref: mtnRef, inView: mtnVisible} = useInView({threshold:.5})
   return (
     <>
-      <div className="App">
+      <div className="App" id='bcId'>
       <NavigationMenu defaultActive='battleCry'/>
         <div className="dynamicSection">
         <div className='stickyNavContainer'>
-          <div className={heroVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}></div>
-          <div className={fmVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}></div>
-          <div className={vomVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}></div>
-          <div className={mtdVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}></div>
-          <div className={mtnVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}></div>
+          <HashLink to='#bcId' smooth><FaRegDotCircle className={heroVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
+          <HashLink to='#fmRef' smooth><FaRegDotCircle className={fmVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
+          <HashLink to='#vomRef' smooth><FaRegDotCircle className={vomVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
+          <HashLink to='#mtdRef' smooth><FaRegDotCircle className={mtdVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
+          <HashLink to='#mtnRef' smooth><FaRegDotCircle className={mtnVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
         </div>
         <div className="pagesContent">
             <BattleCryHero refG={heroRef}/>
             <FoundersMessage refG={fmRef}/>
-            <ValuesOfMetavist title='Values of a Metavist' refG={vomRef}/>
-            <ValuesOfMetavist title='Mission to Donors' refG={mtdRef}/>
-            <ValuesOfMetavist title='Mission to Nonprofits'refG={mtnRef}/>
+            <ValuesOfMetavist refG={vomRef}/>
+            <MissionToDonors refG={mtdRef}/>
+            <MissionToNonprofits refG={mtnRef}/>
          </div>
        </div>
       </div>

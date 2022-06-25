@@ -2,7 +2,7 @@ import React from 'react'
 
 function BriefStory(props) {
     return (
-        <div className='briefStorySection' ref={props.refB}>
+        <div className='briefStorySection' ref={props.refB} id='bsRef'>
              <div className='subSection'>
                 <h1 className='briefStoryTitle'>BRIEF STORY</h1>
            

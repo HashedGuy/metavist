@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 import {BsSearch, BsChevronDown, BsChevronUp} from 'react-icons/bs'
 
 function Problem(props) {
-    const [responseQ1, setResponseQ1] = useState(false)
+    const [response, setResponse] = useState('three')
     const [responseQ2, setResponseQ2] = useState(false)
     const [responseQ3, setResponseQ3] = useState(true)
   return (
-    <div className='briefStorySection' ref={props.refG}>
+    <div className='briefStorySection' ref={props.refG} id='problemRef'>
              <div className='subSection'>
                 <h1 className='briefStoryTitle'>PROBLEM WE SOLVE</h1>
            
@@ -16,11 +16,11 @@ function Problem(props) {
                             <BsSearch color='white' className='searchIcon'/>    When is the Mint Date?
                         
                         </div>
-                        <a onClick={()=>setResponseQ1(!responseQ1)}>
-                            {responseQ1 ? <BsChevronUp /> : <BsChevronDown/>}
-                        </a>
+                        {response==='one' ? 
+                        <a onClick={()=>setResponse('')}> <BsChevronUp /></a> : 
+                        <a onClick={()=>setResponse('one')}><BsChevronDown /></a>}
                     </div>
-                    {responseQ1 ? 
+                    {response==='one' ? 
                         <div className='responseBox'>
                             <hr className='hrStyle'/>
                             <p>
@@ -36,11 +36,11 @@ function Problem(props) {
                             <BsSearch color='white' className='searchIcon'/>    How much it will cost?
                         
                         </div>
-                        <a onClick={()=>setResponseQ2(!responseQ2)}>
-                            {responseQ2 ? <BsChevronUp /> : <BsChevronDown/>}
-                        </a>
+                        {response==='two' ? 
+                        <a onClick={()=>setResponse('')}> <BsChevronUp /></a> : 
+                        <a onClick={()=>setResponse('two')}><BsChevronDown /></a>}
                     </div>
-                    {responseQ2 ? 
+                    {response==='two' ? 
                         <div className='responseBox'>
                             <hr className='hrStyle'/>
                             <p>
@@ -56,11 +56,11 @@ function Problem(props) {
                             <BsSearch color='white' className='searchIcon'/>    How much it will cost?
                         
                         </div>
-                        <a onClick={()=>setResponseQ3(!responseQ3)}>
-                            {responseQ3 ? <BsChevronUp /> : <BsChevronDown/>}
-                        </a>
+                        {response==='three' ? 
+                        <a onClick={()=>setResponse('')}> <BsChevronUp /></a> : 
+                        <a onClick={()=>setResponse('three')}><BsChevronDown /></a>}
                     </div>
-                    {responseQ3 ? 
+                    {response==='three' ? 
                         <div className='responseBox'>
                             <hr className='hrStyle'/>
                             <p>
@@ -72,7 +72,9 @@ function Problem(props) {
                 </div>
               
             </div>
-            <img className='briefStoryImg'/>
+            <div className='problemImg'>
+                {response==='one' ? '1' : response==='two' ? '2' : '3'}
+            </div>
         </div>
   )
 }

@@ -6,6 +6,8 @@ import Character from './homeComponents/character'
 import Problem from './homeComponents/problem'
 import NavigationMenu from '../navigation/navigationMenu'
 import { useInView } from 'react-intersection-observer';
+import {FaRegDotCircle} from 'react-icons/fa'
+import { HashLink } from 'react-router-hash-link'
 import '../navigation/nav.css'
 
 function Home() {
@@ -17,14 +19,14 @@ function Home() {
   
   return (
     <>
-    <div className="App">
+    <div className="App" id='homeId'>
       <NavigationMenu defaultActive='home'/>
       <div className="dynamicSection">
         <div className='stickyNavContainer'>
-          <div className={heroVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}></div>
-          <div className={bsVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}></div>
-          <div className={charVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}></div>
-          <div className={problemVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}></div>
+          <HashLink to='#homeId' smooth><FaRegDotCircle className={heroVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
+          <HashLink to='#bsRef' smooth><FaRegDotCircle className={bsVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
+          <HashLink to='#charRef' smooth><FaRegDotCircle className={charVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
+          <HashLink to='#problemRef' smooth><FaRegDotCircle className={problemVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
         </div>
        <div className="pagesContent">
          <HomeHero refG={heroRef}/>

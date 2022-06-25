@@ -1,24 +1,37 @@
 .navContainer {
     /* border: 1px solid white; */
-    margin: 1em;
-    padding: 1em;
-
-    display: flex;
+ 
+  
+    width: 100vw;
+    display:flex;
+    position: fixed;
     justify-content: space-between;
+    top: 0;
 
     color: #FFFFFF;
 }
+.scrolledNav {
+    background-color: rgb(49, 49, 49);
+    opacity: .5;
+    border-radius: 5px;
+    font-size: 80%;
+    padding: 1em;
 
+}
+.logoContainer {
+    margin-left: 2em;
+}
 .menuSection {
     font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
 }
-
 .menuSection ul {
     list-style: none;
 }
-
+.ulMenu {
+    display: none;
+}
 .menuSection li {
     display: inline;
     margin-right: 1em;
@@ -38,7 +51,6 @@
     position: relative;
     display:inline-block;  
 }
-
 .activeMenuItem::after {
     background-color: #9E55FC;
     position: absolute;
@@ -52,48 +64,56 @@
 	-o-transform: skew(-20deg); 
 	z-index: -1;
 }
-
-.languageBox {
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: .7em 1em;
-
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.dropdownMenu {
+    margin-right: 2em;
+    font-size: 150%;
 }
-.languageBox:hover {
-    opacity: .7;
-}
-
-.flagIcon {
-    margin-right: .5em;
-}
-
 .downIcon {
     font-size: 10px;
     margin-left: .7em;
 }
-
 .stickyNavContainer {
     /* border: 1px solid wheat; */
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 5vh;
+    max-width: 5vh;
     height: 90vh;
-    margin-left: 2em;
-    padding: 1em;
+    margin-left: 0;
+    padding: .5em;
 }
-
 .verticalNavSection {
-    height: 80px;
-    border-left: 3px solid #414141;
+    font-size: 1em;
+    color: #414141;
     margin-bottom: 1em;
+    padding-left: 1em;
+}
+.verticalNavSection:hover {
+    opacity: .7;
+}
+.activeNavSection {
+    color: #9E55FC;
+    font-size: 1.5em;
+    padding-left: .50em;
 }
 
-.activeNavSection {
-    border-color: #9E55FC;
+@media (min-width: 600px) {
+  .verticalNavSection {
+      font-size: 1.5em;
+      margin-right: 1em;
+  }
+  .activeNavSection {
+      font-size: 2em;
+      padding-left: .65em;
+  }
+  .ulMenu {
+    display: block;
+  }
+  .dropdownMenu {
+      display: none;
+  }
+  .scrolledNav {
+    font-size: 50%;
+  }
 }

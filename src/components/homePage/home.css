@@ -1,62 +1,76 @@
 .homeHeroSection {
-    min-width: 100vh;
+    max-width: 100vh;
     font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
 }
 .heroTitle {
     color: #FFFFFF;
-    font-size: 60px;
-    line-height: 157px;
+    font-size: 45px;
+    line-height: 47px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 1em;
 }
 .heroImg {
-    width: 1064px;
-    height: 463px;
+    min-width: 300px;
+    min-height: 80vh;
     border: 1px solid wheat;
     text-align: center;
 }
 .briefStorySection {
     display: flex;
+    flex-direction: column;
     color: #FFFFFF;
-    padding: 1em;
-    justify-content: space-between;
-    margin: 10em 1em;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em .5em;
     font-family: 'Poppins', sans-serif;
 }
 .briefStoryTitle {
-    text-align: left;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 102px;
-    margin-bottom: 0;
+    font-size: 25px;
+    line-height: 10px;
+    margin-bottom: 1em;
 }
 .characterName {
-    text-align: left;
+    text-align: center;
     font-size: 26px;
-    line-height: 57px;
+    line-height: 30px;
     margin-bottom: 0;
 }
 .subSection {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 90%;
 }
 .briefStoryText {
-    text-align: left;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 25px;
     font-weight: 400;
 }
 .briefStoryImg {
-    width: 660px;
+    min-width: 300px;
+    height: 60vh;
+    border: 1px solid wheat;
+    margin: 1em 0;
+}
+.problemImg {
+    min-width: 300px;
     height: 530px;
     border: 1px solid wheat;
+    font-size: 200%;
+    margin: 1em 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .characterImg {
     width: 150px;
     height: 150px;
     border: 1px solid wheat;
+    margin: 0 auto;
 }
 .questionBox {
     padding: 1em;
@@ -92,7 +106,7 @@ hr {
     opacity: .25;
 }
 .characterImgs {
-    width: 660px;
+    max-width: 660px;
     height: 630px;
     border: 1px solid wheat;
 
@@ -107,4 +121,45 @@ hr {
 }
 .character:hover {
     opacity: .5;
+}
+
+@media (min-width: 600px) {
+    .homeHeroSection {
+        width: 100vh;
+    }
+    .heroTitle {
+        font-size: 60px;
+        line-height: 127px;
+    }
+    .heroImg {
+        min-height: 60vh;
+    }
+    .briefStoryImg {
+        width: 664px;
+    }
+    .briefStorySection {
+        margin: 10em 2em;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .briefStoryTitle {
+        font-size: 40px;
+        line-height: 50px;
+        text-align: left;
+    }
+    .briefStoryText {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: left;
+    }
+    .subSection {
+        width: 40%;
+    }
+    .characterImg {
+        margin: 1em;
+    }
+    .characterName {
+        text-align: left;
+    }
 }
