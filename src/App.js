@@ -2,8 +2,7 @@ import BattleCry from "./components/battleCryPage/battleCry";
 import Home from "./components/homePage/home";
 import Roadmap from "./components/roadmapPage/roadmap";
 import FablesMyths from "./components/fablesMythsPage/fablesMyths";
-import NavigationMenu from "./components/navigation/navigationMenu";
-import StickyNavigation from "./components/navigation/stickyNavigation";
+import Story from "./components/storyPage/story";
 import {
   BrowserRouter,
   Routes,
@@ -18,6 +17,7 @@ function App() {
             <Route path="battlecry" element={<BattleCry />} />
             <Route path="roadmap" element={<Roadmap />} />
             <Route path="fablesmyths" element={<FablesMyths />} />
+            <Route path="story" element={<Story />} />
           </Routes>
   );
 }

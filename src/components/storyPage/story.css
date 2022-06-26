@@ -1,0 +1,47 @@
+.storyHero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.storyText {
+    padding: 1em;
+    color: white;
+    background-color: #1B1919;
+}
+.storyBTitle {
+    color: white
+}
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+.background {
+    transform: translateZ(-10px) scale(2);
+}
+.foreground {
+    transform: translateZ(-5px) scale(1.5);
+}
+.char {
+    cursor: pointer;
+    opacity: .5;
+}
+.char:hover {
+    opacity: 1;
+}
+.charActive {
+    opacity: 1;
+}
+.background, 
+.foreground {
+     position: absolute;
+     height: 100%;
+     width:  100%;
+     object-fit: cover;
+     z-index: -1;
+}
