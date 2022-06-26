@@ -25,21 +25,41 @@ function NavigationMenu(props) {
       windowHeight > 200 ? setScrolled(true) : setScrolled(false);
     }
   };
-  
+
   return (
     <div className={scrolled ? 'navContainer scrolledNav':'navContainer'} >
       <div className='logoContainer'>
         <Link className='navLink' to={'/'} onClick={()=>setActiveLink('home')}><h2>Metavists</h2></Link>
       </div>
 
-      <div className='menuSection'>
-        <RiMenu2Line className='dropdownMenu' onClick={()=>setDropdownMenu(!dropdownMenu)}/>
+      <div className={dropdownMenu ? 'menuSection openedMenuSection' : 'menuSection'}>
+        <RiMenu2Line className={dropdownMenu ? 'dropdownMenu openedDropdownMenu' : 'dropdownMenu'} onClick={()=>setDropdownMenu(!dropdownMenu)}/>
         {dropdownMenu ? 
           <ul className='ulDropdown'>
-            <li className={activeLink==='home' ? 'activeDropdownMenuItem' : ''}><Link className='navLink' to={'/'} onClick={()=>setActiveLink('home')}><AiFillHome/></Link></li>
-            <li className={activeLink==='battleCry' ? 'activeDropdownMenuItem' : ''}><Link className='navLink' to={'/battlecry'} onClick={()=>setActiveLink('battleCry')}><GiBattleGear/></Link></li>
-            <li className={activeLink==='fablesMyths' ? 'activeDropdownMenuItem' : ''}><Link className='navLink' to={'/fablesMyths'} onClick={()=>setActiveLink('fablesMyths')}><CgGhostCharacter/></Link></li>
-            <li className={activeLink==='roadmap' ? 'activeDropdownMenuItem' : ''}><Link className='navLink' to={'/roadmap'} onClick={()=>setActiveLink('roadmap')}><RiRoadMapFill/></Link></li>
+            <li className={activeLink==='home' ? 'activeDropdownMenuItem' : ''}>
+              <Link className='navLink' to={'/'} onClick={()=>setActiveLink('home')}>
+                <AiFillHome/>
+                <p className='dropdownText'>Home</p>
+              </Link>
+            </li>
+            <li className={activeLink==='battleCry' ? 'activeDropdownMenuItem' : ''}>
+              <Link className='navLink' to={'/battlecry'} onClick={()=>setActiveLink('battleCry')}>
+                <GiBattleGear/>
+                <p className='dropdownText'>BattleCry</p>
+              </Link>
+            </li>
+            <li className={activeLink==='fablesMyths' ? 'activeDropdownMenuItem' : ''}>
+              <Link className='navLink' to={'/fablesMyths'} onClick={()=>setActiveLink('fablesMyths')}>
+                <CgGhostCharacter/>
+                <p className='dropdownText'>Character</p>
+              </Link>
+            </li>
+            <li className={activeLink==='roadmap' ? 'activeDropdownMenuItem' : ''}>
+              <Link className='navLink' to={'/roadmap'} onClick={()=>setActiveLink('roadmap')}>
+                <RiRoadMapFill/>
+                <p className='dropdownText'>Roadmap</p>
+              </Link>
+            </li>
           </ul> : ''}
         <ul className='ulMenu'>
           <li className={activeLink==='home' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/'} onClick={()=>setActiveLink('home')}>Home</Link></li>
