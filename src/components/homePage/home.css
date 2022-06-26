@@ -106,7 +106,7 @@ hr {
     opacity: .25;
 }
 .characterImgs {
-    max-width: 660px;
+    min-width: 300px;
     height: 630px;
     border: 1px solid wheat;
 
@@ -116,7 +116,7 @@ hr {
 }
 .character {
     cursor: pointer;
-    margin: 0 2em;
+    margin: 0 .5em;
     font-size: 150%;
 }
 .character:hover {
@@ -155,6 +155,9 @@ hr {
     }
     .subSection {
         width: 40%;
+    }
+    .character {
+        margin: 0 2em;
     }
     .characterImg {
         margin: 1em;
