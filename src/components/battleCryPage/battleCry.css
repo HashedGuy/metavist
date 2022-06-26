@@ -16,38 +16,39 @@
     font-weight: 400;
 }
 .foundersMessageImg {
-    width: 460px;
+    min-width: 300px;
     height: 830px;
     border: 1px solid wheat;
 }
 .valuesSection {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin-right: 2em;
+    width: 100%;
 }
 .valuesImg {
-    width: 600px;
-    height: 730px;
+    min-width: 300px;
+    height: 50vh;
     border: 1px solid wheat;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2em;
 }
 .valuesTitle {
-    text-align: left;
+    text-align: center;
     font-weight: 700;
     font-size: 40px;
-    line-height: 102px;
-    margin-bottom: 0;
+    line-height: 42px;
+    margin-bottom: 1em;
 }
 .valuesBoxes {
     display: flex;
     margin-top: 0;
+    justify-content: center;
 }
 .valuesBox {
-    height: 250px;
-    width: 250px;
+    min-height: 150px;
+    min-width: 150px;
     background-color: #2E2E2E;
     margin: 1em;
     cursor: pointer;
@@ -56,11 +57,12 @@
     opacity: .5;
 }
 .valuesOpenBox {
-    height: 500px;
-    width: 500px;
+    height: 260px;
+    width: 260px;
     background-color: #2E2E2E;
     cursor: pointer;
     padding: 2em;
+    margin: 2em;
 
     display: flex;
     justify-content: space-between;
@@ -71,4 +73,26 @@
 }
 .closeIcon:hover {
     opacity: .5;
+}
+
+@media (min-width: 600px) {
+    .valuesTitle {
+        line-height: 102px;
+        text-align: left;
+    }
+    .valuesBox {
+        height: 250px;
+        width: 250px;
+    }
+    .valuesImg {
+        width: 600px;
+    }
+    .valuesSection {
+        width: 50%;
+        margin-right: 2em;
+    }
+    .valuesOpenBox {
+        height: 500px;
+        width: 500px;
+    }
 }

@@ -13,7 +13,7 @@ import { HashLink } from 'react-router-hash-link'
 
 function BattleCry(props) {
   const { ref: heroRef, inView: heroVisible} = useInView({threshold:.5})
-  const { ref: fmRef, inView: fmVisible} = useInView({threshold:.5})
+  const { ref: fmRef, inView: fmVisible} = useInView({threshold:.3})
   const { ref: vomRef, inView: vomVisible} = useInView({threshold:.5})
   const { ref: mtdRef, inView: mtdVisible} = useInView({threshold:.5})
   const { ref: mtnRef, inView: mtnVisible} = useInView({threshold:.5})
