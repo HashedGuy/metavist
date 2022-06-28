@@ -3,7 +3,7 @@ import { useState } from "react"
 function FablesMythsHero(props) {
     const [activeDot, setActiveDot] = useState('first')
   return (
-    <div className="homeHeroSection" ref={props.refG}>
+    <div className="homeHeroSection">
         <h1 className="heroTitle">Fables & Myths</h1>
         <a className="fablesMythsHeroImg">
           {activeDot==='second' ? 2 : activeDot==='third' ? 3 : activeDot==='fourth' ? 4 : 'default'}

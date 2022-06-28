@@ -34,3 +34,25 @@
 .pathItem:hover, .pathItem2:hover, .pathItem3:hover, .pathItem4:hover, .pathItem5:hover, .pathItem6:hover {
     opacity: .5;
 }
+.roadmap {
+    max-height: 50vh;
+    margin-bottom: 20em;
+    /* display: flex; */
+}
+.foregroundImg, .foregroundImgTwo, .foregroundImgThree{
+    width: 300px;
+    /* object-fit: cover; */
+    cursor: pointer;
+    opacity: .5;
+    transition: all .2s ease-in-out;
+}
+.foregroundImg:hover, .foregroundImgTwo:hover, .foregroundImgThree:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.foregroundImgTwo {
+    margin-left: 5em;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+

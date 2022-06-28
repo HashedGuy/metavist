@@ -1,17 +1,17 @@
-import React from 'react'
+import Mountain from '../../../assets/img/animeMap.png'
+import Tree from '../../../assets/img/dest1.png'
+import Dest2 from '../../../assets/img/dest2.png'
+import Dest3 from '../../../assets/img/dest3.png'
 
 function RoadmapHero(props) {
   return (
-    <div className="homeHeroSection" ref={props.refG}>
-        <h1 className="heroTitle">Paths of Conquest</h1>
-        <div className="roadmapHeroImg">
-          <a className='pathItem'>1</a>
-          <a className='pathItem2'>2</a>
-          <a className='pathItem3'>3</a>
-          <a className='pathItem4'>4</a>
-          <a className='pathItem5'>5</a>
-          <a className='pathItem6'>6</a>
-        </div>
+    <div className='roadmap'>
+      <img src={Tree} className="foregroundImg" alt=''/>
+      <img src={Dest2} className="foregroundImgTwo" alt=''/>
+      <img src={Dest3} className="foregroundImgThree" alt=''/>
+      <img src={Tree} className="foregroundImg" alt=''/>
+      <img src={Dest2} className="foregroundImgTwo" alt=''/>
+      <img src={Dest3} className="foregroundImgThree" alt=''/>
     </div>
   )
 }

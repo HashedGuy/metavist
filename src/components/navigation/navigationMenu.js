@@ -66,7 +66,7 @@ function NavigationMenu(props) {
           <li className={activeLink==='battleCry' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/battlecry'} onClick={()=>setActiveLink('battleCry')}>Battle Cry</Link></li>
           <li className={activeLink==='fablesMyths' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/fablesMyths'} onClick={()=>setActiveLink('fablesMyths')}>Fables & Myths</Link></li>
           <li className={activeLink==='roadmap' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/roadmap'} onClick={()=>setActiveLink('roadmap')}>Roadmap</Link></li>
-          <li className={activeLink==='story' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/story'} onClick={()=>setActiveLink('story')}>Story</Link></li>
+          {/* <li className={activeLink==='story' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/story'} onClick={()=>setActiveLink('story')}>Story</Link></li> */}
         </ul>
         {/* <a className='languageBox'><CircleFlag countryCode="us" height="20" className='flagIcon'/>English US <BsChevronDown className='downIcon'/></a> */}
       </div>

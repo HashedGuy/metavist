@@ -1,4 +1,7 @@
 import { useState } from "react"
+import MainGuy from '../../../assets/img/mainGuy.png'
+import Friends from '../../../assets/img/friends.png'
+import { HashLink } from "react-router-hash-link"
 
 function Character(props) {
   const [character, setCharacter] = useState('bigBoy')
@@ -15,11 +18,13 @@ function Character(props) {
           <br/><br/>
           I am just too fast! Forget about the rumors, my actual shoe size is 49, and I love taking naps. Last time I took a nap though, it lasted for 200 years..
        </p>
+       <HashLink className="homeReferenceBtn" to={'./fablesMyths#strRef'}>Know your characters</HashLink>
    </div>
    <div className='characterImgs'>
-     <div className='character' onClick={()=>setCharacter('bigBoy')}>1</div>
-     <div className='character' onClick={()=>setCharacter('potter')}>2</div>
-     <div className='character' onClick={()=>setCharacter('weasley')}>3</div>
+    <img className={character==='bigBoy' ? 'character activeCharacter' : 'character'} src={MainGuy} onClick={()=>setCharacter('bigBoy')}/>
+    <img className={character==='potter' ? 'character activeCharacter' : 'character'} src={Friends} onClick={()=>setCharacter('potter')}/>
+     {/* <div className='character' onClick={()=>setCharacter('weasley')}>3</div> */}
+   
    </div>
 </div>
   )

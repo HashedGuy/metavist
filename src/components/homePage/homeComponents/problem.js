@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {BsSearch, BsChevronDown, BsChevronUp} from 'react-icons/bs'
+import { HashLink } from 'react-router-hash-link'
 
 function Problem(props) {
     const [response, setResponse] = useState('three')
@@ -70,6 +71,7 @@ function Problem(props) {
                      : ''}
                   
                 </div>
+                <HashLink className="homeReferenceAnchor" to={'./battleCry#bcId'}>Wanna know more? Check out our Battle Cry</HashLink>
               
             </div>
             <div className='problemImg'>

@@ -107,8 +107,7 @@ hr {
 }
 .characterImgs {
     min-width: 300px;
-    height: 630px;
-    border: 1px solid wheat;
+    max-height: 630px;
 
     display: flex;
     align-items: center;
@@ -118,8 +117,35 @@ hr {
     cursor: pointer;
     margin: 0 .5em;
     font-size: 150%;
+    opacity: .3;
 }
 .character:hover {
+    opacity: 1;
+}
+.activeCharacter {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+    transform: scale(1.2);
+}
+.homeReferenceBtn {
+    color: #FFFFFF;
+    background-color: #9E55FC;
+    padding: 1em;
+    width: 50%;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.homeReferenceAnchor {
+    text-align: left;
+    margin: 1em;
+    text-decoration: none;
+    color: #9E55FC;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.homeReferenceAnchor:hover, .homeReferenceBtn:hover {
     opacity: .5;
 }
 
@@ -164,5 +190,8 @@ hr {
     }
     .characterName {
         text-align: left;
+    }
+    .activeCharacter {
+        transform: scale(1.5);
     }
 }

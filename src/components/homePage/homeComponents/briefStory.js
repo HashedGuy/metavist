@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link'
 
 function BriefStory(props) {
     return (
@@ -11,6 +12,7 @@ function BriefStory(props) {
                     <br/><br/>
                     However, the LOM does not believes humanity failed because we did not care. But we failed because the system through which we ‘care’ is broken beyond repair.
                 </p>
+                <HashLink className="homeReferenceBtn" to={'./fablesMyths#backgroundStoryRef'}>Background story</HashLink>
             </div>
             <img className='briefStoryImg'/>
         </div>
