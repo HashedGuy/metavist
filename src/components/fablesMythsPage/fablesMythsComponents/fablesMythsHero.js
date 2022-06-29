@@ -1,19 +1,22 @@
 import { useState } from "react"
+import CharZ from '../../../assets/img/charZ.png'
+import CharB from '../../../assets/img/charB.png'
+import CharJ from '../../../assets/img/charJ.png'
+import CharP from '../../../assets/img/charP.png'
+import CharA from '../../../assets/img/charA.png'
+import { HashLink } from "react-router-hash-link"
+import Stories from "./stories"
 
 function FablesMythsHero(props) {
-    const [activeDot, setActiveDot] = useState('first')
+    const [character, setCharacter] = useState('Big Boy')
   return (
-    <div className="homeHeroSection">
-        <h1 className="heroTitle">Fables & Myths</h1>
-        <a className="fablesMythsHeroImg">
-          {activeDot==='second' ? 2 : activeDot==='third' ? 3 : activeDot==='fourth' ? 4 : 'default'}
-        </a>
-        <div className='slideShowDotsContainer'>
-            <div className={activeDot==='first' ? 'slideShowDot activeDot' : 'slideShowDot'} onClick={()=>setActiveDot('first')}></div>
-            <div className={activeDot==='second' ? 'slideShowDot activeDot' : 'slideShowDot'} onClick={()=>setActiveDot('second')}></div>
-            <div className={activeDot==='third' ? 'slideShowDot activeDot' : 'slideShowDot'} onClick={()=>setActiveDot('third')}></div>
-            <div className={activeDot==='fourth' ? 'slideShowDot activeDot' : 'slideShowDot'} onClick={()=>setActiveDot('fourth')}></div>
-        </div>
+    <div className="characterHeroSection">
+      <HashLink to='#charLetter' smooth><img src={CharP} className={character==='Luna'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Luna')}/></HashLink>
+      <HashLink to='#charLetter' smooth><img src={CharZ} className={character==='Cedric'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Cedric')}/></HashLink>
+      <HashLink to='#charLetter' smooth><img src={CharA} className={character==='Big Boy'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Big Boy')}/></HashLink>
+      <HashLink to='#charLetter' smooth><img src={CharJ} className={character==='Hermoine'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Hermoine')}/></HashLink>
+      <HashLink to='#charLetter' smooth><img src={CharB} className={character==='Weasley'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Weasley')}/></HashLink>
+       <Stories character={character}/>
     </div>
   )
 }

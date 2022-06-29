@@ -14,7 +14,7 @@
 .heroImg {
     min-width: 300px;
     min-height: 80vh;
-    border: 1px solid wheat;
+    /* border: 1px solid wheat; */
     text-align: center;
 }
 .briefStorySection {
@@ -51,14 +51,14 @@
 }
 .briefStoryImg {
     min-width: 300px;
-    height: 60vh;
-    border: 1px solid wheat;
+    height: 75vh;
+    /* border: 1px solid wheat; */
     margin: 1em 0;
 }
 .problemImg {
     min-width: 300px;
     height: 530px;
-    border: 1px solid wheat;
+    /* border: 1px solid wheat; */
     font-size: 200%;
     margin: 1em 0;
 
@@ -71,6 +71,11 @@
     height: 150px;
     border: 1px solid wheat;
     margin: 0 auto;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.characterImg:hover {
+    transform: scale(1.1);
 }
 .questionBox {
     padding: 1em;
@@ -129,13 +134,14 @@ hr {
 }
 .homeReferenceBtn {
     color: #FFFFFF;
-    background-color: #9E55FC;
+    border: #9E55FC 1px solid;
     padding: 1em;
     width: 50%;
-    border-radius: 5px;
+    border-radius: 10px;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 600;
+    transition: all .2s ease-in-out;
 }
 .homeReferenceAnchor {
     text-align: left;
@@ -145,7 +151,12 @@ hr {
     font-weight: 600;
     font-size: 1.2em;
 }
-.homeReferenceAnchor:hover, .homeReferenceBtn:hover {
+.homeReferenceBtn:hover {
+    /* opacity: .5; */
+    background-color: #9E55FC;
+    transform: scale(1.03);
+}
+.homeReferenceAnchor:hover {
     opacity: .5;
 }
 

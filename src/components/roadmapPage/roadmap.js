@@ -5,7 +5,6 @@ import RoadmapHero from './roadmapComponents/roadmapHero'
 import NavigationMenu from '../navigation/navigationMenu'
 import { useInView } from 'react-intersection-observer';
 import BriefStory from '../homePage/homeComponents/briefStory'
-import UnknownSection from './roadmapComponents/unknownSection'
 
 function Roadmap() {
   const { ref: heroRef, inView: heroVisible} = useInView({threshold:.5})
@@ -21,7 +20,6 @@ function Roadmap() {
         </div>
        <div className="pagesContent">
         <RoadmapHero refG={heroRef}/>
-        <UnknownSection refG={unkRef}/>
        </div>
       </div>
      </div> 

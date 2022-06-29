@@ -1,5 +1,5 @@
-import React from 'react'
 import { HashLink } from 'react-router-hash-link'
+import bsImg from '../../../assets/img/bs.png'
 
 function BriefStory(props) {
     return (
@@ -14,7 +14,7 @@ function BriefStory(props) {
                 </p>
                 <HashLink className="homeReferenceBtn" to={'./fablesMyths#backgroundStoryRef'}>Background story</HashLink>
             </div>
-            <img className='briefStoryImg'/>
+            <img src={bsImg} className='briefStoryImg'/>
         </div>
     )
 }

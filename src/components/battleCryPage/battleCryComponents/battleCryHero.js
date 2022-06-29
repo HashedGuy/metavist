@@ -1,10 +1,10 @@
-import React from 'react'
+import bcHero from '../../../assets/img/bcHero.png'
 
 function BattleCryHero(props) {
   return (
     <div className="homeHeroSection" ref={props.refG} id='heroRef'>
         <h1 className="heroTitle">Battle Cry</h1>
-        <img className="heroImg"/>
+        <img src={bcHero} className="heroImg"/>
     </div>
   )
 }

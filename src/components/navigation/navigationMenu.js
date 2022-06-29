@@ -6,6 +6,8 @@ import {AiFillHome} from 'react-icons/ai'
 import {GiBattleGear} from 'react-icons/gi'
 import {CgGhostCharacter} from 'react-icons/cg'
 
+import Logo from '../../assets/img/logo.png'
+
 function NavigationMenu(props) {
   const [activeLink, setActiveLink] = useState(props.defaultActive)
   const [scrolled, setScrolled] = useState(false);
@@ -29,7 +31,7 @@ function NavigationMenu(props) {
   return (
     <div className={scrolled ? 'navContainer scrolledNav':'navContainer'} >
       <div className='logoContainer'>
-        <Link className='navLink' to={'/'} onClick={()=>setActiveLink('home')}><h2>Metavists</h2></Link>
+        <Link to={'/'} onClick={()=>setActiveLink('home')}><img src={Logo} className='logoImg'/></Link>
       </div>
 
       <div className={dropdownMenu ? 'menuSection openedMenuSection' : 'menuSection'}>

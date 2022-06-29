@@ -18,7 +18,7 @@
 .foundersMessageImg {
     min-width: 300px;
     height: 830px;
-    border: 1px solid wheat;
+    /* border: 1px solid wheat; */
 }
 .valuesSection {
     display: flex;
@@ -28,11 +28,16 @@
 .valuesImg {
     min-width: 300px;
     height: 50vh;
-    border: 1px solid wheat;
+    /* border: 1px solid wheat; */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2em;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.valuesImg:hover {
+    transform: scale(1.1);
 }
 .valuesTitle {
     text-align: center;
@@ -88,7 +93,8 @@
         width: 200px;
     }
     .valuesImg {
-        width: 600px;
+        width: 50vw;
+        height: 75vh;
     }
     .valuesSection {
         width: 50%;
@@ -98,5 +104,9 @@
         height: 420px;
         width: 420px;
         margin: 1em;
+    }
+    .foundersMessageImg {
+        width: 50vw;
+        height: 90vh;
     }
 }

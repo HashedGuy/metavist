@@ -112,6 +112,14 @@
     animation: growDown 500ms ease-in-out forwards;
     transform-origin: top center;
 }
+.logoImg {
+    width: 150px;
+    transition: all .2s ease-in-out;
+}
+.logoImg:hover {
+    opacity: 1 !important;
+    transform: scale(1.1);
+}
 @keyframes growDown {
     0% {
       transform: scaleY(0)

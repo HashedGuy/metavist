@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {BsSearch, BsChevronDown, BsChevronUp} from 'react-icons/bs'
 import { HashLink } from 'react-router-hash-link'
+import ProblemImg from '../../../assets/img/problem.png'
 
 function Problem(props) {
     const [response, setResponse] = useState('three')
@@ -75,7 +76,7 @@ function Problem(props) {
               
             </div>
             <div className='problemImg'>
-                {response==='one' ? '1' : response==='two' ? '2' : '3'}
+                <img src={ProblemImg}/>
             </div>
         </div>
   )

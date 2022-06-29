@@ -1,6 +1,7 @@
 import { useState } from "react"
 import MainGuy from '../../../assets/img/mainGuy.png'
 import Friends from '../../../assets/img/friends.png'
+import CharMini from '../../../assets/img/charMini.png'
 import { HashLink } from "react-router-hash-link"
 
 function Character(props) {
@@ -9,7 +10,7 @@ function Character(props) {
     <div className='briefStorySection' ref={props.refG} id='charRef'>
     <div className='subSection'>
        <h1 className='briefStoryTitle'>CHARACTER</h1>
-       <img className='characterImg'/>
+       <img src={CharMini} className='characterImg'/>
        <h2 className='characterName'>
          {character==='bigBoy' ? 'BIG BOY' : character==='potter' ? 'POTTER' : 'WEASLEY'}
         </h2>

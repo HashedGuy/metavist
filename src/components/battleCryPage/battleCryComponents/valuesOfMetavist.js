@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import {AiOutlineClose} from 'react-icons/ai'
+import Vom from '../../../assets/img/vom.png'
 
 function ValuesOfMetavist(props) {
   const [box, setBox] = useState('')
@@ -59,9 +60,9 @@ function ValuesOfMetavist(props) {
                 
               </div>
         </div>
-        <div className='valuesImg'>
-          <div style={{fontSize:30}}>{box}</div>
-        </div>
+        <img src={Vom} className='valuesImg'/>
+        
+        
     </div>
   )
 }

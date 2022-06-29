@@ -1,4 +1,4 @@
-import React from 'react'
+import Founder from '../../../assets/img/founder.png'
 
 function FoundersMessage(props) {
   return (
@@ -25,7 +25,7 @@ function FoundersMessage(props) {
                 The Metavists App aims to cut the hassle & costs of fundraising through monthly subscriptions in both Fiat & Cryptocurrency to nonprofits. Nonprofits will be able to plan the impact roadmap better knowing what they will be receiving every month from generous donors and continue to spend most of their time making an impact for their mission.
             </p>
         </div>
-        <img className='foundersMessageImg'/>
+        <img src={Founder} className='foundersMessageImg'/>
     </div>
   )
 }
