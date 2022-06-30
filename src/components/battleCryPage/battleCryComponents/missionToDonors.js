@@ -53,7 +53,7 @@ function MissionToDonors(props) {
               Four
               </>}
                    <br/>
-                    <a onClick={()=>setBox('')}>Back</a>
+                    <a onClick={()=>setBox('')}><AiOutlineClose className='closeIcon'/></a>
                 </div>
                </>}
                 

@@ -10,7 +10,7 @@ function Character(props) {
     <div className='briefStorySection' ref={props.refG} id='charRef'>
     <div className='subSection'>
        <h1 className='briefStoryTitle'>CHARACTER</h1>
-       <img src={CharMini} className='characterImg'/>
+       <HashLink className="miniChar" to='./fablesMyths#players'><img src={CharMini} className='characterImg'/></HashLink>
        <h2 className='characterName'>
          {character==='bigBoy' ? 'BIG BOY' : character==='potter' ? 'POTTER' : 'WEASLEY'}
         </h2>
@@ -19,7 +19,7 @@ function Character(props) {
           <br/><br/>
           I am just too fast! Forget about the rumors, my actual shoe size is 49, and I love taking naps. Last time I took a nap though, it lasted for 200 years..
        </p>
-       <HashLink className="homeReferenceBtn" to={'./fablesMyths#strRef'}>Know your characters</HashLink>
+       <HashLink className="homeReferenceBtn" to={'./fablesMyths#players'}>Know your players</HashLink>
    </div>
    <div className='characterImgs'>
     <img className={character==='bigBoy' ? 'character activeCharacter' : 'character'} src={MainGuy} onClick={()=>setCharacter('bigBoy')}/>

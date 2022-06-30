@@ -4,6 +4,7 @@
     position: fixed;
     justify-content: space-between;
     top: 0;
+    z-index: 9999;
 
     color: #FFFFFF;
 }
@@ -62,6 +63,10 @@
 	-moz-transform: skew(-20deg); 
 	-o-transform: skew(-20deg); 
 	z-index: -1;
+}
+.white::after  {
+    background-color: white;
+    color: #9E55FC !important;
 }
 .dropdownMenu {
     padding:1em;

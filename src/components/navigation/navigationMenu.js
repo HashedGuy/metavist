@@ -29,7 +29,7 @@ function NavigationMenu(props) {
   };
 
   return (
-    <div className={scrolled ? 'navContainer scrolledNav':'navContainer'} >
+    <div className={scrolled ? 'navContainer scrolledNav':'navContainer'} style={props.defaultActive==='fablesMyths' ? {position:'sticky', background:'rgba(158, 85, 252, .1)'} : {}}>
       <div className='logoContainer'>
         <Link to={'/'} onClick={()=>setActiveLink('home')}><img src={Logo} className='logoImg'/></Link>
       </div>
@@ -66,7 +66,7 @@ function NavigationMenu(props) {
         <ul className='ulMenu'>
           <li className={activeLink==='home' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/'} onClick={()=>setActiveLink('home')}>Home</Link></li>
           <li className={activeLink==='battleCry' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/battlecry'} onClick={()=>setActiveLink('battleCry')}>Battle Cry</Link></li>
-          <li className={activeLink==='fablesMyths' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/fablesMyths'} onClick={()=>setActiveLink('fablesMyths')}>Fables & Myths</Link></li>
+          <li className={activeLink==='fablesMyths' ? 'activeMenuItem white' : ''}><Link className='navLink' style={props.defaultActive==='fablesMyths' ? {color:'#9E55FC'}:{}} to={'/fablesMyths'} onClick={()=>setActiveLink('fablesMyths')}>Fables & Myths</Link></li>
           <li className={activeLink==='roadmap' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/roadmap'} onClick={()=>setActiveLink('roadmap')}>Roadmap</Link></li>
           {/* <li className={activeLink==='story' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/story'} onClick={()=>setActiveLink('story')}>Story</Link></li> */}
         </ul>

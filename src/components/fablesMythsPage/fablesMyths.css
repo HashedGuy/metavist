@@ -73,12 +73,11 @@
     color: white;
 
 }
-.wrapper {
+.AppG {
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
-    margin-left: 2em;
 }
 .background {
     transform: translateZ(-10px) scale(2);
@@ -104,9 +103,10 @@
      object-fit: cover;
      z-index: -1;
 }
-.charcterHeroSection {
+.characterHeroSection {
     min-width: 95vw;
     margin-bottom: 0;
+    text-align: center !important;
 }
 .charLetter {
     height: 350px;

@@ -198,11 +198,15 @@ hr {
     }
     .characterImg {
         margin: 1em;
+        margin-left: 0;
     }
     .characterName {
         text-align: left;
     }
     .activeCharacter {
         transform: scale(1.5);
+    }
+    .miniChar {
+        text-align: left;
     }
 }
