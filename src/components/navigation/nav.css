@@ -5,7 +5,7 @@
     justify-content: space-between;
     top: 0;
     z-index: 9999;
-
+    padding-top: 1em;
     color: #FFFFFF;
 }
 .scrolledNav {
@@ -15,8 +15,7 @@
     padding: 0;
 }
 .logoContainer {
-    margin-right: 1em;
-    order: 1;
+    margin-left: 1em;
 }
 .menuSection {
     font-family: 'Poppins', sans-serif;
@@ -150,6 +149,13 @@
 }
 
 @media (min-width: 600px) {
+    .ulDropdown li {
+        padding: .7em 1em;
+    }
+  
+}
+
+@media (min-width: 1000px) {
   .verticalNavSection {
       font-size: 1.5em;
       margin-right: 1em;

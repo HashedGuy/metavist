@@ -7,7 +7,7 @@ function MissionToNonProfits(props) {
   return (
     <div className='briefStorySection' ref={props.refG} id='mtnRef'>
         <div className='valuesSection'>
-           <h1 className='valuesTitle'>Values of a Metavist</h1>
+           <h1 className='valuesTitle'>Mission to Nonprofits</h1>
              <div className='valuesBoxes'>
                {box==='' ? 
                <>

@@ -16,7 +16,7 @@
     font-weight: 400;
 }
 .foundersMessageImg {
-    min-width: 300px;
+    /* min-width: 300px; */
     height: 830px;
     /* border: 1px solid wheat; */
 }
@@ -90,20 +90,19 @@
 
 @media (min-width: 600px) {
     .valuesTitle {
-        line-height: 102px;
-        text-align: left;
+        line-height: 72px;
+        text-align: center;
     }
     .valuesBox {
         height: 200px;
         width: 200px;
     }
     .valuesImg {
-        width: 40vw;
-        height: 75vh;
+        height: 40vh;
     }
     .valuesSection {
-        width: 50%;
-        margin-right: 2em;
+        justify-content: center;
+        align-items: center;
     }
     .openBox {
         height: 420px;
@@ -113,5 +112,37 @@
     .foundersMessageImg {
         width: 50vw;
         height: 90vh;
+    }
+    .messageSection {
+        align-items: center;
+    }
+    .foundersMessageText {
+        text-align: center;
+    }
+    .foundersMessageImg {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 1000px) {
+    .messageSection {
+        align-items: flex-start;
+    }
+    .foundersMessageText {
+        text-align: left;
+    }
+    .foundersMessageImg {
+        height: 80vh;
+    }
+    .valuesTitle {
+        line-height: 102px;
+        text-align: left;
+    }
+    .valuesSection {
+        width: 50%;
+        margin-right: 2em;
+    }
+    .valuesImg {
+        height: 75vh;
     }
 }
