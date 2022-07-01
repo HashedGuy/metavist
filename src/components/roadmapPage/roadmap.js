@@ -18,7 +18,7 @@ function Roadmap() {
           <div className={heroVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}></div>
           <div className={unkVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}></div>
         </div>
-       <div className="pagesContent">
+       <div className="pagesContent rmp">
         <RoadmapHero refG={heroRef}/>
        </div>
       </div>

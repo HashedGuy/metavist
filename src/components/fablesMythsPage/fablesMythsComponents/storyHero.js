@@ -18,15 +18,6 @@ function StoryHero() {
   return (
       <>
        <div className="AppG">
-        {/* <NavigationMenu defaultActive='fablesMyths'/>
-          <div className="dynamicSection">
-            <div className='stickyNavContainer'>
-              <HashLink to='#backgroundStoryRef' smooth><FaRegDotCircle className={heroVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
-              <HashLink to='#players' smooth><FaRegDotCircle className={strVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
-            </div>
-          </div> */}
-          {/* <div className="pagesContent"> */}
-            {/* <div className='wrapper'> */}
               <>
               <NavigationMenu defaultActive='fablesMyths'/>
               <div className="storyHero" id='backgroundStoryRef'>

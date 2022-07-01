@@ -9,8 +9,8 @@ function Character(props) {
   return (
     <div className='briefStorySection' ref={props.refG} id='charRef'>
     <div className='subSection'>
-       <h1 className='briefStoryTitle'>CHARACTER</h1>
-       <HashLink className="miniChar" to='./fablesMyths#players'><img src={CharMini} className='characterImg'/></HashLink>
+       {/* <h1 className='briefStoryTitle'>CHARACTER</h1>
+       <HashLink className="miniChar" to='./fablesMyths#players'><img src={CharMini} className='characterImg'/></HashLink> */}
        <h2 className='characterName'>
          {character==='bigBoy' ? 'BIG BOY' : character==='potter' ? 'POTTER' : 'WEASLEY'}
         </h2>

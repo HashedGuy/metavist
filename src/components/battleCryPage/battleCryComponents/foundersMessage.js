@@ -2,7 +2,7 @@ import Founder from '../../../assets/img/founder.png'
 
 function FoundersMessage(props) {
   return (
-    <div className='briefStorySection' ref={props.refG} id='fmRef'>
+    <div className='battleCrySection' ref={props.refG} id='fmRef'>
          <div className='messageSection'>
             <h1 className='briefStoryTitle'>Founder's Message</h1>
             <h2 className='titleh2'>Technology</h2>

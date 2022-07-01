@@ -75,9 +75,9 @@ function Problem(props) {
                 <HashLink className="homeReferenceAnchor" to={'./battleCry#bcId'}>Wanna know more? Check out our Battle Cry</HashLink>
               
             </div>
-            <div className='problemImg'>
-                <img src={ProblemImg}/>
-            </div>
+           
+                <img src={ProblemImg} className='problemImg'/>
+         
         </div>
   )
 }

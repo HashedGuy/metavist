@@ -7,7 +7,7 @@ import Cedric from '../../../assets/img/charZx.png'
 function Stories(props) {
   return (
     <>
-    <div className='briefStorySection' id='charLetter'>
+    <div className='fmSpecialSection' id='charLetter'>
              <div className='subSection'>
                 <h1 className='storyTitle'>{props.character}</h1>
            
@@ -20,7 +20,7 @@ function Stories(props) {
             <img src={props.character==='Hermoine' ? Hermoine : props.character==='Cedric' ? Cedric : props.character==='Weasley' ? Weasley : props.character==='Luna' ? Luna : MainGuy} className='storyImg'/>
         </div>
 
-      <div className='briefStorySection' >
+      <div className='fmSpecialSection' >
       <div className='subSection order'>
         <h1 className='storyTitle'>Fables & Myths</h1>
 
@@ -33,7 +33,7 @@ function Stories(props) {
       <img className='storyImg'/>
       </div>
 
-      <div className='briefStorySection' >
+      <div className='fmSpecialSection' >
       <div className='subSection'>
         <h1 className='storyTitle'>Fables & Myths</h1>
 
@@ -46,7 +46,7 @@ function Stories(props) {
       <img className='storyImg'/>
       </div>
 
-      <div className='briefStorySection' >
+      <div className='fmSpecialSection' >
       <div className='subSection order'>
         <h1 className='storyTitle'>Fables & Myths</h1>
 

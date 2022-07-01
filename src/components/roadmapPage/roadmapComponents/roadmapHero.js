@@ -11,7 +11,7 @@ function RoadmapHero(props) {
   const [destination, setDestination] = useState('')
   return (
     <>
-    <div>
+    <div className='roadmapHero'>
         <h1 className='roadmapTitle'>Roadmap</h1>
         <div className='roadmap'>
           <HashLink to='#destination' smooth><img src={Tree}  onClick={()=>setDestination('Destionation 1')}className="foregroundImg" alt=''/></HashLink>

@@ -5,7 +5,7 @@ import Mtd from '../../../assets/img/mtd.png'
 function MissionToDonors(props) {
   const [box, setBox] = useState('')
   return (
-    <div className='briefStorySection' ref={props.refG} id='mtdRef'>
+    <div className='battleCrySection' ref={props.refG} id='mtdRef'>
         <div className='valuesSection'>
            <h1 className='valuesTitle'>Mission to Donors</h1>
              <div className='valuesBoxes'>
