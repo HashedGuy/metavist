@@ -24,8 +24,6 @@ function Character(props) {
    <div className='characterImgs'>
     <img className={character==='bigBoy' ? 'character activeCharacter' : 'character'} src={MainGuy} onClick={()=>setCharacter('bigBoy')}/>
     <img className={character==='potter' ? 'character activeCharacter' : 'character'} src={Friends} onClick={()=>setCharacter('potter')}/>
-     {/* <div className='character' onClick={()=>setCharacter('weasley')}>3</div> */}
-   
    </div>
 </div>
   )
