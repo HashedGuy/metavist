@@ -40,3 +40,42 @@
     min-height: 400px;
 }
 
+@media (min-width: 600px) {
+    .foregroundImg, .foregroundImgTwo, .foregroundImgThree {
+        width: 170px;
+        margin-top: 5em;
+    }
+    .foregroundImgTwo, .foregroundImgThree {
+        margin-left: 2.5em;
+        margin-bottom: 2.5em;
+        margin-right: .5em;
+    }
+  
+}
+
+@media (min-width: 1000px) {
+    .foregroundImg, .foregroundImgTwo, .foregroundImgThree {
+        width: 200px;
+        margin-top: 2em;
+    }
+    .foregroundImgTwo, .foregroundImgThree {
+        margin-left: 3em;
+        margin-bottom: 3em;
+        margin-right: .8em;
+    }
+  
+}
+
+@media (min-width: 1200px) {
+    .foregroundImg, .foregroundImgTwo, .foregroundImgThree {
+        width: 250px;
+        margin-top: 2em;
+    }
+    .foregroundImgTwo, .foregroundImgThree {
+        margin-left: 5em;
+        margin-bottom: 5em;
+        margin-right: 1em;
+    }
+  
+}
+

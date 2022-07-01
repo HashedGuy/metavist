@@ -83,7 +83,7 @@
     transform: translateZ(-10px) scale(2);
 }
 .foreground {
-    transform: translateZ(-5px) scale(1.1);
+    transform: translateZ(-5px) scale(1.5);
 }
 .char {
     cursor: pointer;
@@ -119,8 +119,48 @@
     opacity: 1;
 }
 
+@media (min-width: 600px) {
+    .storyBTitle {
+        font-size: 350%;
+    }
+    .storyText {
+        text-align: center;
+        padding: 1.5em;
+    }
+    .charInfoText {
+        text-align: center;
+    }
+    .storyTitle {
+        font-size: 50px;
+    }
+    .storyImg {
+        border-top: 1px solid gray;
+    }
+}
+
 @media (min-width: 1000px) {
     .storyBTitle {
         font-size: 400%;
+    }
+    .storyText {
+        text-align: left;
+    }
+    .charLetter {
+        height: 250px;
+    }
+    .charInfoText {
+        text-align: left;
+    }
+    .storyTitle {
+        font-size: 60px;
+    }
+    .storyImg {
+        border-top: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .charLetter {
+        height: 300px;
     }
 }

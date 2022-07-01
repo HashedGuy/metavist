@@ -22,9 +22,9 @@ function RoadmapHero(props) {
           <HashLink to='#destination' smooth><img src={Dest6} onClick={()=>setDestination('Destionation 6')}className="foregroundImgThree" alt=''/></HashLink>
         </div>
     </div>
-          <div className='briefStorySection'>
+          <div className='briefStorySection'  id='destination'>
           <div className='subSection'>
-             <h1 className='briefStoryTitle' id='destination'>{destination}</h1>
+             <h1 className='briefStoryTitle'>{destination}</h1>
         
              <p className='briefStoryText'>
                  This is a story of the mythical legends we heard from ancient cultures & civilizations for thousands of years. Yes, they are true! They were entrusted to rise when humanity fails to preserve Earth & Her people.

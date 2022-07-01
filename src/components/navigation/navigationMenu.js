@@ -29,7 +29,11 @@ function NavigationMenu(props) {
   };
 
   return (
-    <div className={scrolled ? 'navContainer scrolledNav':'navContainer'} style={props.defaultActive==='fablesMyths' ? {position:'sticky', background:'rgba(158, 85, 252, .1)'} : {}}>
+    <div 
+      className={scrolled ? 'navContainer scrolledNav':'navContainer'} 
+      style={(props.defaultActive==='fablesMyths') && (!dropdownMenu) ? {position:'sticky', background:'rgba(158, 85, 252, .1)'} 
+      : (props.defaultActive==='fablesMyths') && (dropdownMenu) ? {position:'sticky'}
+      : {}}>
       <div className='logoContainer'>
         <Link to={'/'} onClick={()=>setActiveLink('home')}><img src={Logo} className='logoImg'/></Link>
       </div>
