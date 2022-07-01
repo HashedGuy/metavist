@@ -76,6 +76,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
+    scroll-behavior: smooth;
 }
 .background {
     transform: translateZ(-10px) scale(2);
