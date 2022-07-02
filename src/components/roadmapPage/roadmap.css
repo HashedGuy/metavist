@@ -22,7 +22,7 @@
     width: 100px;
     /* object-fit: cover; */
     cursor: pointer;
-    opacity: .7;
+    opacity: .5;
     transition: all .2s ease-in-out;
 }
 .foregroundImg:hover, .foregroundImgTwo:hover, .foregroundImgThree:hover {
@@ -43,11 +43,13 @@
     align-items: center;
     font-size: 2em;
     border: 1px solid white;
-    min-width: 400px;
-    min-height: 400px;
+    width: 90vw;
 }
 .rmp {
     margin-left: 0;
+}
+.activeBox {
+    opacity: 1;
 }
 
 @media (min-width: 600px) {
@@ -78,13 +80,18 @@
     .roadmapTitle {
         font-size: 3em;
     }
- 
+ .roadmapStoryImg {
+     width: 50vw;
+ }
   
 }
 
 @media (min-width: 1200px) {
+    .roadmapTitle {
+        margin-bottom: 0em;
+    }
     .foregroundImg, .foregroundImgTwo, .foregroundImgThree {
-        width: 250px;
+        width: 240px;
         margin-top: 2em;
     }
     .foregroundImgTwo, .foregroundImgThree {

@@ -8,18 +8,18 @@ import Dest6 from '../../../assets/img/dest6.png'
 import { HashLink } from 'react-router-hash-link'
 
 function RoadmapHero(props) {
-  const [destination, setDestination] = useState('')
+  const [destination, setDestination] = useState('Destionation 1')
   return (
     <>
     <div className='roadmapHero'>
         <h1 className='roadmapTitle'>Roadmap</h1>
         <div className='roadmap'>
-          <HashLink to='#destination' smooth><img src={Tree}  onClick={()=>setDestination('Destionation 1')}className="foregroundImg" alt=''/></HashLink>
-          <HashLink to='#destination' smooth><img src={Dest2} onClick={()=>setDestination('Destionation 2')}className="foregroundImgTwo" alt=''/></HashLink>
-          <HashLink to='#destination' smooth><img src={Dest3} onClick={()=>setDestination('Destionation 3')}className="foregroundImgThree" alt=''/></HashLink>
-          <HashLink to='#destination' smooth><img src={Dest4} onClick={()=>setDestination('Destionation 4')}className="foregroundImg" alt=''/></HashLink>
-          <HashLink to='#destination' smooth><img src={Dest5} onClick={()=>setDestination('Destionation 5')}className="foregroundImgTwo" alt=''/></HashLink>
-          <HashLink to='#destination' smooth><img src={Dest6} onClick={()=>setDestination('Destionation 6')}className="foregroundImgThree" alt=''/></HashLink>
+          <HashLink to='#destination' smooth><img src={Tree}  onClick={()=>setDestination('Destionation 1')} className={destination==='Destionation 1'? 'foregroundImg activeBox' : "foregroundImg"} alt=''/></HashLink>
+          <HashLink to='#destination' smooth><img src={Dest2} onClick={()=>setDestination('Destionation 2')} className={destination==='Destionation 2'? 'foregroundImgTwo activeBox' : "foregroundImgTwo"} alt=''/></HashLink>
+          <HashLink to='#destination' smooth><img src={Dest3} onClick={()=>setDestination('Destionation 3')} className={destination==='Destionation 3'? 'foregroundImgThree activeBox' : "foregroundImgThree"} alt=''/></HashLink>
+          <HashLink to='#destination' smooth><img src={Dest4} onClick={()=>setDestination('Destionation 4')} className={destination==='Destionation 4'? 'foregroundImg activeBox' : "foregroundImg"} alt=''/></HashLink>
+          <HashLink to='#destination' smooth><img src={Dest5} onClick={()=>setDestination('Destionation 5')} className={destination==='Destionation 5'? 'foregroundImgTwo activeBox' : "foregroundImgTwo"} alt=''/></HashLink>
+          <HashLink to='#destination' smooth><img src={Dest6} onClick={()=>setDestination('Destionation 6')} className={destination==='Destionation 6'? 'foregroundImgThree activeBox' : "foregroundImgThree"} alt=''/></HashLink>
         </div>
     </div>
           <div className='briefStorySection'  id='destination'>
