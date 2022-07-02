@@ -11,28 +11,6 @@
     text-align: center;
     margin: 0 2em;
 }
-.slideShowDotsContainer {
-    display: flex;
-    justify-content: center;
-    margin: 2em 0;
-}
-
-.slideShowDot {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid #BBBBBB;
-    margin: 1em;
-    cursor: pointer;
-}
-.slideShowDot:hover {
-    background-color: #9E55FC;
-    border: 1px solid transparent;
-}
-.activeDot {
-    background-color: #9E55FC;
-    border: 0;
-}
 .storyTitle {
     font-family: 'Poppins', sans-serif;
     text-align: left;
