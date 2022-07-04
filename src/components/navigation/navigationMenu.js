@@ -7,6 +7,7 @@ import {GiBattleGear} from 'react-icons/gi'
 import {CgGhostCharacter} from 'react-icons/cg'
 
 import Logo from '../../assets/img/logo.png'
+import { HashLink } from 'react-router-hash-link';
 
 function NavigationMenu(props) {
   const [activeLink, setActiveLink] = useState(props.defaultActive)
@@ -29,6 +30,7 @@ function NavigationMenu(props) {
   };
 
   return (
+    <>
     <div 
       className={scrolled ? 'navContainer scrolledNav':'navContainer'} 
       style={(props.defaultActive==='fablesMyths') && (!dropdownMenu) ? {position:'sticky', background:'rgba(158, 85, 252, .1)'} 
@@ -39,44 +41,40 @@ function NavigationMenu(props) {
       </div>
 
       <div className={dropdownMenu ? 'menuSection openedMenuSection' : 'menuSection'}>
-        <RiMenu2Line className={dropdownMenu ? 'dropdownMenu openedDropdownMenu' : 'dropdownMenu'} onClick={()=>setDropdownMenu(!dropdownMenu)}/>
-        {dropdownMenu ? 
-          <ul className='ulDropdown'>
-            <li className={activeLink==='home' ? 'activeDropdownMenuItem' : ''}>
-              <Link className='navLink' to={'/'} onClick={()=>setActiveLink('home')}>
-                <AiFillHome/>
-                <p className='dropdownText'>Home</p>
-              </Link>
-            </li>
-            <li className={activeLink==='battleCry' ? 'activeDropdownMenuItem' : ''}>
-              <Link className='navLink' to={'/battlecry'} onClick={()=>setActiveLink('battleCry')}>
-                <GiBattleGear/>
-                <p className='dropdownText'>BattleCry</p>
-              </Link>
-            </li>
-            <li className={activeLink==='fablesMyths' ? 'activeDropdownMenuItem' : ''}>
-              <Link className='navLink' to={'/fablesMyths'} onClick={()=>setActiveLink('fablesMyths')}>
-                <CgGhostCharacter/>
-                <p className='dropdownText'>Character</p>
-              </Link>
-            </li>
-            <li className={activeLink==='roadmap' ? 'activeDropdownMenuItem' : ''}>
-              <Link className='navLink' to={'/roadmap'} onClick={()=>setActiveLink('roadmap')}>
-                <RiRoadMapFill/>
-                <p className='dropdownText'>Roadmap</p>
-              </Link>
-            </li>
-          </ul> : ''}
         <ul className='ulMenu'>
           <li className={activeLink==='home' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/'} onClick={()=>setActiveLink('home')}>Home</Link></li>
           <li className={activeLink==='battleCry' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/battlecry'} onClick={()=>setActiveLink('battleCry')}>Battle Cry</Link></li>
           <li className={activeLink==='fablesMyths' ? 'activeMenuItem white' : ''}><Link className='navLink' style={props.defaultActive==='fablesMyths' ? {color:'#9E55FC'}:{}} to={'/fablesMyths'} onClick={()=>setActiveLink('fablesMyths')}>Fables & Myths</Link></li>
           <li className={activeLink==='roadmap' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/roadmap'} onClick={()=>setActiveLink('roadmap')}>Roadmap</Link></li>
-          {/* <li className={activeLink==='story' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/story'} onClick={()=>setActiveLink('story')}>Story</Link></li> */}
         </ul>
-        {/* <a className='languageBox'><CircleFlag countryCode="us" height="20" className='flagIcon'/>English US <BsChevronDown className='downIcon'/></a> */}
       </div>
     </div>
+    <div className='bottomMenu'>
+      <HashLink to={'/'} onClick={()=>setActiveLink('home')} className={activeLink==='home' ? 'bottomMenuItems activeBottomMenuItem': 'bottomMenuItems'}>
+        <div >
+        <AiFillHome/>
+        <p className='bottomMenuText'>Home</p>
+      </div></HashLink>
+
+      <HashLink to={'/battlecry'} onClick={()=>setActiveLink('battleCry')} className={activeLink==='battleCry' ? 'bottomMenuItems activeBottomMenuItem': 'bottomMenuItems'}>
+      <div  >
+        <GiBattleGear/>
+        <p className='bottomMenuText'>BattleCry</p>
+      </div></HashLink>
+      
+      <HashLink to={'/fablesMyths'} onClick={()=>setActiveLink('fablesMyths')} className={activeLink==='fablesMyths' ? 'bottomMenuItems activeBottomMenuItem': 'bottomMenuItems'}>
+        <div >
+          <CgGhostCharacter/>
+          <p className='bottomMenuText'>F&M</p>
+        </div></HashLink>
+
+      <HashLink to={'/roadmap'} onClick={()=>setActiveLink('roadmap')} className={activeLink==='roadmap' ? 'bottomMenuItems activeBottomMenuItem': 'bottomMenuItems'}>
+        <div>
+          <RiRoadMapFill/>
+          <p className='bottomMenuText'>Roadmap</p>
+        </div></HashLink>
+    </div>
+    </>
   )
 }
 
