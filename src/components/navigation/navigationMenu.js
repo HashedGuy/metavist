@@ -37,7 +37,7 @@ function NavigationMenu(props) {
       : (props.defaultActive==='fablesMyths') && (dropdownMenu) ? {position:'sticky'}
       : {}}>
       <div className='logoContainer'>
-        <Link to={'/'} onClick={()=>setActiveLink('home')}><img src={Logo} className='logoImg'/></Link>
+        <Link to={'/'} onClick={()=>setActiveLink('home')}><img src={Logo} className={scrolled ? 'logoImg hideMenu' : 'logoImg'}/></Link>
       </div>
 
       <div className={dropdownMenu ? 'menuSection openedMenuSection' : 'menuSection'}>
