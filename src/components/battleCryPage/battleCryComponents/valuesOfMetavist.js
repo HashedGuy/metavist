@@ -16,20 +16,23 @@ function ValuesOfMetavist(props) {
                   className='valuesBox'
                   onClick={()=>setBox('one')}
                   >
-                    
+                    Intelligence
                 </div>
                 <div 
                   className='valuesBox'
                   onClick={()=>setBox('two')}>
+                    Vision
                 </div>
 
                 <div 
                   className='valuesBox'
                   onClick={()=>setBox('three')}>
+                    Generosity
                 </div>
                 <div 
                   className='valuesBox'
-                  onClick={()=>setBox('four')} >
+                  onClick={()=>setBox('four')}>
+                    Universal unity
                 </div>
                </>
                : 
@@ -37,22 +40,22 @@ function ValuesOfMetavist(props) {
                 <div className='openBox'>
                   {box==='one' ? 
                   <>
-                  One
+                  <p>You run on data and metrics. Realising the impact of an organisation lies in more than how it is marketed and the legacy it holds.</p>
                   </>
                   :
                   box==='two' ? 
                 <>
-                Two
+                  <p>You believe bold ideas are the road to a brighter future. Blazing a path of your very own.</p>
                 </>
                 :
                 box==='three' ? 
                 <>
-                Three
+                  <p>You take heed in the idea that we are not what we take but what we give. Eager to share your knowledge and experience with others.</p>
                 </>
                 :
                 <>
-              Four
-              </>}
+                  <p>You believe that we are all in this together. You want to be able to lift all of us up together. Striving to know and respect the differences we hold as humans.</p>
+                </>}
                    <br/>
                     <a onClick={()=>setBox('')}><AiOutlineClose className='closeIcon'/></a>
                 </div>

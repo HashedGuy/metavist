@@ -67,6 +67,7 @@
     /* perspective: 10px; */
 }
 .valuesBox {
+    display: flex;
     height: 100px;
     width: 100px;
     background-color: #2E2E2E;
@@ -75,6 +76,7 @@
     justify-content: center;
     align-items: center;
     transition: all .2s ease-in-out;
+    font-size: .6em;
 }
 .valuesBox:hover {
     transform: scale(1.05);
@@ -100,6 +102,58 @@
     height: 10em;
     padding: 1em;
 }
+.openBox ul {
+    text-align: left;
+}
+.openBox p, .openBox li {
+    font-size: .6em;
+}
+.benefitCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #2E2E2E;
+    opacity: .5;
+    color: white;
+    cursor: pointer;
+}
+.benefitCard:hover {
+    opacity: 1;
+}
+.openedBenefitCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #2E2E2E;
+    color: white;
+    cursor: pointer;
+
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 60vh;
+    margin: 2.5em;
+    border-radius: 10px;
+    /* transition: .2s all ease-in-out; */
+    overflow: hidden;
+    position: relative;
+}
+.closeBtn {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: .5em 1em;
+    margin-top: 2em;
+}
+.closeBtn:hover {
+    background-color: white;
+    color:#2E2E2E;
+    border: 0;
+}
+.smaller {
+    width: 50% !important;
+}
+.edition {
+    display: flex;
+}
+
 
 @media (min-width: 600px) {
     .titleh2 {
@@ -141,6 +195,12 @@
     .foundersMessageImg {
         height: 50vh;
     }
+    .openBox p, .openBox li {
+        font-size: .8em;
+    }
+    .valuesBox {
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -157,7 +217,7 @@
     .foundersMessageText {
         text-align: left;
         width: 70%;
-        font-size: 1.1em;
+        font-size: 1em;
         line-height: 1.5em;
     }
     .foundersMessageImg {
@@ -179,4 +239,38 @@
     .valuesImg {
         width: 50vw;
     }
+    .benefitCard {
+        justify-content: center;
+        align-items: center;
+        width: 15vw;
+        height: 40vh;
+        margin: 2.5em;
+        border-radius: 10px;
+        transition: .2s all ease-in-out;
+        overflow: hidden;
+        position: relative;
+    }
+    .benefitCard:hover {
+        transform: scale(1.1);
+    }
+ 
+    .coverImg {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .openedBenefitCard {
+          padding: 2em;
+      }
+      .openedBoxText {
+          font-size: .8em;
+      }
 }
