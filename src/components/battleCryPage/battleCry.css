@@ -201,6 +201,40 @@
     .valuesBox {
         font-size: 1em;
     }
+    .benefitCard {
+        justify-content: center;
+        align-items: center;
+        width: 25vw;
+        height: 30vh;
+        margin: 1.5em;
+        border-radius: 10px;
+        transition: .2s all ease-in-out;
+        overflow: hidden;
+        position: relative;
+    }
+    .benefitCard:hover {
+        transform: scale(1.1);
+    }
+ 
+    .coverImg {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .openedBenefitCard {
+          padding: 2em;
+      }
+      .openedBoxText {
+          font-size: .8em;
+      }
 }
 
 @media (min-width: 1000px) {
@@ -240,37 +274,9 @@
         width: 50vw;
     }
     .benefitCard {
-        justify-content: center;
-        align-items: center;
         width: 15vw;
         height: 40vh;
         margin: 2.5em;
-        border-radius: 10px;
-        transition: .2s all ease-in-out;
-        overflow: hidden;
-        position: relative;
     }
-    .benefitCard:hover {
-        transform: scale(1.1);
-    }
- 
-    .coverImg {
-        width: 100%;
-        height: auto;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .openedBenefitCard {
-          padding: 2em;
-      }
-      .openedBoxText {
-          font-size: .8em;
-      }
+    
 }

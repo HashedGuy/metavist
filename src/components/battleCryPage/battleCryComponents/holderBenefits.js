@@ -10,7 +10,7 @@ function HolderBenefits(props) {
        <h1 className='valuesTitle'>Experimental</h1>
        <div className='edition'>
         <div className={open==='one' ? 'openedBenefitCard' : 'benefitCard'} >
-                {open ? '' : <div className="centered" onClick={()=>setOpen('one')}>Intelligence</div>}
+                {open==='one' ? '' : <div className="centered" onClick={()=>setOpen('one')}>Intelligence</div>}
                 <img src={smth} className={open==='one' ? 'coverImg smaller' : 'coverImg'}/>
                 {open==='one' ? 
                 <>
