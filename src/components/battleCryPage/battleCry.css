@@ -120,9 +120,7 @@
     position: relative;
     border-radius: 10px;
 }
-.benefitCard:hover {
-    opacity: 1;
-}
+
 .openedBenefitCard {
     display: flex;
     flex-direction: column;
@@ -303,8 +301,8 @@
       .exp2Container p {
           font-size: .6em;
       }
-      .order {
-          order: 0;
+      .orderB {
+          order: 1;
       }
       .exp1Div {
           flex-direction: column !important;
@@ -351,6 +349,9 @@
         width: 15vw;
         height: 40vh;
         margin: 2.5em;
+    }
+    .benefitCard:hover {
+        opacity: 1;
     }
     .openedBenefitCard {
         width: 25vw;
