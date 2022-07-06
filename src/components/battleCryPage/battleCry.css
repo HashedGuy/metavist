@@ -55,6 +55,7 @@
     font-size: 1.6em;
     line-height: 1.6em;
     margin-bottom: 1em;
+    color: #FFFFFF;
 }
 .valuesBoxes {
     display: flex;
@@ -177,6 +178,15 @@
     padding: 2em;
     margin-bottom: 5em;
 }
+.exp1Container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2em;
+    margin-bottom: 5em;
+}
 .exp2Div {
     display: flex;
     flex-direction: column;
@@ -193,7 +203,13 @@
 .exp2Paragraph p {
     font-size: .7em;
 }
-.order {
+.exp2Paragraph ul {
+    list-style: none;
+}
+.exp2Paragraph li {
+    font-size: .7em;
+}
+.orderB {
     order: 0;
 }
 
@@ -247,9 +263,9 @@
     .benefitCard {
         justify-content: center;
         align-items: center;
-        width: 30vw;
-        height: 40vh;
-        margin: 1.5em;
+        width: 20vw;
+        height: 30vh;
+        margin: .5em;
         border-radius: 10px;
         transition: .2s all ease-in-out;
       
@@ -258,15 +274,18 @@
         transform: scale(1.1);
     }
       .openedBenefitCard {
-          width: 25vw;
-          height: 35vh;
-          padding: 1em;
+          width: 22vw;
+          height: 30vh;
+          padding: .5em;
       }
       .openedBoxText {
           font-size: .8em;
       }
       .exp2Container {
         margin-left: 2.5em;
+      }
+      .exp1Container {
+          flex-direction: row;
       }
       .exp2Div {
           flex-direction: row;
@@ -277,15 +296,18 @@
       }
       .exp2Paragraph h1 {
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;  
         overflow: hidden;
       }
       .exp2Container p {
-          font-size: .7em;
+          font-size: .6em;
       }
       .order {
           order: 0;
+      }
+      .exp1Div {
+          flex-direction: column !important;
       }
 }
 
@@ -336,12 +358,15 @@
     }
     .exp2Paragraph h1 {
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;  
         overflow: hidden;
-        font-size: 1.5em;
+        font-size: 1.3em;
       }
-      .exp2Container p {
+      .exp2Container p, .exp2Paragraph p {
         font-size: .9em;
+    }
+    .exp2Container, .exp1Container {
+        margin-bottom: 1.5em;
     }
 }
