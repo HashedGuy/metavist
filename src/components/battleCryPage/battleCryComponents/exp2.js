@@ -24,7 +24,7 @@ function Exp2() {
             </div>
        </div>
        <div className='exp2Div'>
-            <div className={open==='two' ? 'openedBenefitCard' : 'benefitCard'} style={{order:1}}>
+            <div className={open==='two' ? 'openedBenefitCard order' : 'benefitCard order'}>
                 {open==='two' ? '' : <div className="centered" onClick={()=>setOpen('two')}>Impactful</div>}
                 <img src={smth} className={open==='two' ? 'coverImg smaller' : 'coverImg'}/>
                 {open==='two' ? 

@@ -39,7 +39,7 @@ function BattleCry(props) {
             <ValuesOfMetavist refG={vomRef}/>
             <MissionToDonors refG={mtdRef}/>
             <MissionToNonprofits refG={mtnRef}/>
-            <HolderBenefits refG={mhbRef}/>
+            {/* <HolderBenefits refG={mhbRef}/> */}
             <Exp2/>
          </div>
        </div>
