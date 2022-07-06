@@ -119,6 +119,7 @@
     overflow: hidden;
     position: relative;
     border-radius: 10px;
+    margin-bottom: 2em;
 }
 
 .openedBenefitCard {
@@ -130,18 +131,18 @@
 
     justify-content: center;
     align-items: center;
-    width: 85vw;
-    height: 60vh;
+   
     border-radius: 10px;
     /* transition: .2s all ease-in-out; */
     overflow: hidden;
-    position: relative;
+    margin-bottom: 2em;
 }
 .closeBtn {
     border: 1px solid white;
     border-radius: 5px;
-    padding: .5em 1em;
-    margin-top: 2em;
+    padding: .3em .5em;
+    margin-bottom: 1em;
+    font-size: .5em;
 }
 .closeBtn:hover {
     background-color: white;
@@ -192,27 +193,48 @@
     align-items: center;
 }
 .exp2Paragraph {
-    flex: 1;
-    max-width: 70vw;
-}
-.exp2Paragraph h1 {
-    font-size: 1.1em;
-}
-.exp2Paragraph p {
-    font-size: .7em;
-}
-.exp2Paragraph ul {
-    list-style: none;
-}
-.exp2Paragraph li {
-    font-size: .7em;
+    display: none;
 }
 .orderB {
     order: 0;
 }
+.insidePar {
+    padding: .5em;
+}
+.insidePar h1 {
+    font-size: 1.1em !important;
+}
+.insidePar p {
+    font-size: .5em;
+}
+.insidePar ul {
+    font-size: .5em;
+    text-align: left;
+}
 
 
 @media (min-width: 600px) {
+   
+    .exp2Paragraph {
+        display: block;
+        flex: 1;
+        max-width: 70vw;
+    }
+    .exp2Paragraph h1 {
+        font-size: 1.1em;
+    }
+    .exp2Paragraph p {
+        font-size: .7em;
+    }
+    .exp2Paragraph ul {
+        list-style: none;
+    }
+    .exp2Paragraph li {
+        font-size: .7em;
+    }
+    .insidePar {
+        display: none;
+    }
     .titleh2 {
         text-align: left;
     }
@@ -307,6 +329,16 @@
       .exp1Div {
           flex-direction: column !important;
       }
+      .closeBtn {
+        margin-top: 2em;
+      }
+      .closeBtn {
+        padding: .5em .8em;
+        font-size: .8em;
+    }
+    .pro {
+        display: block !important;
+    }
 }
 
 @media (min-width: 1000px) {

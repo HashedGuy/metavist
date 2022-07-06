@@ -19,6 +19,7 @@ function BattleCry(props) {
   const { ref: vomRef, inView: vomVisible} = useInView({threshold:.5})
   const { ref: mtdRef, inView: mtdVisible} = useInView({threshold:.3})
   const { ref: mtnRef, inView: mtnVisible} = useInView({threshold:.5})
+  const { ref: mhbRef, inView: mhbVisible} = useInView({threshold:.5})
   return (
     <>
       <div className="App" id='bcId'>
@@ -30,6 +31,7 @@ function BattleCry(props) {
           <HashLink to='#vomRef' smooth><FaRegDotCircle className={vomVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
           <HashLink to='#mtdRef' smooth><FaRegDotCircle className={mtdVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
           <HashLink to='#mtnRef' smooth><FaRegDotCircle className={mtnVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
+          <HashLink to='#mhbRef' smooth><FaRegDotCircle className={mhbVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
         </div>
         <div className="pagesContent">
             <BattleCryHero refG={heroRef}/>
@@ -37,7 +39,7 @@ function BattleCry(props) {
             <ValuesOfMetavist refG={vomRef}/>
             <Exp2 refG={mtdRef}/>
             <MissionToNonprofits refG={mtnRef}/>
-            {/* <HolderBenefits refG={mhbRef}/> */}
+            <HolderBenefits refG={mhbRef}/>
         
          </div>
        </div>
