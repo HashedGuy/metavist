@@ -19,7 +19,7 @@ function Exp2() {
             
             </div>
             <div className='exp2Paragraph'>
-                <h1><AiOutlineSafety/> Protecting your Donations</h1>
+                <h1><a onClick={()=>setOpen('one')}><AiOutlineSafety/> Protecting your Donations</a></h1>
                 {open==='one' ? <p className='exp2Text'>Nonprofits contribute to 41% of all corruption cases according to ACFE. Such stats have made the public highly skeptical and it has impacted sincere & impactful nonprofits. User friendly open-source transparency is key in fighting corruption & building trust. By holding a Metavists NFT, you will pave the way to easier public tracked donations. A new way to measure & review the impact donations hold all through the Metavists App.  </p> : ''}
             </div>
        </div>
@@ -33,7 +33,7 @@ function Exp2() {
                 </> : ''}
             </div>
             <div className='exp2Paragraph'>
-                <h1><AiOutlineHeart/> Impact and Satisfaction</h1>
+                <h1><a onClick={()=>setOpen('two')}><AiOutlineHeart/> Impact and Satisfaction</a></h1>
                 {open==='two' ? <p className='exp2Text'>Data & metrics are key factors for donors like you in evaluating the impact of your favourite social impact project.  This missing element must raise thoughts in the mind like, “Oh, you raised a million dollars but only fed five thousand?” Founders send investors updates monthly and we believe you deserve to be in that conversation as well. We Metavists want a future where every donor gets to feel the satisfaction of looking at the impact their donation made with a full heart. You deserve more than just a short shot of happiness at the moment of donation. By supporting the Metavists project, we will build a future where donations mean so much more than they do now.</p> : ''}
             </div>
        </div>
