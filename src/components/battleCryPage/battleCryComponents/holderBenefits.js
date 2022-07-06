@@ -3,11 +3,10 @@ import smth from '../../../assets/img/vom.png'
 
 function HolderBenefits(props) {
     const [open, setOpen] = useState('')
-    console.log(open)
   return (
   
     <div className='valuesSection' style={{color: 'white', marginLeft: '2.5em'}} ref={props.refG} id='mhbRef'>
-       <h1 className='valuesTitle'>Experimental</h1>
+       <h1 className='valuesTitle'>Experimental 1</h1>
        <div className='edition'>
         <div className={open==='one' ? 'openedBenefitCard' : 'benefitCard'} >
                 {open==='one' ? '' : <div className="centered" onClick={()=>setOpen('one')}>Intelligence</div>}

@@ -11,6 +11,7 @@ import MissionToDonors from './battleCryComponents/missionToDonors'
 import MissionToNonprofits from './battleCryComponents/missionToNonprofits'
 import { HashLink } from 'react-router-hash-link'
 import HolderBenefits from './battleCryComponents/holderBenefits'
+import Exp2 from './battleCryComponents/exp2'
 
 function BattleCry(props) {
   const { ref: heroRef, inView: heroVisible} = useInView({threshold:.5})
@@ -39,6 +40,7 @@ function BattleCry(props) {
             <MissionToDonors refG={mtdRef}/>
             <MissionToNonprofits refG={mtnRef}/>
             <HolderBenefits refG={mhbRef}/>
+            <Exp2/>
          </div>
        </div>
       </div>

@@ -153,6 +153,23 @@
 .edition {
     display: flex;
 }
+.exp2Container {
+    color: white;
+    margin: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.exp2Div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exp2Paragraph {
+    flex: 1;
+    max-width: 50vw;
+}
 
 
 @media (min-width: 600px) {
