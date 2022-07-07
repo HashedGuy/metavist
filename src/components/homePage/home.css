@@ -32,7 +32,6 @@
 .briefStoryTitle {
     font-weight: 700;
     font-size: 1.6em;
-    line-height: 2.2em;
     margin-bottom: .5em;
 }
 .characterName {
@@ -174,6 +173,9 @@ hr {
     .heroImg {
         width: 90vw;
     }
+    .heroTitle {
+        font-size: 2.6em;
+    }
     .subSection {
         justify-content: center;
         align-items: center;
@@ -195,9 +197,11 @@ hr {
     }
     .briefStoryText {
         font-size: 1.1em;
+        line-height: 2.2em;
     }
     .homeReferenceBtn {
         font-size: 1.2em;
+        line-height: 2.4em;
     }
     .briefStorySection {
         margin: 6em 0;
@@ -207,9 +211,7 @@ hr {
         width: 90vw;
         margin: 0;
     }
-    .heroTitle {
-        font-size: 2.6em;
-    }
+
   
 }
 
@@ -219,7 +221,6 @@ hr {
     }
     .heroTitle {
         font-size: 3em;
-        line-height: 3em;
         margin-bottom: 0;
         margin-top: 2em;
     }
@@ -239,12 +240,10 @@ hr {
 
     .briefStoryTitle {
         font-size: 2.4em;
-        line-height: 2.4em;
         text-align: left;
     }
     .briefStoryText {
         width: 90%;
-        line-height: 30px;
         text-align: left;
     }
     .subSection {
