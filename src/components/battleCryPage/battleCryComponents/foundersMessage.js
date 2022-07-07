@@ -4,8 +4,7 @@ function FoundersMessage(props) {
   return (
     <div className='battleCrySection' ref={props.refG} id='fmRef'>
          <div className='messageSection'>
-            <h1 className='briefStoryTitle'>Founder's Message</h1>
-            <h2 className='titleh2'>The Carcass in Public</h2>
+            <h1 className='briefStoryTitle'>The Carcass in Public</h1>
             <p className='foundersMessageText'>
                 Remember a time where you wanted to donate to something? Whether it be to help those in need or maybe support a cause you feel strongly about. You most likely felt proud that your money was going towards a good cause, but there is always that feeling of what is my money going towards exactly?
             </p>

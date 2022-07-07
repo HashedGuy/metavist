@@ -17,7 +17,7 @@ function MissionToNonProfits(props) {
              <img src={smth} className={open==='one' ? 'coverImg smaller' : 'coverImg'}/>
              {open==='one' ? 
              <>
-              <div className='insidePar pro'>
+              <div className='insidePar'>
                   <h1><a onClick={()=>setOpen('one')}><FaLaptopCode/> Technology</a></h1>
                   <p className='exp2Text'>The world is constantly shifting. It’s in a constant state of evolutions and changes. Yet, it would seem that when these evolutions shift the flow of industry the corporate giants are a large step beyond the public service sector. Our commitment is to put the social impact industry at the centre of benefits as we equip them with the technology to serve them efficiently, truthfully & transparently. 
                   <br/><br/>
@@ -44,7 +44,7 @@ function MissionToNonProfits(props) {
              <img src={smth} className={open==='two' ? 'coverImg smaller' : 'coverImg'}/>
              {open==='two' ? 
              <>
-             <div className='insidePar pro'>
+             <div className='insidePar'>
                   <h1><a onClick={()=>setOpen('two')}><MdOutlineGroups/> Community</a></h1>
                   <p className='exp2Text'> Community is key for any brand. Social media is one of the best places to cultivate a community.  Though it’s easy to see that today’s social media is a playground holding creators, influencers and brands to a higher degree.. Mission driven causes and activists find themselves left behind. There are apps for video content, audio engagement, sharing thoughts, and even to grow your professional career. What’s missing from those is a social app with a focus on doing good as a collective. A social app used to bring together useful tools to protect, preserve, and sustain Earth and its inhabitants.
                   <br/><br/>
@@ -69,7 +69,7 @@ function MissionToNonProfits(props) {
              <img src={smth} className={open==='three' ? 'coverImg smaller' : 'coverImg'}/>
              {open==='three' ? 
              <>
-              <div className='insidePar pro'>
+              <div className='insidePar'>
                 <h1><a onClick={()=>setOpen('three')}><MdOutlineMonetizationOn/> Monetization</a></h1>
                 <p className='exp2Text'>Fundraising is an extremely time consuming, expensive & resource rich process. It can take upwards of 6 months with costs up to 50% of funds raised. We would love to see social impact organisations using a more sustainable & sleek approach. Through a system of recurring donations, accepting both fiat & cryptocurrencies, It has already proven to be a major success:
                 </p>
@@ -109,7 +109,7 @@ function MissionToNonProfits(props) {
              <img src={smth} className={open==='four' ? 'coverImg smaller' : 'coverImg'}/>
              {open==='four' ? 
              <>
-              <div className='insidePar pro'>
+              <div className='insidePar'>
               <h1><a onClick={()=>setOpen('four')}><FaVoteYea/> Democratize Capital</a></h1>
               <p className='exp2Text'>$474 Billion is no small amount of money.  This amount has the potential to change the world around us as we know it. This is the annual amount just the American working people donate to the various nonprofits. However many small but impactful nonprofits are struggling to stay afloat fighting alongside organisations with huge marketing budgets but low impact. 
               <br/><br/>

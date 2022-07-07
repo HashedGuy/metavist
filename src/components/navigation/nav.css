@@ -148,6 +148,8 @@
     background-color: #414141;
     flex-shrink: 1;
     border-radius: 5px;
+    perspective: 1000px;
+    z-index: 9999999999;
 }
 .bottomMenuItems {
     text-align: center;
@@ -158,7 +160,7 @@
     border-radius: 5px;
     border-right: 2px solid rgba(83, 82, 82, 0.493);
     text-decoration: none;
-    z-index: 9999999999;
+   
 }
 .activeBottomMenuItem {
     background-color: #9E55FC;

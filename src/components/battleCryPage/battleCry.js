@@ -18,8 +18,8 @@ function BattleCry(props) {
   const { ref: fmRef, inView: fmVisible} = useInView({threshold:.3})
   const { ref: vomRef, inView: vomVisible} = useInView({threshold:.5})
   const { ref: mtdRef, inView: mtdVisible} = useInView({threshold:.3})
-  const { ref: mtnRef, inView: mtnVisible} = useInView({threshold:.5})
-  const { ref: mhbRef, inView: mhbVisible} = useInView({threshold:.5})
+  const { ref: mtnRef, inView: mtnVisible} = useInView({threshold:.8})
+  const { ref: mhbRef, inView: mhbVisible} = useInView({threshold: 1})
   return (
     <>
       <div className="App" id='bcId'>
@@ -36,9 +36,9 @@ function BattleCry(props) {
         <div className="pagesContent">
             <BattleCryHero refG={heroRef}/>
             <FoundersMessage refG={fmRef}/>
-            <ValuesOfMetavist refG={vomRef}/>
+            {/* <ValuesOfMetavist refG={vomRef}/>
             <Exp2 refG={mtdRef}/>
-            <MissionToNonprofits refG={mtnRef}/>
+            <MissionToNonprofits refG={mtnRef}/> */}
             <HolderBenefits refG={mhbRef}/>
         
          </div>
