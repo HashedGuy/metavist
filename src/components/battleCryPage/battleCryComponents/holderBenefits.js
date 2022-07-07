@@ -9,8 +9,8 @@ function HolderBenefits(props) {
   const [open, setOpen] = useState('')
   return (
     <>
-    <h1 className='valuesTitle' style={{textAlign:'center'}} ref={props.refG} id='vomRef'>Values of Metavists</h1>
-    <div className='exp1Container demonContainer' >
+    <h1 className='valuesTitle' style={{textAlign:'center'}} >Values of Metavists</h1>
+    <div className='exp1Container demonContainer' ref={props.refG} id='vomRef'>
    
    <div className='benefitCard' >
      <div className='innerCard'>
