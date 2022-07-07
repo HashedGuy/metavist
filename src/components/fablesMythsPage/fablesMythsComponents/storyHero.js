@@ -21,7 +21,7 @@ function StoryHero() {
               <>
               <NavigationMenu defaultActive='fablesMyths'/>
               <div>
-                
+
               </div>
               <div className="storyHero" id='backgroundStoryRef'>
                
@@ -36,14 +36,12 @@ function StoryHero() {
              
           
         </div>
-          {/* </div> */}
-        {/* </div> */}
- 
-
-    
-
-    
-
+        <div className='MappG'>
+          <NavigationMenu defaultActive='fablesMyths'/>
+         <div ref={strRef} id='players'>
+                <FablesMythsHero />
+              </div>
+        </div>
 
 </>
   )
