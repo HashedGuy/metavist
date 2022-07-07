@@ -8,7 +8,7 @@ function ValuesOfMetavist(props) {
   return (
     <div className='battleCrySection' ref={props.refG} id='vomRef'>
         <div className='valuesSection'>
-           <h1 className='valuesTitle'>Values of a Metavist</h1>
+           <h1 className='valuesTitle'>Our Mission to Nonprofits</h1>
              <div className='valuesBoxes'>
                {box==='' ? 
                <>
@@ -16,23 +16,23 @@ function ValuesOfMetavist(props) {
                   className='valuesBox'
                   onClick={()=>setBox('one')}
                   >
-                    Intelligence
+                   Technology
                 </div>
                 <div 
                   className='valuesBox'
                   onClick={()=>setBox('two')}>
-                    Vision
+                    Community
                 </div>
 
                 <div 
                   className='valuesBox'
                   onClick={()=>setBox('three')}>
-                    Generosity
+                    Monetization
                 </div>
                 <div 
                   className='valuesBox'
                   onClick={()=>setBox('four')}>
-                    Universal unity
+                    Democratize Capital
                 </div>
                </>
                : 

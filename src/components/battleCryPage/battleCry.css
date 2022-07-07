@@ -479,5 +479,9 @@
     .frontCard h1, .backCard h1 {
         font-size: 1.5em;
     }
+    .closeBtn {
+        margin-top: 2em;
+        font-size: 1em;
+    }
 
 }

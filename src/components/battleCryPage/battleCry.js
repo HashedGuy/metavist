@@ -36,10 +36,10 @@ function BattleCry(props) {
         <div className="pagesContent">
             <BattleCryHero refG={heroRef}/>
             <FoundersMessage refG={fmRef}/>
-            {/* <ValuesOfMetavist refG={vomRef}/>
-            <Exp2 refG={mtdRef}/>
-            <MissionToNonprofits refG={mtnRef}/> */}
             <HolderBenefits refG={mhbRef}/>
+            <ValuesOfMetavist refG={vomRef}/>
+            <Exp2 refG={mtdRef}/>
+            <MissionToNonprofits refG={mtnRef}/>
         
          </div>
        </div>
