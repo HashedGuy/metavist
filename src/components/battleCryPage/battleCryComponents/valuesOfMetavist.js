@@ -6,7 +6,7 @@ function ValuesOfMetavist(props) {
   const [box, setBox] = useState('')
   console.log(box)
   return (
-    <div className='battleCrySection' ref={props.refG} id='vomRef'>
+    <div className='battleCrySection' ref={props.refG} id='mtnRef'>
         <div className='valuesSection'>
            <h1 className='valuesTitle'>Our Mission to Nonprofits</h1>
              <div className='valuesBoxes'>

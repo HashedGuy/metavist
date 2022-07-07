@@ -8,8 +8,8 @@ function MissionToNonProfits(props) {
   const [open, setOpen] = useState('')
   return (
     <>
-    <h1 className='valuesTitle' style={{textAlign:'center'}} id='mtnRef'>Metavists Holder Benefits</h1>
-    <div className='exp1Container' ref={props.refG} >
+    <h1 className='valuesTitle' style={{textAlign:'center'}} ref={props.refG} id='mhbRef'>Metavists Holder Benefits</h1>
+    <div className='exp1Container' >
    
   
     <div className='exp2Div exp1Div'>

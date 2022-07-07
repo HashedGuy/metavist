@@ -16,10 +16,10 @@ import Exp2 from './battleCryComponents/exp2'
 function BattleCry(props) {
   const { ref: heroRef, inView: heroVisible} = useInView({threshold:.5})
   const { ref: fmRef, inView: fmVisible} = useInView({threshold:.3})
-  const { ref: vomRef, inView: vomVisible} = useInView({threshold:.5})
+  const { ref: vomRef, inView: vomVisible} = useInView({threshold:.3})
   const { ref: mtdRef, inView: mtdVisible} = useInView({threshold:.3})
-  const { ref: mtnRef, inView: mtnVisible} = useInView({threshold:.8})
-  const { ref: mhbRef, inView: mhbVisible} = useInView({threshold: 1})
+  const { ref: mtnRef, inView: mtnVisible} = useInView({threshold:.3})
+  const { ref: mhbRef, inView: mhbVisible} = useInView({threshold: .3})
   return (
     <>
       <div className="App" id='bcId'>
@@ -29,17 +29,17 @@ function BattleCry(props) {
           <HashLink to='#bcId' smooth><FaRegDotCircle className={heroVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
           <HashLink to='#fmRef' smooth><FaRegDotCircle className={fmVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
           <HashLink to='#vomRef' smooth><FaRegDotCircle className={vomVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
-          <HashLink to='#mtdRef' smooth><FaRegDotCircle className={mtdVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
           <HashLink to='#mtnRef' smooth><FaRegDotCircle className={mtnVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
+          <HashLink to='#mtdRef' smooth><FaRegDotCircle className={mtdVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
           <HashLink to='#mhbRef' smooth><FaRegDotCircle className={mhbVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
         </div>
         <div className="pagesContent">
             <BattleCryHero refG={heroRef}/>
             <FoundersMessage refG={fmRef}/>
-            <HolderBenefits refG={mhbRef}/>
-            <ValuesOfMetavist refG={vomRef}/>
+            <HolderBenefits refG={vomRef}/>
+            <ValuesOfMetavist refG={mtnRef}/>
             <Exp2 refG={mtdRef}/>
-            <MissionToNonprofits refG={mtnRef}/>
+            <MissionToNonprofits refG={mhbRef}/>
         
          </div>
        </div>
