@@ -53,7 +53,6 @@
     text-align: center;
     font-weight: 700;
     font-size: 1.6em;
-    line-height: 1.6em;
     margin-bottom: 1em;
     color: #FFFFFF;
 }
@@ -296,7 +295,6 @@
     }
     .valuesTitle {
         font-size: 2.2em;
-        line-height: 2.2em;
         text-align: center;
     }
     .valuesBoxes {
@@ -430,7 +428,7 @@
         text-align: left;
         width: 70%;
         font-size: 1em;
-        line-height: 1.5em;
+        line-height: 2em;
     }
     .foundersMessageImg {
         height: 80vh;
@@ -440,7 +438,6 @@
     }
     .valuesTitle {
         font-size: 2.4em;
-        line-height: 102px;
         text-align: left;
     }
     .valuesSection {
@@ -471,11 +468,14 @@
         overflow: hidden;
         font-size: 1.3em;
       }
-      .exp2Container p, .exp2Paragraph p {
-        font-size: .9em;
+    .exp2Container p, .exp2Paragraph p {
+      font-size: .9em;
     }
     .exp2Container, .exp1Container {
         margin-bottom: 1.5em;
+    }
+    .exp2Text {
+        font-size: 1.1em;
     }
     .frontCard h1, .backCard h1 {
         font-size: 1.5em;
