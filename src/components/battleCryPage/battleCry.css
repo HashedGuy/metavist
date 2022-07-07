@@ -22,8 +22,8 @@
 
 .foundersMessageText {
     text-align: center;
-    font-size: 12px;
-    line-height: 24px;
+    font-size: .9em;
+    line-height: 2em;
     font-weight: 400;
 }
 .foundersMessageImg {
@@ -315,20 +315,17 @@
         margin: 1em;
     }
     .foundersMessageText {
+        font-size: 1em;
         text-align: left;
     }
     .foundersMessageImg {
         width: 50vw;
-        height: 90vh;
     }
     .messageSection {
         align-items: center;
     }
     .foundersMessageText {
         text-align: center;
-    }
-    .foundersMessageImg {
-        height: 50vh;
     }
     .openBox p, .openBox li {
         font-size: .8em;
@@ -346,49 +343,49 @@
         overflow: hidden;
       
     }
-    /* .benefitCard:hover {
-        transform: scale(1.1);
-    } */
-      .openedBenefitCard {
-          width: 22vw;
-          height: 30vh;
-          padding: .5em;
-      }
-      .openedBoxText {
-          font-size: .8em;
-      }
-      .exp2Container {
-        margin-left: 2.5em;
-      }
-      .exp1Container {
-          flex-direction: row;
-          align-items: flex-start;
-      }
-      .exp2Div {
-          flex-direction: row;
-      }
-      .exp2Paragraph {
-          max-width: 40vw;
-          padding: 1em;
-      }
-      .exp2Paragraph h1 {
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;  
-        overflow: hidden;
-      }
-      .exp2Container p {
-          font-size: .6em;
-      }
-      .orderB {
-          order: 1;
-      }
-      .exp1Div {
-          flex-direction: column !important;
-      }
-      .closeBtn {
+    .openedBenefitCard {
+        width: 22vw;
+        height: 30vh;
         padding: .5em;
-        font-size: .5em;
+    }
+    .openedBoxText {
+        font-size: .8em;
+    }
+    .exp2Container {
+      margin-left: 2.5em;
+    }
+    .exp1Container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .exp2Div {
+        flex-direction: row;
+    }
+    .exp2Paragraph {
+        max-width: 40vw;
+        padding: 1em;
+    }
+    .exp2Paragraph h1 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
+    }
+    .exp2Container p {
+        font-size: .6em;
+    }
+    .exp2Text {
+        font-size: 1em;
+    }
+    .orderB {
+        order: 1;
+    }
+    .exp1Div {
+        flex-direction: column !important;
+    }
+    .closeBtn {
+      padding: .5em;
+      font-size: .5em;
     }
     .pro {
         display: block !important;
