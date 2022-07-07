@@ -37,13 +37,7 @@
     background-color: gray;
 }
 .storyHero {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    transform-style: preserve-3d;
-    z-index: -1;
+    display: none;
 }
 .storyBTitle {
     color: white;
@@ -89,7 +83,7 @@
     height: 150px;
     cursor: pointer;
     transition: .2s all ease-in-out;
-    opacity: .2;
+    opacity: .7;
 }
 .charLetter:hover, .selectedCharacter {
     transform: scale(1.2);
@@ -114,6 +108,15 @@
 }
 
 @media (min-width: 600px) {
+    .storyHero {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        transform-style: preserve-3d;
+        z-index: -1;
+    }
     .storyBTitle {
         font-size: 350%;
     }

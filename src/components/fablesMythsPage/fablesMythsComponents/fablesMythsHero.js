@@ -13,7 +13,6 @@ function FablesMythsHero(props) {
     <div className="characterHeroSection">
       <div className="charactersTogether">
         <HashLink to='#charLetter' smooth><img src={CharP} className={character==='Luna'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Luna')}/></HashLink>
-        {/* <HashLink to='#charLetter' smooth><img src={CharZ} className={character==='Cedric'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Cedric')}/></HashLink> */}
         <HashLink to='#charLetter' smooth><img src={CharA} className={character==='Big Boy'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Big Boy')}/></HashLink>
         <HashLink to='#charLetter' smooth><img src={CharJ} className={character==='Hermoine'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Hermoine')}/></HashLink>
         <HashLink to='#charLetter' smooth><img src={CharB} className={character==='Weasley'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Weasley')}/></HashLink>
