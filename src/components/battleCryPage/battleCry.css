@@ -23,7 +23,7 @@
 .foundersMessageText {
     text-align: center;
     font-size: .9em;
-    line-height: 2em;
+    line-height: 1.7em;
     font-weight: 400;
 }
 .foundersMessageImg {
@@ -200,7 +200,7 @@
 }
 .exp2Text {
     font-size: .9em;
-    line-height: 2em;
+    line-height: 1.7em;
 }
 .orderB {
     order: 0;
