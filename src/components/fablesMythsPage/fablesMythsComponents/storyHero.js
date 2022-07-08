@@ -38,6 +38,10 @@ function StoryHero() {
         </div>
         <div className='MappG'>
           <NavigationMenu defaultActive='fablesMyths'/>
+          <div className="containerFM">
+            <img src={Mountain} alt="Snow" style={{width:'100%'}}/>
+          <div className="centered"><h1>Metavist story</h1></div>
+        </div>
          <div ref={strRef} id='players'>
                 <FablesMythsHero />
               </div>

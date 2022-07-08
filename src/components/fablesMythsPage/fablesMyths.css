@@ -92,6 +92,19 @@
 .charactersTogether {
     width: 100vw;
 }
+.containerFM {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 12em;
+    margin-bottom: 2em;
+}
+.centered {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 @media (min-width: 600px) {
     .MappG {
