@@ -427,8 +427,8 @@
     .foundersMessageText {
         text-align: left;
         width: 70%;
-        font-size: 1em;
-        line-height: 2em;
+        font-size: 1.1em;
+        line-height: 1.8em;
     }
     .foundersMessageImg {
         height: 80vh;

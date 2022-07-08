@@ -147,6 +147,8 @@
     }
     .charInfoText {
         text-align: left;
+        font-size: 1.1em;
+        line-height: 1.8em;
     }
     .storyTitle {
         font-size: 2.8em;
