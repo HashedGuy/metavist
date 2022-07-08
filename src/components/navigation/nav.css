@@ -83,7 +83,14 @@
     margin-left: .7em;
 }
 .stickyNavContainer {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    position:fixed;
+    bottom: 8%;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    z-index: 99999;
 }
 .verticalNavSection {
     font-size: 1em;
@@ -96,8 +103,9 @@
 }
 .activeNavSection {
     color: #9E55FC;
-    font-size: 1.5em;
-    padding-left: .50em;
+    font-size: 1.1em;
+    padding-top: .2em;
+    
 }
 .ulDropdown {
     /* background-color: rgba(75, 74, 74, 0.44); */
@@ -196,6 +204,10 @@
     }
     .hideMenu {
         display: block;
+    }
+    .activeNavSection {
+        font-size: 1.5em;
+        padding-left: .50em;
     }
 }
 
