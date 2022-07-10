@@ -242,6 +242,9 @@
   backface-visibility: hidden;
 }
 .frontCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   background-color: rgb(182, 168, 87);
   color: rgb(255, 255, 255);
 }

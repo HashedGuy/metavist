@@ -16,7 +16,7 @@ function HolderBenefits(props) {
      <div className='innerCard'>
       <div className='frontCard'>
        <h1>Intelligence</h1>
-       <img src={Demon} className='coverImg'/>
+       {/* <img src={Demon} className='coverImg'/> */}
       </div>
       <div className='backCard'>
         <h1><a onClick={()=>setOpen('one')}><RiGovernmentLine/> Intelligence</a></h1>
@@ -33,7 +33,7 @@ function HolderBenefits(props) {
      <div className='innerCard'>
       <div className='frontCard'>
        <h1>Vision</h1>
-       <img src={Demon} className='coverImg'/>
+       {/* <img src={Demon} className='coverImg'/> */}
       </div>
       <div className='backCard'>
         <h1><a onClick={()=>setOpen('one')}><RiGovernmentLine/> Vision</a></h1>
@@ -49,7 +49,7 @@ function HolderBenefits(props) {
         <div className='innerCard'>
           <div className='frontCard'>
           <h1>Generosity</h1>
-          <img src={Demon} className='coverImg'/>
+          {/* <img src={Demon} className='coverImg'/> */}
           </div>
           <div className='backCard'>
             <h1><a onClick={()=>setOpen('one')}><RiGovernmentLine/> Generosity</a></h1>
@@ -62,7 +62,7 @@ function HolderBenefits(props) {
       <div className='innerCard'>
         <div className='frontCard'>
         <h1>Unity</h1>
-        <img src={Demon} className='coverImg'/>
+        {/* <img src={Demon} className='coverImg'/> */}
         </div>
         <div className='backCard'>
           <h1><a onClick={()=>setOpen('one')}><RiGovernmentLine/> Universal Unity</a></h1>
@@ -74,7 +74,7 @@ function HolderBenefits(props) {
      <div className='innerCard'>
       <div className='frontCard'>
        <h1>Awareness</h1>
-       <img src={Demon} className='coverImg'/>
+       {/* <img src={Demon} className='coverImg'/> */}
       </div>
       <div className='backCard'>
         <h1><a onClick={()=>setOpen('one')}><RiGovernmentLine/> Awareness</a></h1>
