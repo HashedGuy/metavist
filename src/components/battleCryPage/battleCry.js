@@ -8,7 +8,6 @@ import NavigationMenu from '../navigation/navigationMenu'
 import { useInView } from 'react-intersection-observer';
 import {FaRegDotCircle} from 'react-icons/fa'
 import MissionToDonors from './battleCryComponents/missionToDonors'
-import MissionToNonprofits from './battleCryComponents/missionToNonprofits'
 import { HashLink } from 'react-router-hash-link'
 import HolderBenefits from './battleCryComponents/holderBenefits'
 import Exp2 from './battleCryComponents/exp2'
@@ -31,7 +30,7 @@ function BattleCry(props) {
           <HashLink to='#vomRef' smooth><FaRegDotCircle className={vomVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
           <HashLink to='#mtnRef' smooth><FaRegDotCircle className={mtnVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
           <HashLink to='#mtdRef' smooth><FaRegDotCircle className={mtdVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
-          <HashLink to='#mhbRef' smooth><FaRegDotCircle className={mhbVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
+          {/* <HashLink to='#mhbRef' smooth><FaRegDotCircle className={mhbVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink> */}
         </div>
         <div className="pagesContent">
             <BattleCryHero refG={heroRef}/>
@@ -39,7 +38,7 @@ function BattleCry(props) {
             <HolderBenefits refG={vomRef}/>
             <ValuesOfMetavist refG={mtnRef}/>
             <Exp2 refG={mtdRef}/>
-            <MissionToNonprofits refG={mhbRef}/>
+            {/* <MissionToNonprofits refG={mhbRef}/> */}
         
          </div>
        </div>
