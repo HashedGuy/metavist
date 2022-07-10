@@ -10,7 +10,7 @@ function Problem(props) {
   return (
     <div className='briefStorySection' ref={props.refG} id='problemRef'>
              <div className='subSection'>
-                <h1 className='briefStoryTitle'>PROBLEM WE SOLVE</h1>
+                <h1 className='briefStoryTitle'>THE WORLD NEEDS YOU TODAY!</h1>
            
                 <div className='questionBox'>
                     <div className='questionPart'>

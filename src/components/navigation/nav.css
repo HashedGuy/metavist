@@ -192,11 +192,12 @@
         position: fixed;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
+        align-items: center;
         max-width: 5vh;
         height: 90vh;
-        margin-top: 20em;
-        margin-left: 0;
+        /* margin-top: 20em; */
+        margin-left: .5em;
         padding: .5em;
     }
     .bottomMenu {
@@ -207,7 +208,7 @@
     }
     .activeNavSection {
         font-size: 1.5em;
-        padding-left: .50em;
+        margin-left: .4em;
     }
 }
 

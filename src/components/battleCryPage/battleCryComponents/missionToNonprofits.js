@@ -14,7 +14,7 @@ function MissionToNonProfits(props) {
   
     <div className='exp2Div exp1Div'>
          <div className={open==='two' ? 'openedBenefitCard' : 'benefitCard'}>
-             {open==='two' ? '' : <div className="centered" onClick={()=>setOpen('two')}>Governance</div>}
+             {/* {open==='two' ? '' : <div className="centered" onClick={()=>setOpen('two')}>Governance</div>} */}
              <img src={smth} className={open==='two' ? 'coverImg smaller' : 'coverImg'}/>
              {open==='two' ? 
              <>
@@ -39,7 +39,7 @@ function MissionToNonProfits(props) {
     </div>
     <div className='exp2Div exp1Div'>
          <div className={open==='three' ? 'openedBenefitCard' : 'benefitCard'} >
-             {open==='three' ? '' : <div className="centered" onClick={()=>setOpen('three')}>In-App Utility</div>}
+             {/* {open==='three' ? '' : <div className="centered" onClick={()=>setOpen('three')}>In-App Utility</div>} */}
              <img src={smth} className={open==='three' ? 'coverImg smaller' : 'coverImg'}/>
              {open==='three' ? 
              <>
@@ -79,7 +79,7 @@ function MissionToNonProfits(props) {
     </div>
     <div className='exp2Div exp1Div'>
          <div className={open==='four' ? 'openedBenefitCard' : 'benefitCard '}>
-             {open==='four' ? '' : <div className="centered" onClick={()=>setOpen('four')}>Utility</div>}
+             {/* {open==='four' ? '' : <div className="centered" onClick={()=>setOpen('four')}>Utility</div>} */}
              <img src={smth} className={open==='four' ? 'coverImg smaller' : 'coverImg'}/>
              {open==='four' ? 
              <>
