@@ -93,6 +93,10 @@
     width: 80vw;
     font-size: .75em;
 }
+.questionBox li {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
 .questionPart {
     display: flex;
     justify-content: space-between;
@@ -214,7 +218,9 @@ hr {
         width: 90vw;
         margin: 0;
     }
-
+    .questionBox li {
+        font-size: 1em;
+    }
   
 }
 
