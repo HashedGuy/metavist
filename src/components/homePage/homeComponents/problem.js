@@ -14,8 +14,7 @@ function Problem(props) {
            
                 <div className='questionBox'>
                     <div className='questionPart'>
-                        <div className='questionLeft'>
-                            <BsSearch color='white' className='searchIcon'/>    When is the Mint Date?
+                        <div className='questionLeft'>   Fight Fraud & Corruption. The number 1 culprit halting our progress!
                         
                         </div>
                         {response==='one' ? 
@@ -26,7 +25,10 @@ function Problem(props) {
                         <div className='responseBox'>
                             <hr className='hrStyle'/>
                             <p className='briefStoryText'>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                <ul>
+                                    <li>ACFE reports that 41% of all corruption cases & 15% of all fraud is from nonprofits. That’s whack!</li>
+                                    <li>ACFE also reports that $639,000 is the average loss!</li>
+                                </ul>
                             </p>
                         </div>
                      : ''}
@@ -34,8 +36,7 @@ function Problem(props) {
                 </div>
                 <div className='questionBox'>
                     <div className='questionPart'>
-                        <div className='questionLeft'>
-                            <BsSearch color='white' className='searchIcon'/>    How much it will cost?
+                        <div className='questionLeft'>  Making Philanthropy Accountable & Trustworthy
                         
                         </div>
                         {response==='two' ? 
@@ -46,7 +47,10 @@ function Problem(props) {
                         <div className='responseBox'>
                             <hr className='hrStyle'/>
                             <p className='briefStoryText'>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                <ul>
+                                    <li>Only 52 % of Americans have faith that nonprofits will ‘do what is right’ [2020 Edelman Trust Barometer].. I don’t blame em</li>
+                                    <li>58% of the public feel there is a lack of transparency.  I mean, why will they not feel this way?</li>
+                                </ul>
                             </p>
                         </div>
                      : ''}
@@ -55,7 +59,7 @@ function Problem(props) {
                 <div className='questionBox'>
                     <div className='questionPart'>
                         <div className='questionLeft'>
-                            <BsSearch color='white' className='searchIcon'/>    How much it will cost?
+                          Democratise & Revolutionise Capital Flow
                         
                         </div>
                         {response==='three' ? 
@@ -66,7 +70,10 @@ function Problem(props) {
                         <div className='responseBox'>
                             <hr className='hrStyle'/>
                             <p className='briefStoryText'>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                <ul>
+                                    <li>Big, ineffective nonprofits are major beneficiaries of the current USD $500 bn philanthropy market. Let’s flow this capital to small & impactful nonprofits too!</li>
+                                    <li>Crypto holders are more generous & open to innovation. Let’s prove em right!</li>
+                                </ul>
                             </p>
                         </div>
                      : ''}
