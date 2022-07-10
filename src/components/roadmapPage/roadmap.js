@@ -21,12 +21,12 @@ function Roadmap() {
       <div className='stickyNavContainer'>
           <HashLink to='#rmpHero' smooth><FaRegDotCircle className={heroVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
           <HashLink to='#roadmap' smooth><FaRegDotCircle className={roadmapVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
-          <HashLink to='#mhbRef' smooth><FaRegDotCircle className={mhbVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
+          {/* <HashLink to='#mhbRef' smooth><FaRegDotCircle className={mhbVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink> */}
         </div>
        <div className="pagesContent">
         <RmpHero refG={heroRef}/>
         <RoadmapHero refG={roadmapRef}/>
-        <MissionToNonProfits refG={mhbRef} />
+        {/* <MissionToNonProfits refG={mhbRef} /> */}
        </div>
       </div>
      </div> 

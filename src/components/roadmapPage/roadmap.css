@@ -3,7 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    margin-top: 5em;
+    padding-top: 3em;
+    /* min-height: 100vh; */
 }
 .roadmap {
     /* align-items: baseline; */
@@ -53,6 +55,9 @@
 }
 .roadmapTextSection {
     width: 90%;
+}
+.briefStoryText li {
+    margin-bottom: 1em;
 }
 
 @media (min-width: 600px) {
