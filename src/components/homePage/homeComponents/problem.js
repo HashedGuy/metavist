@@ -14,7 +14,7 @@ function Problem(props) {
            
                 <div className='questionBox'>
                     <div className='questionPart'>
-                        <div className='questionLeft'>   Fight Fraud & Corruption. The number 1 culprit halting our progress!
+                        <div className='questionLeft'>   Fight Fraud & Corruption
                         
                         </div>
                         {response==='one' ? 
@@ -25,6 +25,7 @@ function Problem(props) {
                         <div className='responseBox'>
                             <hr className='hrStyle'/>
                             <p className='briefStoryText'>
+                            The number 1 culprit halting our progress!
                                 <ul>
                                     <li>ACFE reports that 41% of all corruption cases & 15% of all fraud is from nonprofits. That’s whack!</li>
                                     <li>ACFE also reports that $639,000 is the average loss!</li>
