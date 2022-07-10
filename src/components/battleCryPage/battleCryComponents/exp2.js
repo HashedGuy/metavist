@@ -10,7 +10,7 @@ function Exp2(props) {
        <h1 className='valuesTitle'>Our Mission to You</h1>
        <div className='exp2Div'>
             <div className={open==='one' ? 'openedBenefitCard' : 'benefitCard'} >
-                {open==='one' ? '' : <div className="centered" onClick={()=>setOpen('one')}>Secure</div>}
+                {/* {open==='one' ? '' : <div className="centered" onClick={()=>setOpen('one')}>Secure</div>} */}
                 <img src={smth} className={open==='one' ? 'coverImg smaller' : 'coverImg'}/>
                 {open==='one' ? 
                 <>
@@ -30,7 +30,7 @@ function Exp2(props) {
        </div>
        <div className='exp2Div'>
             <div className={open==='two' ? 'openedBenefitCard orderB' : 'benefitCard orderB'}>
-                {open==='two' ? '' : <div className="centered" onClick={()=>setOpen('two')}>Impactful</div>}
+                {/* {open==='two' ? '' : <div className="centered" onClick={()=>setOpen('two')}>Impactful</div>} */}
                 <img src={smth} className={open==='two' ? 'coverImg smaller' : 'coverImg'}/>
                 {open==='two' ? 
                 <>
@@ -48,7 +48,7 @@ function Exp2(props) {
        </div>
        <div className='exp2Div'>
             <div className={open==='three' ? 'openedBenefitCard' : 'benefitCard'} >
-                {open==='three' ? '' : <div className="centered" onClick={()=>setOpen('three')}>Valuable</div>}
+                {/* {open==='three' ? '' : <div className="centered" onClick={()=>setOpen('three')}>Valuable</div>} */}
                 <img src={smth} className={open==='three' ? 'coverImg smaller' : 'coverImg'}/>
                 {open==='three' ? 
                 <>
@@ -74,7 +74,7 @@ function Exp2(props) {
        </div>
        <div className='exp2Div'>
             <div className={open==='four' ? 'openedBenefitCard orderB' : 'benefitCard orderB'}>
-                {open==='four' ? '' : <div className="centered" onClick={()=>setOpen('four')}>Inspiring</div>}
+                {/* {open==='four' ? '' : <div className="centered" onClick={()=>setOpen('four')}>Inspiring</div>} */}
                 <img src={smth} className={open==='four' ? 'coverImg smaller' : 'coverImg'}/>
                 {open==='four' ? 
                 <>

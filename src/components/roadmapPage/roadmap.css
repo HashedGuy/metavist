@@ -51,6 +51,9 @@
 .activeBox {
     opacity: 1;
 }
+.roadmapTextSection {
+    width: 90%;
+}
 
 @media (min-width: 600px) {
     .foregroundImg, .foregroundImgTwo, .foregroundImgThree {
@@ -64,6 +67,9 @@
     }
     .roadmapTitle {
         font-size: 2.6em;
+    }
+    .roadmapTextSection {
+        width: 100%;
     }
 }
 
