@@ -58,6 +58,7 @@
 }
 .briefStoryText li {
     margin-bottom: 1em;
+    text-align: start;
 }
 
 @media (min-width: 600px) {
@@ -75,6 +76,9 @@
     }
     .roadmapTextSection {
         width: 100%;
+    }
+    .briefStoryText li {
+        margin-bottom: .5em;
     }
 }
 

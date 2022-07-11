@@ -107,17 +107,7 @@
   }
 
 @media (min-width: 600px) {
-    .MappG {
-        display: none;
-    }
-    .AppG {
-        display: block;
-        height: 100vh;
-        overflow-y: auto;
-        overflow-x: hidden;
-        perspective: 10px;
-        scroll-behavior: smooth;
-    }
+  
     .storyHero {
         position: relative;
         display: flex;
@@ -149,6 +139,17 @@
 }
 
 @media (min-width: 1000px) {
+    .MappG {
+        display: none;
+    }
+    .AppG {
+        display: block;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        perspective: 10px;
+        scroll-behavior: smooth;
+    }
     .storyBTitle {
         font-size: 3.5em;
     }

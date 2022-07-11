@@ -182,9 +182,7 @@
 }
 
 @media (min-width: 600px) {
-    .navContainer {
-        justify-content: space-between;
-    }
+   
     .ulDropdown li {
         padding: .7em 1em;
     }
@@ -200,19 +198,29 @@
         margin-left: .5em;
         padding: .5em;
     }
-    .bottomMenu {
-        display: none;
-    }
-    .hideMenu {
-        display: block;
-    }
+  
+  
     .activeNavSection {
         font-size: 1.5em;
         margin-left: .4em;
+        padding-right: .7em;
+    }
+    .bottomMenuItems {
+        font-size: 150%;
+        padding: 1em;
     }
 }
 
 @media (min-width: 1000px) {
+    .hideMenu {
+        display: block;
+    }
+    .navContainer {
+        justify-content: space-between;
+    }
+    .bottomMenu {
+        display: none;
+    }
   .verticalNavSection {
       font-size: 1.5em;
       margin-right: 1em;
@@ -220,6 +228,7 @@
   .activeNavSection {
       font-size: 2em;
       padding-left: .65em;
+      padding-right: 0;
   }
   .ulMenu {
     display: block;
