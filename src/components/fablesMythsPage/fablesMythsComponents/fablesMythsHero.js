@@ -8,14 +8,14 @@ import { HashLink } from "react-router-hash-link"
 import Stories from "./stories"
 
 function FablesMythsHero(props) {
-    const [character, setCharacter] = useState('Big Boy')
+    const [character, setCharacter] = useState('Thunderbird B')
   return (
     <div className="characterHeroSection">
       <div className="charactersTogether">
         <HashLink to='#charLetter' smooth><img src={CharP} className={character==='Luna'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Luna')}/></HashLink>
-        <HashLink to='#charLetter' smooth><img src={CharA} className={character==='Big Boy'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Big Boy')}/></HashLink>
-        <HashLink to='#charLetter' smooth><img src={CharJ} className={character==='Hermoine'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Hermoine')}/></HashLink>
-        <HashLink to='#charLetter' smooth><img src={CharB} className={character==='Weasley'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Weasley')}/></HashLink>
+        <HashLink to='#charLetter' smooth><img src={CharA} className={character==='Thunderbird B'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Thunderbird B')}/></HashLink>
+        <HashLink to='#charLetter' smooth><img src={CharJ} className={character==='Nessie'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Nessie')}/></HashLink>
+        <HashLink to='#charLetter' smooth><img src={CharB} className={character==='Thunderbird M'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Thunderbird M')}/></HashLink>
       </div>
        <Stories character={character}/>
     </div>

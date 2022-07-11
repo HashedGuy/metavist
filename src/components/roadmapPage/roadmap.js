@@ -12,7 +12,7 @@ import {FaRegDotCircle} from 'react-icons/fa'
 function Roadmap() {
   const { ref: heroRef, inView: heroVisible} = useInView({threshold:.5})
   const { ref: roadmapRef, inView: roadmapVisible} = useInView({threshold:.5})
-  const { ref: mhbRef, inView: mhbVisible} = useInView({threshold:.5})
+  // const { ref: mhbRef, inView: mhbVisible} = useInView({threshold:.5})
   return (
     <>
     <div className="App">
