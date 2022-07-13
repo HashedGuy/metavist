@@ -1,15 +1,10 @@
 import React, {useState} from 'react'
 import Mountain from '../../../assets/img/mntn.png'
 import Tree from '../../../assets/img/tr.png'
-import MainGuy from '../../../assets/img/mainGuy.png'
-import Friends from '../../../assets/img/friends.png'
 import FablesMythsHero from './fablesMythsHero'
-import Stories from './stories'
 
 import { useInView } from 'react-intersection-observer';
 import NavigationMenu from '../../navigation/navigationMenu'
-import { HashLink } from 'react-router-hash-link'
-import {FaRegDotCircle} from 'react-icons/fa'
 
 function StoryHero() {
   const [activeChar, setActiveChar] = useState('mainGuy')
@@ -32,6 +27,7 @@ function StoryHero() {
               </>
               <div ref={strRef} id='players'>
                 <FablesMythsHero />
+            
               </div>
              
           

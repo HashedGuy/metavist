@@ -60,9 +60,27 @@
      object-fit: cover;
      z-index: -1;
 }
+.backStory {
+    z-index: 1;
+    color: #FFFFFF;
+    background-color: #1B1919;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.backStory p {
+    text-align: center;
+    width: 90%;
+}
+
+.backStoryImg {
+    height: 30vh;
+}
 .characterHeroSection {
     min-width: 95vw;
-    margin-bottom: 0;
+    margin-bottom: 5em;
     text-align: center !important;
 }
 .charLetter {
@@ -137,6 +155,20 @@
     }
     .charInfoText {
         font-size: 1em;
+    }
+    .backStory {
+        flex-direction: row;
+        width: 100vw;
+    }
+    .backStory p {
+        text-align: left;
+    }
+    .backStoryImg {
+        order: 1;
+        /* height: 70vh; */
+    }
+    .characterHeroSection {
+        margin-bottom: 0;
     }
 }
 
