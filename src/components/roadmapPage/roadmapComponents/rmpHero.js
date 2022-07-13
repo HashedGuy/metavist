@@ -1,5 +1,5 @@
 import React from 'react'
-import bcHero from '../../../assets/img/bcHero.png'
+import bcHero from '../../../assets/img/final/PathsOfConquest_Header.png'
 
 function RmpHero(props) {
   return (
