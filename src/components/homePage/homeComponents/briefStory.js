@@ -1,5 +1,5 @@
 import { HashLink } from 'react-router-hash-link'
-import bsImg from '../../../assets/img/bs.png'
+import bsImg from '../../../assets/img/final/HomePage_BriefStory.png'
 
 function BriefStory(props) {
     return (

@@ -1,4 +1,4 @@
-import bcHero from '../../../assets/img/bcHero.png'
+import bcHero from '../../../assets/img/final/BattleCry_Header.png'
 
 function BattleCryHero(props) {
   return (

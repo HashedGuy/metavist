@@ -56,13 +56,11 @@
     margin-bottom: 2em;
 }
 .briefStoryImg {
-    width: 95vw;
-    /* height: 75vh; */
-    /* border: 1px solid wheat; */
+    height: 30vh;
     margin: 1em 0;
 }
 .problemImg {
-    width: 95vw;
+    height: 75vw;
     /* border: 1px solid wheat; */
     font-size: 200%;
     margin: 1em 0;
@@ -132,7 +130,7 @@ hr {
 .character {
     cursor: pointer;
     margin: 0 .5em;
-    width: 40vw;
+    width: 25vw;
     opacity: .3;
 }
 .character:hover {
@@ -190,7 +188,7 @@ hr {
         width: 90%;
     }
     .briefStoryImg {
-        max-width: 700px;
+        height: 40vh;
     }
     .activeCharacter {
         transform: scale(1.1);
@@ -215,11 +213,13 @@ hr {
         min-height: 95vh;
     }
     .problemImg {
-        width: 90vw;
-        margin: 0;
+        height: 40vh;
     }
     .questionBox li {
         font-size: 1em;
+    }
+    .character {
+        width: 20vw;
     }
   
 }
@@ -238,7 +238,7 @@ hr {
         /* height: 80vh; */
     }
     .briefStoryImg {
-        width: 664px;
+        height: 60vh;
     }
     .briefStorySection {
         min-height: 100vh;
@@ -262,6 +262,7 @@ hr {
     }
     .character {
         margin: 0;
+        width: 15vw;
     }
     .characterImg {
         margin: 1em;
@@ -279,5 +280,8 @@ hr {
     .questionBox {
         width: 45vw;
         font-size: 1em;
+    }
+    .problemImg {
+        height: 70vh;
     }
 }

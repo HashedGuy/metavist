@@ -1,4 +1,4 @@
-import homeHero from '../../../assets/img/char.png'
+import homeHero from '../../../assets/img/final/HomePage_Header.png'
 function HomeHero(props) {
   return (
     <div className="homeHeroSection" ref={props.refG} id='heroHome'>

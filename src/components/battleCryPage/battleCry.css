@@ -27,7 +27,7 @@
     font-weight: 400;
 }
 .foundersMessageImg {
-    width: 70vw;
+    height: 40vh;
 }
 .valuesSection {
     display: flex;
@@ -270,6 +270,10 @@
 .iconColor {
     color: white;
 }
+.carcassSections {
+    display: flex;
+    flex-direction: column;
+}
 
 @media (min-width: 600px) {
     .demonImg {
@@ -322,13 +326,10 @@
         text-align: left;
     }
     .foundersMessageImg {
-        width: 50vw;
+        height: 30vh;
     }
     .messageSection {
         align-items: center;
-    }
-    .foundersMessageText {
-        text-align: center;
     }
     .openBox p, .openBox li {
         font-size: .8em;
@@ -416,6 +417,13 @@
     .exp1Container {
         justify-content: space-evenly;
     }
+    .carcassSections {
+        flex-direction: row;
+        align-items: center;
+    }
+    .orderChange {
+        order: 1;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -436,7 +444,7 @@
         line-height: 1.8em;
     }
     .foundersMessageImg {
-        height: 80vh;
+        height: 50vh;
     }
     .valuesBoxes {
         justify-content: flex-start;

@@ -1,18 +1,18 @@
 import { useState } from "react"
-import MainGuy from '../../../assets/img/mainGuy.png'
-import Friends from '../../../assets/img/friends.png'
-import CharMini from '../../../assets/img/charMini.png'
+import MainGuy from '../../../assets/img/final/HomePage_HeroesBF.png'
+import Friends from '../../../assets/img/final/HomePage_HeroesLC.png'
+import CharMini from '../../../assets/img/final/HomePage_HeroesTB.png'
 import { HashLink } from "react-router-hash-link"
 
 function Character(props) {
-  const [character, setCharacter] = useState('bigBoy')
+  const [character, setCharacter] = useState('BF')
   return (
     <div className='briefStorySection' ref={props.refG} id='charRef'>
     <div className='subSection'>
        {/* <h1 className='briefStoryTitle'>CHARACTER</h1>
        <HashLink className="miniChar" to='./fablesMyths#players'><img src={CharMini} className='characterImg'/></HashLink> */}
        <h2 className='characterName'>
-         {character==='bigBoy' ? 'BIG BOY' : character==='potter' ? 'POTTER' : 'WEASLEY'}
+         {character==='BF' ? 'BIG FOOT' : character==='LC' ? 'NESSIE' : 'THUNDERBIRD'}
         </h2>
        <p className='briefStoryText'>
           Howdy! They always ask me – how come humans rarely see you in person, and I always tell them – well son,
@@ -22,8 +22,9 @@ function Character(props) {
        <HashLink className="homeReferenceBtn" to={'./fablesMyths#players'}>Know your players</HashLink>
    </div>
    <div className='characterImgs'>
-    <img className={character==='bigBoy' ? 'character activeCharacter' : 'character'} src={MainGuy} onClick={()=>setCharacter('bigBoy')}/>
-    <img className={character==='potter' ? 'character activeCharacter' : 'character'} src={Friends} onClick={()=>setCharacter('potter')}/>
+    <img className={character==='LC' ? 'character activeCharacter' : 'character'} src={Friends} onClick={()=>setCharacter('LC')}/>
+    <img className={character==='BF' ? 'character activeCharacter' : 'character'} src={MainGuy} onClick={()=>setCharacter('BF')}/>
+    <img className={character==='TB' ? 'character activeCharacter' : 'character'} src={CharMini} onClick={()=>setCharacter('TB')}/>
    </div>
 </div>
   )
