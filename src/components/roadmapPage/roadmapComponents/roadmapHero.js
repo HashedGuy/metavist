@@ -1,25 +1,26 @@
 import { useState } from 'react'
 import Tree from '../../../assets/img/dest2.png'
-import Dest2 from '../../../assets/img/dest1.png'
-import Dest3 from '../../../assets/img/dest3.png'
-import Dest4 from '../../../assets/img/dest4.png'
-import Dest5 from '../../../assets/img/dest5.png'
-import Dest6 from '../../../assets/img/dest6.png'
+import Dest2 from '../../../assets/img/final/PathsOfConquest_Media.png'
+import Dest3 from '../../../assets/img/final/PathsOfConquest_Metaverse.png'
+import Dest4 from '../../../assets/img/final/PathsOfConquest_Foundation.png'
+import Dest5 from '../../../assets/img/final/PathsOfConquest_Community.png'
+import Dest6 from '../../../assets/img/final/PathsOfConquest_Media1.png'
 import { HashLink } from 'react-router-hash-link'
 
 function RoadmapHero(props) {
-  const [destination, setDestination] = useState('The Metavists App')
+  const [destination, setDestination] = useState('Metavists Foundation')
   return (
     <>
     <div className='roadmapHero' ref={props.refG} id='roadmap'>
         <div className='roadmap'>
-          <HashLink to='#destination' smooth><img src={Tree}  onClick={()=>setDestination('The Metavists App')} className={destination==='Destionation 1'? 'foregroundImg activeBox' : "foregroundImg"} alt=''/></HashLink>
-          <HashLink to='#destination' smooth><img src={Dest2} onClick={()=>setDestination('Community Onboarding')} className={destination==='Destionation 2'? 'foregroundImgTwo activeBox' : "foregroundImgTwo"} alt=''/></HashLink>
-          <HashLink to='#destination' smooth><img src={Dest3} onClick={()=>setDestination('Metavists Foundation')} className={destination==='Destionation 3'? 'foregroundImgThree activeBox' : "foregroundImgThree"} alt=''/></HashLink>
-          <HashLink to='#destination' smooth><img src={Dest4} onClick={()=>setDestination('The Metaverse')} className={destination==='Destionation 4'? 'foregroundImg activeBox' : "foregroundImg"} alt=''/></HashLink>
-          <HashLink to='#destination' smooth><img src={Dest5} onClick={()=>setDestination('Metavists Media ')} className={destination==='Destionation 5'? 'foregroundImgTwo activeBox' : "foregroundImgTwo"} alt=''/></HashLink>
-          <HashLink to='#destination' smooth><img src={Dest6} onClick={()=>setDestination('Metavists Holder Benefits')} className={destination==='Destionation 6'? 'foregroundImgThree activeBox' : "foregroundImgThree"} alt=''/></HashLink>
-          <HashLink to='#destination' smooth><img src={Dest2} onClick={()=>setDestination('Metavists Utility')} className={destination==='Destionation 6'? 'foregroundImgThree activeBox' : "foregroundImgThree"} alt=''/></HashLink>
+          <HashLink to='#destination' smooth><img src={Dest3}  onClick={()=>setDestination('The Metavists App')} className={destination==='The Metavists App'? 'foregroundImg activeBox' : "foregroundImg"} alt=''/></HashLink>
+          <HashLink to='#destination' smooth><img src={Dest5} onClick={()=>setDestination('Community Onboarding')} className={destination==='Community Onboarding'? 'foregroundImgTwo activeBox' : "foregroundImgTwo"} alt=''/></HashLink>
+          <HashLink to='#destination' smooth><img src={Dest4} onClick={()=>setDestination('Metavists Foundation')} className={destination==='Metavists Foundation'? 'foregroundImgThree activeBox' : "foregroundImgThree"} alt=''/></HashLink>
+          <HashLink to='#destination' smooth><img src={Dest3} onClick={()=>setDestination('The Metaverse')} className=
+          {destination==='The Metaverse'? 'foregroundImg activeBox' : "foregroundImg"} alt=''/></HashLink>
+          <HashLink to='#destination' smooth><img src={Dest2} onClick={()=>setDestination('Metavists Media')} className={destination==='Metavists Media'? 'foregroundImgTwo activeBox' : "foregroundImgTwo"} alt=''/></HashLink>
+          <HashLink to='#destination' smooth><img src={Dest6} onClick={()=>setDestination('Metavists Holder Benefits')} className={destination==='Metavists Holder Benefits'? 'foregroundImgThree activeBox' : "foregroundImgThree"} alt=''/></HashLink>
+          <HashLink to='#destination' smooth><img src={Dest2} onClick={()=>setDestination('Metavists Utility')} className={destination==='Metavists Utility'? 'foregroundImgThree activeBox' : "foregroundImgThree"} alt=''/></HashLink>
         </div>
     </div>
           <div className='briefStorySection'  id='destination'>
