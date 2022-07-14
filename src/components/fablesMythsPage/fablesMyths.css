@@ -84,7 +84,7 @@
     text-align: center !important;
 }
 .charLetter {
-    height: 150px;
+    height: 110px;
     cursor: pointer;
     transition: .2s all ease-in-out;
     opacity: .7;
