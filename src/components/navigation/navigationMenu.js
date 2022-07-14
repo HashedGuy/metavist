@@ -3,7 +3,7 @@ import './nav.css'
 import { Link} from "react-router-dom";
 import {RiMenu2Line, RiRoadMapFill} from 'react-icons/ri'
 import {AiFillHome} from 'react-icons/ai'
-import {GiBattleGear} from 'react-icons/gi'
+import {GiBattleGear, GiHamburgerMenu} from 'react-icons/gi'
 import {CgGhostCharacter} from 'react-icons/cg'
 
 import Logo from '../../assets/img/logo.png'
@@ -73,6 +73,13 @@ function NavigationMenu(props) {
           <RiRoadMapFill/>
           <p className='bottomMenuText'>Roadmap</p>
         </div></HashLink>
+
+      
+        <div onClick={()=>setActiveLink('hamburger')} className={activeLink==='hamburger' ? 'bottomMenuItems activeBottomMenuItem': 'bottomMenuItems'}>
+          <GiHamburgerMenu/>
+          <p className='bottomMenuText'>More...</p>
+        </div>
+        
     </div>
     </>
   )
