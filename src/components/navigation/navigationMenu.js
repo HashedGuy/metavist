@@ -4,6 +4,7 @@ import { Link} from "react-router-dom";
 import {RiMenu2Line, RiRoadMapFill} from 'react-icons/ri'
 import {AiFillHome} from 'react-icons/ai'
 import {GiBattleGear, GiHamburgerMenu} from 'react-icons/gi'
+import {MdMenu} from 'react-icons/md'
 import {CgGhostCharacter} from 'react-icons/cg'
 
 import Logo from '../../assets/img/logo.png'
@@ -76,7 +77,7 @@ function NavigationMenu(props) {
 
       
         <div onClick={()=>setActiveLink('hamburger')} className={activeLink==='hamburger' ? 'bottomMenuItems activeBottomMenuItem': 'bottomMenuItems'}>
-          <GiHamburgerMenu/>
+          <MdMenu/>
           <p className='bottomMenuText'>More...</p>
         </div>
         
