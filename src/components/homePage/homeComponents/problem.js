@@ -21,8 +21,8 @@ function Problem(props) {
                         
                         </div>
                         {response==='one' ? 
-                        <a onClick={()=>setResponse('')}> <BsChevronUp /></a> : 
-                        <a onClick={()=>setResponse('one')}><BsChevronDown /></a>}
+                        <a onClick={()=>setResponse('')}> <BsChevronUp className='iconClass'/></a> : 
+                        <a onClick={()=>setResponse('one')}><BsChevronDown className='iconClass'/></a>}
                     </div>
                     {response==='one' ? 
                         <div className='responseBox'>
@@ -44,8 +44,8 @@ function Problem(props) {
                         
                         </div>
                         {response==='two' ? 
-                        <a onClick={()=>setResponse('')}> <BsChevronUp /></a> : 
-                        <a onClick={()=>setResponse('two')}><BsChevronDown /></a>}
+                        <a onClick={()=>setResponse('')}> <BsChevronUp className='iconClass'/></a> : 
+                        <a onClick={()=>setResponse('two')}><BsChevronDown className='iconClass'/></a>}
                     </div>
                     {response==='two' ? 
                         <div className='responseBox'>
@@ -67,8 +67,8 @@ function Problem(props) {
                         
                         </div>
                         {response==='three' ? 
-                        <a onClick={()=>setResponse('')}> <BsChevronUp /></a> : 
-                        <a onClick={()=>setResponse('three')}><BsChevronDown /></a>}
+                        <a onClick={()=>setResponse('')}> <BsChevronUp className='iconClass'/></a> : 
+                        <a onClick={()=>setResponse('three')}><BsChevronDown className='iconClass'/></a>}
                     </div>
                     {response==='three' ? 
                         <div className='responseBox'>

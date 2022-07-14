@@ -2,6 +2,7 @@ import { useState } from "react"
 import MainGuy from '../../../assets/img/final/HomePage_HeroesBF.png'
 import Friends from '../../../assets/img/final/HomePage_HeroesLC.png'
 import CharMini from '../../../assets/img/final/HomePage_HeroesTB.png'
+import { FaAngleRight } from "react-icons/fa"
 import { HashLink } from "react-router-hash-link"
 
 function Character(props) {
@@ -19,7 +20,7 @@ function Character(props) {
           <br/><br/>
           I am just too fast! Forget about the rumors, my actual shoe size is 49, and I love taking naps. Last time I took a nap though, it lasted for 200 years..
        </p>
-       <HashLink className="homeReferenceBtn" to={'./fablesMyths#players'}>Know your players</HashLink>
+       <HashLink className="homeReferenceBtn" to={'./fablesMyths#players'}>Know your players <FaAngleRight className='iconClass'/></HashLink>
    </div>
    <div className='characterImgs'>
     <img className={character==='LC' ? 'character activeCharacter' : 'character'} src={Friends} onClick={()=>setCharacter('LC')}/>

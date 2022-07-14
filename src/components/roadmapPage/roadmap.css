@@ -44,8 +44,7 @@
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    border: 1px solid white;
-    width: 90vw;
+    height: 50vh;
 }
 .rmp {
     margin-left: 0;
@@ -62,6 +61,17 @@
 .briefStoryText li {
     margin-bottom: 1em;
     text-align: start;
+}
+.knowMore {
+    border: 1px solid white;
+    padding: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.knowMore:hover {
+    background-color: white;
+    color: black;
 }
 
 @media (min-width: 600px) {
@@ -98,9 +108,6 @@
     .roadmapTitle {
         font-size: 3em;
     }
- .roadmapStoryImg {
-     width: 50vw;
- }
   
 }
 

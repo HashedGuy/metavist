@@ -1,4 +1,5 @@
 import { HashLink } from 'react-router-hash-link'
+import {FaAngleRight} from 'react-icons/fa'
 import bsImg from '../../../assets/img/final/HomePage_BriefStory.png'
 
 function BriefStory(props) {
@@ -12,7 +13,7 @@ function BriefStory(props) {
                     <br/><br/>
                     However, the LOM does not believes humanity failed because we did not care. But we failed because the system through which we ‘care’ is broken beyond repair.
                 </p>
-                <HashLink className="homeReferenceBtn" to={'./fablesMyths#backgroundStoryRef'}>Background story</HashLink>
+                <HashLink className="homeReferenceBtn" to={'./fablesMyths#backgroundStoryRef'}>Background story  <FaAngleRight className='iconClass'/></HashLink>
             </div>
             <img src={bsImg} className='briefStoryImg'/>
         </div>
