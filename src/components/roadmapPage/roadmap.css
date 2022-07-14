@@ -54,6 +54,9 @@
     opacity: 1;
 }
 .roadmapTextSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
 }
 .briefStoryText li {
