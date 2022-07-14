@@ -56,7 +56,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    margin: 0 2.5em;
 }
 .briefStoryText li {
     margin-bottom: 1em;
@@ -88,7 +88,7 @@
         font-size: 2.6em;
     }
     .roadmapTextSection {
-        width: 100%;
+        margin: 0;
     }
     .briefStoryText li {
         margin-bottom: .5em;
