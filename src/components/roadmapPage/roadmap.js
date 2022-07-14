@@ -8,6 +8,7 @@ import RmpHero from './roadmapComponents/rmpHero'
 import MissionToNonProfits from './roadmapComponents/missionToNonprofits'
 import { HashLink } from 'react-router-hash-link'
 import {FaRegDotCircle} from 'react-icons/fa'
+import { motion } from 'framer-motion'
 
 function Roadmap() {
   const { ref: heroRef, inView: heroVisible} = useInView({threshold:.5})
@@ -15,7 +16,13 @@ function Roadmap() {
   // const { ref: mhbRef, inView: mhbVisible} = useInView({threshold:.5})
   return (
     <>
-    <div className="App">
+    <motion.div 
+      className="App"
+      
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+      exit={{opacity:0 }}
+      >
       <NavigationMenu defaultActive='roadmap'/>
       <div className="dynamicSection">
       <div className='stickyNavContainer'>
@@ -29,7 +36,7 @@ function Roadmap() {
         {/* <MissionToNonProfits refG={mhbRef} /> */}
        </div>
       </div>
-     </div> 
+     </motion.div> 
     </>
   )
 }

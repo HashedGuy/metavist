@@ -11,6 +11,7 @@ import MissionToDonors from './battleCryComponents/missionToDonors'
 import { HashLink } from 'react-router-hash-link'
 import HolderBenefits from './battleCryComponents/holderBenefits'
 import Exp2 from './battleCryComponents/exp2'
+import { motion } from 'framer-motion'
 
 function BattleCry(props) {
   const { ref: heroRef, inView: heroVisible} = useInView({threshold:.5})
@@ -21,7 +22,13 @@ function BattleCry(props) {
   const { ref: mhbRef, inView: mhbVisible} = useInView({threshold: .3})
   return (
     <>
-      <div className="App" id='bcId'>
+      <motion.div 
+        className="App" 
+        id='bcId'
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        exit={{opacity:0 }}
+        >
       <NavigationMenu defaultActive='battleCry'/>
         <div className="dynamicSection">
         <div className='stickyNavContainer'>
@@ -42,7 +49,7 @@ function BattleCry(props) {
         
          </div>
        </div>
-      </div>
+      </motion.div>
     </>
   )
 }

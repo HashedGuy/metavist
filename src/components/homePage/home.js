@@ -9,6 +9,7 @@ import { useInView } from 'react-intersection-observer';
 import {FaRegDotCircle} from 'react-icons/fa'
 import { HashLink } from 'react-router-hash-link'
 import '../navigation/nav.css'
+import { motion } from 'framer-motion'
 
 function Home() {
   const { ref: heroRef, inView: heroVisible} = useInView({threshold:.5})
@@ -19,7 +20,13 @@ function Home() {
   
   return (
     <>
-    <div className="App" id='homeId'>
+    <motion.div 
+      className="App" 
+      id='homeId'
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+      exit={{opacity:0 }}
+      >
       <NavigationMenu defaultActive='home'/>
       <div className="dynamicSection">
         <div className='stickyNavContainer'>
@@ -35,7 +42,7 @@ function Home() {
          <Problem refG={problemRef}/>
        </div>
       </div>
-     </div>
+     </motion.div>
     </>
   )
 }

@@ -6,18 +6,23 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  useLocation
 } from "react-router-dom";
+import {AnimatePresence} from 'framer-motion'
 
 function App() {
+  const location = useLocation()
   return (
-   
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="battlecry" element={<BattleCry />} />
-            <Route path="roadmap" element={<Roadmap />} />
-            <Route path="fablesmyths" element={<FablesMyths />} />
-            {/* <Route path="story" element={<Story />} /> */}
+        <AnimatePresence>
+            <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<Home />} />
+              <Route path="battlecry" element={<BattleCry />} />
+              <Route path="roadmap" element={<Roadmap />} />
+              <Route path="fablesmyths" element={<FablesMyths />} />
+              {/* <Route path="story" element={<Story />} /> */}
           </Routes>
+        </AnimatePresence>
+        
   );
 }
 
