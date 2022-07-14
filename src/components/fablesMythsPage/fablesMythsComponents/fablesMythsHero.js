@@ -8,14 +8,14 @@ import Stories from "./stories"
 import BackgroundStory from "./backgroundStory"
 
 function FablesMythsHero(props) {
-    const [character, setCharacter] = useState('Backstory')
+    const [character, setCharacter] = useState('BACKSTORY')
   return (
     <div className="characterHeroSection">
       {/* <BackgroundStory /> */}
       <div className="charactersTogether">
-        <HashLink to='#charLetter' smooth><img src={BackstoryImg} className={character==='Backstory'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Backstory')}/></HashLink>
-        <HashLink to='#charLetter' smooth><img src={CharJ} className={character==='Nessie'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Nessie')}/></HashLink>
-        <HashLink to='#charLetter' smooth><img src={CharA} className={character==='Thunderbird B'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Thunderbird B')}/></HashLink>
+        <HashLink to='#charLetter' smooth><img src={BackstoryImg} className={character==='BACKSTORY'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('BACKSTORY')}/></HashLink>
+        <HashLink to='#charLetter' smooth><img src={CharJ} className={character==='NESSIE'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('NESSIE')}/></HashLink>
+        <HashLink to='#charLetter' smooth><img src={CharA} className={character==='BIG FOOT'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('BIG FOOT')}/></HashLink>
         <HashLink to='#charLetter' smooth><img src={CharB} className={character==='Thunderbird M'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Thunderbird M')}/></HashLink>
       </div>
        <Stories character={character}/>
