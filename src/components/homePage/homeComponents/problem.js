@@ -7,7 +7,7 @@ import ProblemImg1 from '../../../assets/img/final/Homepage_Probs1.png'
 import ProblemImg2 from '../../../assets/img/final/Homepage_Probs2.png'
 
 function Problem(props) {
-    const [response, setResponse] = useState('three')
+    const [response, setResponse] = useState('')
     const [responseQ2, setResponseQ2] = useState(false)
     const [responseQ3, setResponseQ3] = useState(true)
   return (
