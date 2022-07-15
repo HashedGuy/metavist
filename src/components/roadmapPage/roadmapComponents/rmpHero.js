@@ -6,7 +6,7 @@ function RmpHero(props) {
       <>
     <div className="homeHeroSection" ref={props.refG} id='rmpHero'>
         <h1 className="heroTitle">Roadmap</h1>
-        <img src={bcHero} className="heroImg"/>
+        <img src='https://ik.imagekit.io/74qyv5bswgr/Metavists/Paths_of_Conquest___Header___1__2YbzsFrTY.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1657873528851' className="heroImg"/>
     
       
     </div>  
