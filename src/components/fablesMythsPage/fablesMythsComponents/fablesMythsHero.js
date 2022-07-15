@@ -5,7 +5,6 @@ import CharA from '../../../assets/img/final/FablesMyth_BigGuy.png'
 import BackstoryImg from '../../../assets/img/final/FablesMyth_Backstory.png'
 import { HashLink } from "react-router-hash-link"
 import Stories from "./stories"
-import BackgroundStory from "./backgroundStory"
 
 function FablesMythsHero(props) {
     const [character, setCharacter] = useState('BACKSTORY')

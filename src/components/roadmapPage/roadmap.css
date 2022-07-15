@@ -5,14 +5,11 @@
     align-items: center;
     margin-top: 5em;
     padding-top: 3em;
-    /* min-height: 100vh; */
+    overflow: hidden;
 }
 .roadmap {
-    /* align-items: baseline; */
-    height: 50vh;
     margin-bottom: 10em;
     font-family: 'Poppins', sans-serif;
-    /* display: flex; */
 }
 .roadmapTitle {
     color: white;
@@ -43,7 +40,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
     height: 50vh;
 }
 .rmp {
@@ -68,10 +64,23 @@
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
+    margin-bottom: 5em;
 }
 .knowMore:hover {
     background-color: white;
     color: black;
+}
+.roadmapItemBox {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.roadmapItemInfo h1 {
+    margin-bottom: 1em;
+}
+.briefStoryText {
+    padding: 1em;
+    margin-top: 2em;
 }
 
 @media (min-width: 600px) {
@@ -93,6 +102,22 @@
     .briefStoryText li {
         margin-bottom: .5em;
     }
+    .roadmapItemBox {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2em;
+    }
+    .roadmapItemInfo {
+        text-align: left;
+        padding-left: 2em;
+    }
+    .roadmapStoryImg {
+        height: 20vh;
+    }
+    .briefStoryText {
+        padding: 0;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -107,6 +132,10 @@
     }
     .roadmapTitle {
         font-size: 3em;
+    }
+    .roadmapStoryImg {
+        height: 40vh;
+        margin-right: 2em;
     }
   
 }

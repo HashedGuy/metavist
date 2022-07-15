@@ -5,7 +5,6 @@ import RoadmapHero from './roadmapComponents/roadmapHero'
 import NavigationMenu from '../navigation/navigationMenu'
 import { useInView } from 'react-intersection-observer';
 import RmpHero from './roadmapComponents/rmpHero'
-import MissionToNonProfits from './roadmapComponents/missionToNonprofits'
 import { HashLink } from 'react-router-hash-link'
 import {FaRegDotCircle} from 'react-icons/fa'
 import { motion } from 'framer-motion'

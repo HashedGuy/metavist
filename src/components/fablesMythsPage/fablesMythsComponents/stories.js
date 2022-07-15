@@ -1,9 +1,8 @@
 import MainGuy from '../../../assets/img/mainGuy.png'
 import Hermoine from '../../../assets/img/charJx.png'
 import Weasley from '../../../assets/img/charBx.png'
-import Luna from '../../../assets/img/charPx.png'
 import backStoryImg from '../../../assets/img/final/FablesMyth_Backstory.png'
-import BackgroundStory from './backgroundStory'
+import { motion } from 'framer-motion'
 
 function Stories(props) {
   return (
