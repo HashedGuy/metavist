@@ -16,7 +16,7 @@ import { motion } from 'framer-motion'
 function BattleCry(props) {
   const { ref: heroRef, inView: heroVisible} = useInView({threshold:.5})
   const { ref: fmRef, inView: fmVisible} = useInView({threshold:.3})
-  const { ref: vomRef, inView: vomVisible} = useInView({threshold:.3})
+  const { ref: vomRef, inView: vomVisible} = useInView({threshold:.1})
   const { ref: mtdRef, inView: mtdVisible} = useInView({threshold:.3})
   const { ref: mtnRef, inView: mtnVisible} = useInView({threshold:.3})
   const { ref: mhbRef, inView: mhbVisible} = useInView({threshold: .3})
