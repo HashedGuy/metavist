@@ -11,7 +11,7 @@ function Exp2(props) {
        <div className='exp2Div'>
             <div className={open==='one' ? 'openedBenefitCard' : 'benefitCard'} >
                 {/* {open==='one' ? '' : <div className="centered" onClick={()=>setOpen('one')}>Secure</div>} */}
-                <img src={smth} className={open==='one' ? 'coverImg smaller' : 'coverImg'}/>
+                <img src={smth} className={open==='one' ? 'coverImg smaller' : 'coverImg'} onClick={()=>setOpen('one')}/>
                 {open==='one' ? 
                 <>
                 <div className='insidePar'>
@@ -31,7 +31,7 @@ function Exp2(props) {
        <div className='exp2Div'>
             <div className={open==='two' ? 'openedBenefitCard orderB' : 'benefitCard orderB'}>
                 {/* {open==='two' ? '' : <div className="centered" onClick={()=>setOpen('two')}>Impactful</div>} */}
-                <img src={smth} className={open==='two' ? 'coverImg smaller' : 'coverImg'}/>
+                <img src={smth} className={open==='two' ? 'coverImg smaller' : 'coverImg'} onClick={()=>setOpen('two')}/>
                 {open==='two' ? 
                 <>
                  <div className='insidePar'>
@@ -49,7 +49,7 @@ function Exp2(props) {
        <div className='exp2Div'>
             <div className={open==='three' ? 'openedBenefitCard' : 'benefitCard'} >
                 {/* {open==='three' ? '' : <div className="centered" onClick={()=>setOpen('three')}>Valuable</div>} */}
-                <img src={smth} className={open==='three' ? 'coverImg smaller' : 'coverImg'}/>
+                <img src={smth} className={open==='three' ? 'coverImg smaller' : 'coverImg'} onClick={()=>setOpen('three')}/>
                 {open==='three' ? 
                 <>
                   <div className='insidePar'>
@@ -75,7 +75,7 @@ function Exp2(props) {
        <div className='exp2Div'>
             <div className={open==='four' ? 'openedBenefitCard orderB' : 'benefitCard orderB'}>
                 {/* {open==='four' ? '' : <div className="centered" onClick={()=>setOpen('four')}>Inspiring</div>} */}
-                <img src={smth} className={open==='four' ? 'coverImg smaller' : 'coverImg'}/>
+                <img src={smth} className={open==='four' ? 'coverImg smaller' : 'coverImg'} onClick={()=>setOpen('four')}/>
                 {open==='four' ? 
                 <>
                 <div className='insidePar'>
