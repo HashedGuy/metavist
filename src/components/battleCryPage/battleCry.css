@@ -77,6 +77,7 @@
     align-items: center;
     transition: all .2s ease-in-out;
     font-size: .6em;
+    border-radius: 10px;
 }
 .valuesBox:hover {
     transform: scale(1.05);
@@ -101,6 +102,7 @@
     width: 10em;
     height: 10em;
     padding: 1em;
+    border-radius: 10px;
 }
 .openBox ul {
     text-align: left;
