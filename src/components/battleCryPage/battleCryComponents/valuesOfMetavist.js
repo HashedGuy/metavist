@@ -32,7 +32,7 @@ function ValuesOfMetavist(props) {
                 <div 
                   className='valuesBox'
                   onClick={()=>setBox('four')}>
-                    Democratize Capital
+                    Democratize <br/>Capital
                 </div>
                </>
                : 

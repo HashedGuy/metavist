@@ -88,7 +88,6 @@
 .closeIcon {
     text-align: right;
     font-size: 150%;
-    margin-top: 2em;
 }
 .closeIcon:hover {
     opacity: .5;
@@ -99,8 +98,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 10em;
-    height: 10em;
+    width: 20em;
+    height: 20em;
     padding: 1em;
     border-radius: 10px;
 }
@@ -296,8 +295,14 @@
       box-shadow: 0 0 0 0 #905ead69;
     }
   }
+  .hiddenMobile {
+      display: none;
+  }
 
 @media (min-width: 600px) {
+    .hiddenMobile {
+        display: block;
+    }
     .demonImg {
         display: block;
     }
@@ -521,7 +526,7 @@
         margin-right: 2em;
     }
     .valuesImg {
-        width: 50vw;
+        width: 30vw;
     }
   
     .openedBenefitCard {
