@@ -3,7 +3,7 @@ import BattleCryHero from './battleCryComponents/battleCryHero'
 import '../homePage/home.css'
 import './battleCry.css'
 import FoundersMessage from './battleCryComponents/foundersMessage'
-import ValuesOfMetavist from './battleCryComponents/valuesOfMetavist'
+import ValuesOfMetavist from './battleCryComponents/missionToNonprofits'
 import NavigationMenu from '../navigation/navigationMenu'
 import { useInView } from 'react-intersection-observer';
 import {FaRegDotCircle} from 'react-icons/fa'
@@ -12,6 +12,7 @@ import { HashLink } from 'react-router-hash-link'
 import HolderBenefits from './battleCryComponents/holderBenefits'
 import Exp2 from './battleCryComponents/exp2'
 import { motion } from 'framer-motion'
+import MissionToNonprofits from './battleCryComponents/missionToNonprofits'
 
 function BattleCry(props) {
   const { ref: heroRef, inView: heroVisible} = useInView({threshold:.5})
@@ -43,7 +44,7 @@ function BattleCry(props) {
             <BattleCryHero refG={heroRef}/>
             <FoundersMessage refG={fmRef}/>
             <HolderBenefits refG={vomRef}/>
-            <ValuesOfMetavist refG={mtnRef}/>
+            <MissionToNonprofits refG={mtnRef}/>
             <Exp2 refG={mtdRef}/>
             {/* <MissionToNonprofits refG={mhbRef}/> */}
         
