@@ -40,7 +40,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 20vh;
 }
 .rmp {
     margin-left: 0;
@@ -74,6 +74,9 @@
     display: flex;
     flex-direction: column;
     color: white;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
 }
 .roadmapItemInfo h1 {
     margin-bottom: 1em;
@@ -106,14 +109,15 @@
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 2em;
+        margin-bottom: 5em;
     }
     .roadmapItemInfo {
         text-align: left;
         padding-left: 2em;
     }
     .roadmapStoryImg {
-        height: 20vh;
+        height: 15vh;
+        margin-right: 5em;
     }
     .briefStoryText {
         padding: 0;
@@ -134,8 +138,8 @@
         font-size: 3em;
     }
     .roadmapStoryImg {
-        height: 40vh;
-        margin-right: 2em;
+        height: 35vh;
+        margin-right: 7em;
     }
   
 }
