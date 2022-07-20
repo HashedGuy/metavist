@@ -21,6 +21,7 @@
 }
 
 .foundersMessageText {
+    color: #d6d6d6;
     text-align: center;
     font-size: .9em;
     line-height: 1.7em;
@@ -42,7 +43,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2em;
     transition: all .2s ease-in-out;
     cursor: pointer;
 }
@@ -68,8 +68,8 @@
 }
 .valuesBox {
     display: flex;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     background-color: #2E2E2E;
     margin: .5em;
     cursor: pointer;
@@ -201,6 +201,7 @@
 .exp2Text {
     font-size: .9em;
     line-height: 1.7em;
+    color: #d6d6d6;
 }
 .orderB {
     order: 0;
@@ -359,7 +360,7 @@
         align-items: center;
     }
     .openBox p, .openBox li {
-        font-size: .8em;
+        font-size: .9em;
     }
     .valuesBox {
         font-size: 1em;

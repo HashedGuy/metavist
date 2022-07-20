@@ -105,6 +105,7 @@
     /* min-height: 100vh; */
 }
 .charInfoText {
+    color: #d6d6d6;
     font-size: .9em;
     line-height: 1.7em;
 }

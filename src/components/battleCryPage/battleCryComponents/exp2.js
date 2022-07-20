@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import smth from '../../../assets/img/vom.png'
 import {AiOutlineSafety, AiOutlineHeart, AiOutlineTeam, AiOutlineInteraction} from 'react-icons/ai'
-import {GiInspiration} from 'react-icons/gi'
 
 function Exp2(props) {
     const [open, setOpen] = useState('')

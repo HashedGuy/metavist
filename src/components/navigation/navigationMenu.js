@@ -4,16 +4,21 @@ import { Link} from "react-router-dom";
 import {RiMenu2Line, RiRoadMapFill} from 'react-icons/ri'
 import {AiFillHome} from 'react-icons/ai'
 import {GiBattleGear, GiHamburgerMenu} from 'react-icons/gi'
+import {FaTiktok} from 'react-icons/fa'
+import {BsTwitter} from 'react-icons/bs'
 import {MdMenu} from 'react-icons/md'
 import {CgGhostCharacter} from 'react-icons/cg'
+import Opensea from '../../assets/img/opensea.png'
 
 import Logo from '../../assets/img/logo.png'
 import { HashLink } from 'react-router-hash-link';
+import { icons } from 'react-icons';
 
 function NavigationMenu(props) {
   const [activeLink, setActiveLink] = useState(props.defaultActive)
   const [scrolled, setScrolled] = useState(false);
   const [dropdownMenu, setDropdownMenu] = useState(false)
+  const [icon, setIcon] = useState(false)
 
   useEffect(() => {
     window.addEventListener('scroll', stickNavbar);
@@ -38,7 +43,25 @@ function NavigationMenu(props) {
       : (props.defaultActive==='fablesMyths') && (dropdownMenu) ? {position:'sticky'}
       : {}}>
       <div className='logoContainer'>
-        <Link to={'/'} onClick={()=>setActiveLink('home')}><img src={Logo} className={scrolled ? 'logoImg hideMenu' : 'logoImg'}/></Link>
+        <Link to={'/'} onClick={()=>setActiveLink('home')}>
+          <img src={Logo} className={scrolled ? 'logoImg hideMenu' : 'logoImg'}/>
+          
+        </Link>
+        {scrolled ? 
+          <div className='socialmediaBox'>
+            <a href='https://www.tiktok.com/' target='_blank'><FaTiktok className='socialmediaIcons tiktok' title='TikTok'/></a> 
+            <a href='https://twitter.com/' target='_blank'><BsTwitter className='socialmediaIcons twitter' title='Twitter'/></a>
+            <a href='https://opensea.io/' target='_blank'>
+              <img 
+                src={icon ? 'https://storage.googleapis.com/opensea-static/Logomark/Logomark-Transparent%20White.svg' : 'https://storage.googleapis.com/opensea-static/Logomark/Logomark-White.svg'} 
+                className={icon ? 'socialmediaIcons opensea' : 'socialmediaIcons'}
+                onMouseEnter={()=>setIcon(true)} 
+                onMouseOut={()=>setIcon(false)}
+                title='Opensea'/>
+            </a>
+          </div>
+           : ''}
+      
       </div>
 
       <div className={dropdownMenu ? 'menuSection openedMenuSection' : 'menuSection'}>

@@ -1,96 +1,85 @@
 import { useState } from 'react'
-import smth from '../../../assets/img/vom.png'
-import {AiOutlineSafety, AiOutlineHeart, AiOutlineTeam, AiOutlineInteraction} from 'react-icons/ai'
-import {GiInspiration, GiMoneyStack} from 'react-icons/gi'
-import {TbScale, TbClick} from 'react-icons/tb'
-import {FaPeopleCarry} from 'react-icons/fa'
+import {AiOutlineClose} from 'react-icons/ai'
+import Mtd from '../../../assets/img/mtd.png'
 
 function MissionToNonprofits(props) {
-    const [open, setOpen] = useState('')
+    const [box, setBox] = useState('')
   return (
-    <div className='exp2Container' ref={props.refG} id='mtnRef'>
-       <h1 className='valuesTitle'>Our Mission to Nonprofits</h1>
-       <div className='exp2Div'>
-            <div className={open==='one' ? 'openedBenefitCard' : 'benefitCard'} >
-                {/* {open==='one' ? '' : <div className="centered" onClick={()=>setOpen('one')}>Secure</div>} */}
-                <img src={smth} className={open==='one' ? 'coverImg smaller' : 'coverImg'} onClick={()=>setOpen('one')}/>
-                {open==='one' ? 
-                <>
-                <div className='insidePar'>
-                <h1><a onClick={()=>setOpen('one')}><TbClick/> Technology</a></h1>
-                <p className='exp2Text'>You run on data and metrics. Realising the impact of an organisation lies in more than how it is marketed and the legacy it holds.  </p>
-               
-                </div> 
-                 <a className='closeBtn' onClick={()=>setOpen('')}>Close</a></>: ''}
-                
-            
-            </div>
-            <div className='exp2Paragraph'>
-                <h1><a onClick={()=>setOpen('one')}><TbClick/> Technology</a></h1>
-                {open==='one' ? <p className='exp2Text'>You run on data and metrics. Realising the impact of an organisation lies in more than how it is marketed and the legacy it holds. </p> : ''}
-            </div>
-       </div>
-       <div className='exp2Div'>
-            <div className={open==='two' ? 'openedBenefitCard orderB' : 'benefitCard orderB'}>
-                {/* {open==='two' ? '' : <div className="centered" onClick={()=>setOpen('two')}>Impactful</div>} */}
-                <img src={smth} className={open==='two' ? 'coverImg smaller' : 'coverImg'} onClick={()=>setOpen('two')}/>
-                {open==='two' ? 
-                <>
-                 <div className='insidePar'>
-                    <h1><a onClick={()=>setOpen('two')}><FaPeopleCarry/> Community</a></h1>
-                    <p className='exp2Text'>You believe bold ideas are the road to a brighter future. Blazing a path of your very own.</p>
-                 </div>
-                <a className='closeBtn' onClick={()=>setOpen('')}>Close</a>
-                </> : ''}
-            </div>
-            <div className='exp2Paragraph'>
-                <h1><a onClick={()=>setOpen('two')}><FaPeopleCarry/> Community</a></h1>
-                {open==='two' ? <p className='exp2Text'>You believe bold ideas are the road to a brighter future. Blazing a path of your very own.</p> : ''}
-            </div>
-       </div>
-       <div className='exp2Div'>
-            <div className={open==='three' ? 'openedBenefitCard' : 'benefitCard'} >
-                {/* {open==='three' ? '' : <div className="centered" onClick={()=>setOpen('three')}>Valuable</div>} */}
-                <img src={smth} className={open==='three' ? 'coverImg smaller' : 'coverImg'} onClick={()=>setOpen('three')}/>
-                {open==='three' ? 
-                <>
-                  <div className='insidePar'>
-                    <h1><a onClick={()=>setOpen('three')}><GiMoneyStack/> Monetization</a></h1>
-                    <p className='exp2Text'>You take heed in the idea that we are not what we take but what we give. Eager to share your knowledge and experience with others.
-                    </p>
-                  </div>
-                <a className='closeBtn' onClick={()=>setOpen('')}>Close</a>
-                </> : ''}
-                
-            
-            </div>
-            <div className='exp2Paragraph'>
-                <h1><a onClick={()=>setOpen('three')}><GiMoneyStack/> Monetization</a></h1>
-                {open==='three' ? <p className='exp2Text'>You take heed in the idea that we are not what we take but what we give. Eager to share your knowledge and experience with others.
-                </p> : ''}
-            </div>
-       </div>
-       <div className='exp2Div'>
-            <div className={open==='four' ? 'openedBenefitCard orderB' : 'benefitCard orderB'}>
-                {/* {open==='four' ? '' : <div className="centered" onClick={()=>setOpen('four')}>Inspiring</div>} */}
-                <img src={smth} className={open==='four' ? 'coverImg smaller' : 'coverImg'} onClick={()=>setOpen('four')}/>
-                {open==='four' ? 
-                <>
-                <div className='insidePar'>
-                    <h1><a onClick={()=>setOpen('four')}><TbScale/> Democratise Capital</a></h1>
-                    <p className='exp2Text'>You believe that we are all in this together. You want to be able to lift all of us up together. Striving to know and respect the differences we hold as humans.
-                    </p>
+    <div className='battleCrySection' ref={props.refG} id='mtnRef'>
+        <div className='valuesSection'>
+           <h1 className='valuesTitle'>Our Mission to Nonprofits</h1>
+             <div className='valuesBoxes'>
+               {box==='' ? 
+               <>
+                <div 
+                  className='valuesBox'
+                  onClick={()=>setBox('one')}
+                  >
+                    Technology
                 </div>
-                <a className='closeBtn' onClick={()=>setOpen('')}>Close</a>
-                </> : ''}
-            </div>
-            <div className='exp2Paragraph'>
-                <h1><a onClick={()=>setOpen('four')}><TbScale/> Democratise Capital</a></h1>
-                {open==='four' ? <p className='exp2Text'>You believe that we are all in this together. You want to be able to lift all of us up together. Striving to know and respect the differences we hold as humans.
-                </p> : ''}
-            </div>
-       </div>
-   
+                <div 
+                  className='valuesBox'
+                  onClick={()=>setBox('two')}>
+                    Community
+                </div>
+
+                <div 
+                  className='valuesBox'
+                  onClick={()=>setBox('three')}>
+                    Monetization
+                </div>
+                <div 
+                  className='valuesBox'
+                  onClick={()=>setBox('four')} >
+                   Democratize Capital
+                </div>
+               </>
+               : 
+               <>
+                <div className='openBox'>
+                  {box==='one' ? 
+                  <>
+                    <p>The world is constantly shifting. It’s in a constant state of evolutions and changes. Yet, it would seem that when these evolutions shift the flow of industry the corporate giants are a large step beyond the public service sector. Our commitment is to put the social impact industry at the centre of benefits as we equip them with the technology to serve them efficiently, truthfully & transparently. 
+                    <br/><br/>
+                    By being part of the Metavists Community,  you hold the wheel as we drive this industry into the future. Standing shoulder to shoulder with private industry. With this we will be fueling innovations for a better and brighter world.
+ </p>
+                  </>
+                  :
+                  box==='two' ? 
+                <>
+                  <p>
+                  Community is key for any brand. Social media is one of the best places to cultivate a community.  Though it’s easy to see that today’s social media is a playground holding creators, influencers and brands to a higher degree.. Mission driven causes and activists find themselves left behind. There are apps for video content, audio engagement, sharing thoughts, and even to grow your professional career...
+                  <br/><br/>
+                  We need a social app for social impact! The best part is that we are going to build it together! A nexus point for community building, efficiency, and supporting impactful organizations financially.  A protected space for all kinds of legally ethical social impact projects and organizations.
+                  </p>
+                </>
+                :
+                box==='three' ? 
+                <>
+                  <p>Fundraising is an extremely time consuming, expensive & resource rich process. It can take upwards of 6 months with costs up to 50% of funds raised. We would love to see social impact organisations using a more sustainable & sleek approach. Through a system of recurring donations, accepting both fiat & cryptocurrencies, It has already proven to be a major success.</p>
+                  <ul>
+                      <li>Subscription donors are 5x more valuable than 1-time donors</li>
+                      <li>Subscription donors give 42% more than 1-time donors</li>
+                      <li>52% of Millennials are more likely to give monthly</li>
+                      <li>Improved & distributed cash flow</li>
+                      <li>Increased donations through Crypto Investors</li>
+                  </ul>
+                </>
+                :
+                <>
+                  <p>$474 Billion is no small amount of money.  This amount has the potential to change the world around us as we know it. This is the annual amount just the American working people donate to the various nonprofits. However many small but impactful nonprofits are struggling to stay afloat fighting alongside organisations with huge marketing budgets but low impact. 
+                  <br/><br/>
+                  Can you imagine the impact we can mold if we can deploy this fund democratically? Stripping away the brand names or years of existence to social impact organisations and basing it solely on merit & credits? This is the future we are fighting to create with you!
+                  </p>
+                </>}
+                   <br/>
+                    <a onClick={()=>setBox('')}><AiOutlineClose className='closeIcon'/></a>
+                </div>
+               </>}
+                
+              </div>
+        </div>
+        <img src={Mtd} className='valuesImg'/>
     </div>
   )
 }

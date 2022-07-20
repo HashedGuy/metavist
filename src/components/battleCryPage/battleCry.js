@@ -36,18 +36,16 @@ function BattleCry(props) {
           <HashLink to='#bcId' smooth><FaRegDotCircle className={heroVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
           <HashLink to='#fmRef' smooth><FaRegDotCircle className={fmVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
           <HashLink to='#vomRef' smooth><FaRegDotCircle className={vomVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
-          <HashLink to='#mtnRef' smooth><FaRegDotCircle className={mtnVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
           <HashLink to='#mtdRef' smooth><FaRegDotCircle className={mtdVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
+          <HashLink to='#mtnRef' smooth><FaRegDotCircle className={mtnVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink>
           {/* <HashLink to='#mhbRef' smooth><FaRegDotCircle className={mhbVisible ? 'verticalNavSection activeNavSection' : 'verticalNavSection'}/></HashLink> */}
         </div>
         <div className="pagesContent">
             <BattleCryHero refG={heroRef}/>
             <FoundersMessage refG={fmRef}/>
             <HolderBenefits refG={vomRef}/>
+            <MissionToDonors refG={mtdRef}/>
             <MissionToNonprofits refG={mtnRef}/>
-            <Exp2 refG={mtdRef}/>
-            {/* <MissionToNonprofits refG={mhbRef}/> */}
-        
          </div>
        </div>
       </motion.div>

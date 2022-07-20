@@ -44,7 +44,9 @@ function MissionToDonors(props) {
                   :
                   box==='two' ? 
                 <>
-                  <p>Data & metrics are key factors for donors like you in evaluating the impact of your favourite social impact project.  This missing element must raise thoughts in the mind like, “Oh, you raised a million dollars but only fed five thousand?” Founders send investors updates monthly and we believe you deserve to be in that conversation as well. We Metavists want a future where every donor gets to feel the satisfaction of looking at the impact their donation made with a full heart. You deserve more than just a short shot of happiness at the moment of donation. By supporting the Metavists project, we will build a future where donations mean so much more than they do now.</p>
+                  <p>Data & metrics are key factors for donors like you in evaluating the impact of your favourite social impact project.  This missing element must raise thoughts in the mind like, “Oh, you raised a million dollars but only fed five thousand?” Founders send investors updates monthly and we believe you deserve to be in that conversation as well. 
+                    <br/><br/>
+                    We Metavists want a future where every donor gets to feel the satisfaction of looking at the impact their donation made with a full heart. You deserve more than just a short shot of happiness at the moment of donation. By supporting the Metavists project, we will build a future where donations mean so much more than they do now.</p>
                 </>
                 :
                 box==='three' ? 
