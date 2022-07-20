@@ -10,6 +10,7 @@ import {FaRegDotCircle} from 'react-icons/fa'
 import { HashLink } from 'react-router-hash-link'
 import '../navigation/nav.css'
 import { motion } from 'framer-motion'
+import Footer from './homeComponents/footer'
 
 function Home() {
   const { ref: heroRef, inView: heroVisible} = useInView({threshold:.5})
@@ -40,6 +41,7 @@ function Home() {
          <BriefStory refB={bsRef}/>
          <Character refG={charRef}/>
          <Problem refG={problemRef}/>
+         <Footer />
        </div>
       </div>
      </motion.div>

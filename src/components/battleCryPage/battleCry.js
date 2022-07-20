@@ -13,6 +13,7 @@ import HolderBenefits from './battleCryComponents/holderBenefits'
 import Exp2 from './battleCryComponents/exp2'
 import { motion } from 'framer-motion'
 import MissionToNonprofits from './battleCryComponents/missionToNonprofits'
+import Footer from '../homePage/homeComponents/footer'
 
 function BattleCry(props) {
   const { ref: heroRef, inView: heroVisible} = useInView({threshold:.5})
@@ -46,6 +47,7 @@ function BattleCry(props) {
             <HolderBenefits refG={vomRef}/>
             <MissionToDonors refG={mtdRef}/>
             <MissionToNonprofits refG={mtnRef}/>
+            <Footer />
          </div>
        </div>
       </motion.div>

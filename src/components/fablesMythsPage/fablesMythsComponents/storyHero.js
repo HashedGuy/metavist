@@ -5,6 +5,7 @@ import FablesMythsHero from './fablesMythsHero'
 
 import { useInView } from 'react-intersection-observer';
 import NavigationMenu from '../../navigation/navigationMenu'
+import Footer from '../../homePage/homeComponents/footer';
 
 function StoryHero() {
   const [activeChar, setActiveChar] = useState('mainGuy')
@@ -27,6 +28,8 @@ function StoryHero() {
               </>
               <div ref={strRef} id='players'>
                 <FablesMythsHero />
+
+          <Footer />
             
               </div>
              

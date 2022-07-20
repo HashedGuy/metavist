@@ -8,6 +8,7 @@ import RmpHero from './roadmapComponents/rmpHero'
 import { HashLink } from 'react-router-hash-link'
 import {FaRegDotCircle} from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import Footer from '../homePage/homeComponents/footer'
 
 function Roadmap() {
   const { ref: heroRef, inView: heroVisible} = useInView({threshold:.5})
@@ -32,7 +33,7 @@ function Roadmap() {
        <div className="pagesContent">
         <RmpHero refG={heroRef}/>
         <RoadmapHero refG={roadmapRef}/>
-        {/* <MissionToNonProfits refG={mhbRef} /> */}
+        <Footer/>
        </div>
       </div>
      </motion.div> 
