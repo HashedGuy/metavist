@@ -70,7 +70,7 @@ function MissionToDonors(props) {
                 
               </div>
         </div>
-        <img src={Mtd} className='valuesImg'/>
+        <img src='https://ik.imagekit.io/74qyv5bswgr/Metavists/Battle_Cry___Mission_Donors__ZTVUwS5sfC.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1658339853441' className='valuesImg'/>
     </div>
   )
 }

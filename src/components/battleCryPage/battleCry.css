@@ -3,7 +3,7 @@
     flex-direction: column;
     color: #FFFFFF;
     padding: 0;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 2em .5em;
     font-family: 'Poppins', sans-serif;
@@ -38,7 +38,7 @@
     align-items: center;
 }
 .valuesImg {
-    width: 90vw;
+    width: 60vw;
     /* border: 1px solid wheat; */
     display: flex;
     align-items: center;
@@ -342,7 +342,7 @@
         width: 200px;
     }
     .valuesImg {
-        width: 70vw;
+        width: 40vw;
     }
     .openBox {
         height: 420px;
@@ -497,6 +497,7 @@
 @media (min-width: 1000px) {
     .battleCrySection {
         flex-direction: row;
+        justify-content: space-around;
         margin: 2em;
     }
     .messageSection {

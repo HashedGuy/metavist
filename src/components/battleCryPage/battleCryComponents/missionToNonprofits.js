@@ -79,7 +79,7 @@ function MissionToNonprofits(props) {
                 
               </div>
         </div>
-        <img src={Mtd} className='valuesImg'/>
+        <img src='https://ik.imagekit.io/74qyv5bswgr/Metavists/Battle_Cry___Mission_Nonprofits__sdszmT8WM.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1658339870867' className='valuesImg'/>
     </div>
   )
 }
