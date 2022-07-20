@@ -20,7 +20,7 @@ function MissionToDonors(props) {
                 <div 
                   className='valuesBox'
                   onClick={()=>setBox('two')}>
-                    Donation Impact and Satisfaction
+                    Donation Impact & Satisfaction
                 </div>
 
                 <div 
