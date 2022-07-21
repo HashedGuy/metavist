@@ -15,7 +15,7 @@ function BriefStory(props) {
                 </p>
                 <HashLink className="homeReferenceBtn" to={'./fablesMyths#backgroundStoryRef'}>Background story  <FaAngleRight className='iconClass'/></HashLink>
             </div>
-            <img src={bsImg} className='briefStoryImg'/>
+            <img src='https://ik.imagekit.io/74qyv5bswgr/Metavists/HomePage_BriefStory_Pg5k_OoTm.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658392433303' className='briefStoryImg'/>
         </div>
     )
 }

@@ -87,7 +87,7 @@ function Problem(props) {
               
             </div>
            
-                <img src={ response==='one' ? ProblemImg0 : response==='two' ? ProblemImg1 : response==='three' ? ProblemImg2 : ProblemImg} className='problemImg'/>
+                <img src={ response==='one' ? 'https://ik.imagekit.io/74qyv5bswgr/Metavists/Homepage_Probs0_QG8mF7O9t.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658392460714' : response==='two' ? 'https://ik.imagekit.io/74qyv5bswgr/Metavists/Homepage_Probs1_8HFOsmrrj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658392460837' : response==='three' ? 'https://ik.imagekit.io/74qyv5bswgr/Metavists/Homepage_Probs2_HsI5oSrFP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658392460174' : 'https://ik.imagekit.io/74qyv5bswgr/Metavists/HomePage_Probs_luLAC3H9w.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658392426932'} className='problemImg'/>
          
         </div>
   )

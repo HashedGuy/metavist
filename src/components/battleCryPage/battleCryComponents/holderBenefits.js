@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import smth from '../../../assets/img/vom.png'
-import MainGuy from '../../../assets/img/final/FablesMyth_BigGuy.png'
 import {motion} from 'framer-motion'
 
 function HolderBenefits(props) {
@@ -27,7 +25,7 @@ function HolderBenefits(props) {
    </div>
 
   <div className='demonImg'>
-    <img className='demonImgZ' src={smth}/>
+    <img className='demonImgZ' src='https://ik.imagekit.io/74qyv5bswgr/Metavists/vom_ull6ehpIB.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658392076359'/>
   </div>
 
   <motion.div className='benefitText' >

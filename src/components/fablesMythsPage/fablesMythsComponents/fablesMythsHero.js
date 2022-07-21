@@ -12,10 +12,10 @@ function FablesMythsHero(props) {
     <div className="characterHeroSection">
       {/* <BackgroundStory /> */}
       <div className="charactersTogether">
-        <HashLink to='#charLetter' smooth><img src={BackstoryImg} className={character==='BACKSTORY'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('BACKSTORY')}/></HashLink>
-        <HashLink to='#charLetter' smooth><img src={CharJ} className={character==='NESSIE'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('NESSIE')}/></HashLink>
-        <HashLink to='#charLetter' smooth><img src={CharA} className={character==='BIG FOOT'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('BIG FOOT')}/></HashLink>
-        <HashLink to='#charLetter' smooth><img src={CharB} className={character==='Thunderbird M'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Thunderbird M')}/></HashLink>
+        <HashLink to='#charLetter' smooth><img src='https://ik.imagekit.io/74qyv5bswgr/Metavists/FablesMyth_Backstory_AWBZPwXgJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658393672843' className={character==='BACKSTORY'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('BACKSTORY')}/></HashLink>
+        <HashLink to='#charLetter' smooth><img src='https://ik.imagekit.io/74qyv5bswgr/Metavists/FablesMyth_Girl_W02vapLuO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658393662818' className={character==='NESSIE'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('NESSIE')}/></HashLink>
+        <HashLink to='#charLetter' smooth><img src='https://ik.imagekit.io/74qyv5bswgr/Metavists/FablesMyth_BigGuy_yItM6D82z.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658393663383' className={character==='BIG FOOT'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('BIG FOOT')}/></HashLink>
+        <HashLink to='#charLetter' smooth><img src='https://ik.imagekit.io/74qyv5bswgr/Metavists/FablesMyth_MedGuy_T5jgWnYMH.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658393664158' className={character==='Thunderbird M'? 'charLetter selectedCharacter': 'charLetter'} onClick={()=>setCharacter('Thunderbird M')}/></HashLink>
       </div>
        <Stories character={character}/>
     </div>

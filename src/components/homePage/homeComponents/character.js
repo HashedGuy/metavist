@@ -23,9 +23,9 @@ function Character(props) {
        <HashLink className="homeReferenceBtn" to={'./fablesMyths#players'}>Know your players <FaAngleRight className='iconClass'/></HashLink>
    </div>
    <div className='characterImgs'>
-    <img className={character==='LC' ? 'character activeCharacter' : 'character'} src={Friends} onClick={()=>setCharacter('LC')}/>
-    <img className={character==='BF' ? 'character activeCharacter' : 'character'} src={MainGuy} onClick={()=>setCharacter('BF')}/>
-    <img className={character==='TB' ? 'character activeCharacter' : 'character'} src={CharMini} onClick={()=>setCharacter('TB')}/>
+    <img className={character==='LC' ? 'character activeCharacter' : 'character'} src='https://ik.imagekit.io/74qyv5bswgr/Metavists/HomePage_HeroesLC_n5s7wALxE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658392424733' onClick={()=>setCharacter('LC')}/>
+    <img className={character==='BF' ? 'character activeCharacter' : 'character'} src='https://ik.imagekit.io/74qyv5bswgr/Metavists/HomePage_HeroesBF_ESasBqyDA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658392425856' onClick={()=>setCharacter('BF')}/>
+    <img className={character==='TB' ? 'character activeCharacter' : 'character'} src='https://ik.imagekit.io/74qyv5bswgr/Metavists/HomePage_HeroesTB_aIt9Bljwb.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658392427658' onClick={()=>setCharacter('TB')}/>
    </div>
 </div>
   )

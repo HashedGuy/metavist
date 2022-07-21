@@ -19,7 +19,7 @@ function FoundersMessage(props) {
                 </p>
                 </div>
            
-                <img src={Founder} className='foundersMessageImg'/>
+                <img src='https://ik.imagekit.io/74qyv5bswgr/Metavists/BattleCry_Carcass_yapcLSY2o.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658392168829' className='foundersMessageImg'/>
             </div>
             <div className='carcassSections'>
                 <div className='orderChange'>
@@ -32,7 +32,7 @@ function FoundersMessage(props) {
                         Why are we, the working class, donating a sum of five hundred billion annually subjected to the rigorous game that is the current state of nonprofits.  
                     </p>
                 </div>
-                <img src={FounderOne} className='foundersMessageImg'/>
+                <img src='https://ik.imagekit.io/74qyv5bswgr/Metavists/BattleCry_Carcass1_xL8Zs-_Ry.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658392166836' className='foundersMessageImg'/>
             </div>
          
 
@@ -42,7 +42,7 @@ function FoundersMessage(props) {
                     This should be an aggravating point for everyone. We know it is for us. We are the Metavists (Metaverse Activists) and we will work to restore the trust of the people and extinguish the flames of greed perpetrating the nonprofit world with our NFT Collections. Building a community of the most committed individuals to invest and build the ideal future. All this done in the palm of the hand from our Metavists App.
                 </p>
              </div>
-             <img src={FounderTwo} className='foundersMessageImg'/>
+             <img src='https://ik.imagekit.io/74qyv5bswgr/Metavists/BattleCry_Carcass2_xujrfZN55.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658392168835' className='foundersMessageImg'/>
          
          </div>
           

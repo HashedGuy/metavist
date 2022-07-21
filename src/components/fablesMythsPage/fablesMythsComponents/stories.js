@@ -26,7 +26,7 @@ function Stories(props) {
                   
                 </p>
             </div>
-            <img src={props.character==='NESSIE' ? Hermoine : props.character==='Thunderbird M' ? Weasley : props.character==='BACKSTORY' ? backStoryImg : MainGuy} className='storyImg'/>
+            <img src={props.character==='NESSIE' ? Hermoine : props.character==='Thunderbird M' ? Weasley : props.character==='BACKSTORY' ? 'https://ik.imagekit.io/74qyv5bswgr/Metavists/FablesMyth_Backstory_AWBZPwXgJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658393672843' : MainGuy} className='storyImg'/>
         </div>
 
       <div className='fmSpecialSection'>

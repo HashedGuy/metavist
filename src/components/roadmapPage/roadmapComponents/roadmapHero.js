@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import {FaAngleDown, FaAngleUp} from 'react-icons/fa'
-import Dest2 from '../../../assets/img/final/PathsOfConquest_Media.png'
-import Dest3 from '../../../assets/img/final/PathsOfConquest_Metaverse.png'
-import Dest4 from '../../../assets/img/final/PathsOfConquest_Foundation.png'
-import Dest5 from '../../../assets/img/final/PathsOfConquest_Community.png'
-import Dest6 from '../../../assets/img/final/PathsOfConquest_Media1.png'
 import { HashLink } from 'react-router-hash-link'
 import { motion } from 'framer-motion'
 
 function RoadmapHero(props) {
+  const Dest6 = 'https://ik.imagekit.io/74qyv5bswgr/Metavists/PathsOfConquest_Media1_NM_2oCNaX.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658392989379'
+  const Dest5 = 'https://ik.imagekit.io/74qyv5bswgr/Metavists/PathsOfConquest_Community_LZSAyGgK1V.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658393013342'
+  const Dest4 = 'https://ik.imagekit.io/74qyv5bswgr/Metavists/PathsOfConquest_Foundation_GMnL-QNWg.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658393018454'
+  const Dest3 = 'https://ik.imagekit.io/74qyv5bswgr/Metavists/PathsOfConquest_Metaverse_Q1n-e0NWt.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658392981898'
+  const Dest2 = 'https://ik.imagekit.io/74qyv5bswgr/Metavists/PathsOfConquest_Media_goAPVeT8n.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658393410396'
+
+
   const [destination, setDestination] = useState('#1. The Metavists App')
   const [showMore1, setShowMore1] = useState(false)
   const [showMore2, setShowMore2] = useState(false)
