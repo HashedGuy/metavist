@@ -190,6 +190,7 @@ hr {
     padding: 1em;
     color: lightgray;
     text-align: center;
+    margin: 0 1em;
 }
 .footerItem {
     opacity: 1;

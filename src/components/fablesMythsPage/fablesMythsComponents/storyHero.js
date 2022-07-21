@@ -43,6 +43,7 @@ function StoryHero() {
         </div>
          <div ref={strRef} id='players'>
                 <FablesMythsHero />
+                <Footer />
               </div>
         </div>
 
