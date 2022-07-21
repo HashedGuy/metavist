@@ -19,6 +19,7 @@ function NavigationMenu(props) {
   const [scrolled, setScrolled] = useState(false);
   const [dropdownMenu, setDropdownMenu] = useState(false)
   const [icon, setIcon] = useState(false)
+  const [scrollDirection, setScrollDirection] = useState('')
 
   useEffect(() => {
     window.addEventListener('scroll', stickNavbar);
@@ -28,6 +29,8 @@ function NavigationMenu(props) {
     };
   }, []);
 
+
+
   const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
@@ -35,11 +38,30 @@ function NavigationMenu(props) {
     }
   };
 
+  let lastScrollTop = 0;
+
+useEffect(()=> {
+  // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+  window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
+    const st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+    if (st > lastScrollTop){
+      // downscroll code
+      setScrollDirection('down')
+    } else {
+      // upscroll code
+      setScrollDirection('up')
+    }
+    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+  }, false);
+}, [])
+console.log(scrollDirection)
+
+
   return (
     <>
     <div 
       className={scrolled ? 'navContainer scrolledNav':'navContainer'} 
-      style={(props.defaultActive==='fablesMyths') && (!dropdownMenu) ? {position:'sticky', background:'rgba(158, 85, 252, .1)'} 
+      style={(props.defaultActive==='fablesMyths') && (!dropdownMenu) ? {position:'sticky'} 
       : (props.defaultActive==='fablesMyths') && (dropdownMenu) ? {position:'sticky'}
       : {}}>
       <div className='logoContainer'>
@@ -68,12 +90,12 @@ function NavigationMenu(props) {
         <ul className='ulMenu'>
           <li className={activeLink==='home' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/'} onClick={()=>setActiveLink('home')}>Home</Link></li>
           <li className={activeLink==='battleCry' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/battlecry'} onClick={()=>setActiveLink('battleCry')}>Battle Cry</Link></li>
-          <li className={activeLink==='fablesMyths' ? 'activeMenuItem white' : ''}><Link className='navLink' style={props.defaultActive==='fablesMyths' ? {color:'#9E55FC'}:{}} to={'/fablesMyths'} onClick={()=>setActiveLink('fablesMyths')}>Fables & Myths</Link></li>
+          <li className={activeLink==='fablesMyths' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/fablesMyths'} onClick={()=>setActiveLink('fablesMyths')}>Fables & Myths</Link></li>
           <li className={activeLink==='roadmap' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/roadmap'} onClick={()=>setActiveLink('roadmap')}>Roadmap</Link></li>
         </ul>
       </div>
     </div>
-    <div className='bottomMenu'>
+    <div className={scrollDirection==='down' ? 'bottomMenu hideMenu' : 'bottomMenu'}>
       <HashLink to={'/'} onClick={()=>setActiveLink('home')} className={activeLink==='home' ? 'bottomMenuItems activeBottomMenuItem': 'bottomMenuItems'}>
         <div >
         <AiFillHome/>

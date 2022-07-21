@@ -23,8 +23,8 @@
 }
 .storyImg {
     width: 160px;
-    border: 1px solid white;
     background-color: gray;
+    border-radius: 10px;
 }
 .storyHero {
     display: none;

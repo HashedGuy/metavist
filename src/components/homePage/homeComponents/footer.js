@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className='footerContainer'>
         <div>
-        Join the community:
+        Join the community: <br/><br/>
         <a className='footerItem'>Tiktok</a>
         <a className='footerItem'>Twitter</a>
         <a className='footerItem'>OpenSea</a>

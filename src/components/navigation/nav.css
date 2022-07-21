@@ -269,7 +269,7 @@
       display: none;
   }
   .scrolledNav {
-    background-color: rgb(49, 49, 49);
+    background-color: rgba(49, 49, 49, 0.582);
     font-size: 70% !important;
   }
   .scrolledNav li {
