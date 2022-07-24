@@ -35,8 +35,9 @@ function NavigationMenu(props) {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
       windowHeight > 200 ? setScrolled(true) : setScrolled(false);
-    }
+    } 
   };
+ 
 
   let lastScrollTop = 0;
 
@@ -59,6 +60,7 @@ console.log(scrollDirection)
 
   return (
     <>
+    {scrollDirection==='down' || (scrollDirection==='up' && !scrolled)? 
     <div 
       className={scrolled ? 'navContainer scrolledNav':'navContainer'} 
       style={(props.defaultActive==='fablesMyths') && (!dropdownMenu) ? {position:'sticky'} 
@@ -94,7 +96,7 @@ console.log(scrollDirection)
           <li className={activeLink==='roadmap' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/roadmap'} onClick={()=>setActiveLink('roadmap')}>Roadmap</Link></li>
         </ul>
       </div>
-    </div>
+    </div> : ''}
     <div className={scrollDirection==='down' ? 'bottomMenu hideMenu' : 'bottomMenu'}>
       <HashLink to={'/'} onClick={()=>setActiveLink('home')} className={activeLink==='home' ? 'bottomMenuItems activeBottomMenuItem': 'bottomMenuItems'}>
         <div >
