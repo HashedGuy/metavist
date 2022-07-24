@@ -15,7 +15,6 @@
     padding: 0;
 }
 .logoContainer {
-    margin-left: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,8 +183,7 @@
     display: none;
 }
 .socialmediaBox {
-    margin-left: 2em;
-    display: none;
+    display: block;
 }
 .socialmediaIcons {
     vertical-align: middle;
@@ -213,6 +211,11 @@
 .opensea {
     transform: scale(1.8) !important;
 }
+.scrolledNav {
+    background-color: rgba(49, 49, 49, 0.582);
+    font-size: 70% !important;
+    padding: 1em;
+  }
 @media (min-width: 600px) {
    
     .ulDropdown li {
@@ -241,6 +244,10 @@
         font-size: 150%;
         padding: 1em;
     }  
+    .socialmediaIcons {
+        margin: .5em;
+        padding: .6em;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -268,10 +275,7 @@
   .dropdownMenu {
       display: none;
   }
-  .scrolledNav {
-    background-color: rgba(49, 49, 49, 0.582);
-    font-size: 70% !important;
-  }
+
   .scrolledNav li {
       font-size: 150%;
   }
@@ -294,5 +298,9 @@
   }
   .socialmediaBox {
     display: block;
-}
+    margin-left: 2em;
+  }
+  .socialmediaIcons {
+      margin: .2em;
+  }
 }
