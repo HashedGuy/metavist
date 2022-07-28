@@ -59,7 +59,7 @@ useEffect(()=> {
 
   return (
     <>
-    {scrollDirection==='down' || scrollDirection==='up' || lastScrollTop===0 ? 
+    {scrollDirection==='down' || !scrolled? 
     <div 
       className={scrolled ? 'navContainer scrolledNav':'navContainer'} 
       >
