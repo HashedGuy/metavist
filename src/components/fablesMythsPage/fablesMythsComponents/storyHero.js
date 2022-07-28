@@ -16,9 +16,7 @@ function StoryHero() {
        <div className="AppG">
               <>
               <NavigationMenu defaultActive='fablesMyths'/>
-              <div>
-
-              </div>
+           
               <div className="storyHero" id='backgroundStoryRef'>
                
                 <img src={Mountain} className="background" alt='' ref={backgroundStoryRef} />

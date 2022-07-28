@@ -17,7 +17,6 @@ import { icons } from 'react-icons';
 function NavigationMenu(props) {
   const [activeLink, setActiveLink] = useState(props.defaultActive)
   const [scrolled, setScrolled] = useState(false);
-  const [dropdownMenu, setDropdownMenu] = useState(false)
   const [icon, setIcon] = useState(false)
   const [scrollDirection, setScrollDirection] = useState('')
 
@@ -35,6 +34,7 @@ function NavigationMenu(props) {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
       windowHeight > 200 ? setScrolled(true) : setScrolled(false);
+      console.log(windowHeight)
     } 
   };
  
@@ -55,17 +55,14 @@ useEffect(()=> {
     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
   }, false);
 }, [])
-console.log(scrollDirection)
 
 
   return (
     <>
-    {scrollDirection==='down' || (scrollDirection==='up' && !scrolled)? 
+    {scrollDirection==='down' || scrollDirection==='up' || lastScrollTop===0 ? 
     <div 
       className={scrolled ? 'navContainer scrolledNav':'navContainer'} 
-      style={(props.defaultActive==='fablesMyths') && (!dropdownMenu) ? {position:'sticky'} 
-      : (props.defaultActive==='fablesMyths') && (dropdownMenu) ? {position:'sticky'}
-      : {}}>
+      >
       <div className='logoContainer'>
         <Link to={'/'} onClick={()=>setActiveLink('home')}>
           <img src={Logo} className={scrolled ? 'logoImg hideMenu' : 'logoImg'}/>
@@ -88,7 +85,7 @@ console.log(scrollDirection)
       
       </div>
 
-      <div className={dropdownMenu ? 'menuSection openedMenuSection' : 'menuSection'}>
+      <div className='menuSection'>
         <ul className='ulMenu'>
           <li className={activeLink==='home' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/'} onClick={()=>setActiveLink('home')}>Home</Link></li>
           <li className={activeLink==='battleCry' ? 'activeMenuItem' : ''}><Link className='navLink' to={'/battlecry'} onClick={()=>setActiveLink('battleCry')}>Battle Cry</Link></li>
